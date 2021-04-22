@@ -26,6 +26,7 @@ function Maleshounen() {
         
         <div>
             <Nav />
+            
             <Videoheader gender='male' video={video1} />
             <Container fluid className='anime-selection-cont'>
                 <Selection />

@@ -10,6 +10,7 @@ import Femaleshounen from './femaleshounen'
 import DekuEquip from './components/mha/deku/deku-equip'
 import Allmightequip from './components/mha/allmight/allmightequipment'
 import Shotoequip from './components/mha/shoto/shotoequipment'
+import Bakugouequip from './components/mha/bakugou/bakugouequip'
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <Route exact path ='/deku-equip' component={DekuEquip} />
       <Route exact path ='/allmightequipment' component={Allmightequip} />
       <Route exact path ='/shotoequipment' component={Shotoequip} />
+      <Route exact path ='/bakugouequip' component={Bakugouequip} />
       <Route exact path ='/Femaleshounen' component={Femaleshounen} />
     </div>
   );

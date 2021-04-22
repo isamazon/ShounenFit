@@ -3,12 +3,15 @@ import React from 'react'
 import './CSS/male/MHAM.css'
 import video1 from './assets/maleshounenmp4.mp4'
 import mha from './assets/mhatitlecard.png'
+
 // Dependencies
 import AOS from 'aos'
 import { Link } from 'react-router-dom'
 import { Container, Col, Row } from 'react-bootstrap'
 // Components
 import Nav from './components/navbar'
+
+import Backbutton from './components/backbutton'
 import Charselect from './components/mha/characterselect'
 // character assets
 import deku from './assets/dekuHC.png'
@@ -18,6 +21,7 @@ function MHAM() {
     return (
         <div>
             <Nav />
+            <Backbutton backroute='/maleshounen' />
             <div className='mha-cont-m'>
                 <div className="blurred-video">
                     <video className='video1' autoPlay loop muted>
@@ -38,7 +42,8 @@ function MHAM() {
                 charpath1='/deku-equip' 
                 charpath2='/allmightequipment'
                 charclass2='char-link char-2'
-                charpath3='/shotoequipment' />
+                charpath3='/shotoequipment'
+                charpath4='/bakugouequip' />
             </Container>
         </div>
         

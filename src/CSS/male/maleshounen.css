@@ -75,7 +75,13 @@
 
 @media screen and (max-width: 1000px) {
   .main-container .clear-video h1 {
-    font-size: 70px;
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 633px) {
+  .main-container .clear-video h1 {
+    font-size: 40px;
   }
 }
 
@@ -107,6 +113,12 @@
 @media screen and (max-width: 1000px) {
   .main-container .choose-h1 {
     font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 633px) {
+  .main-container .choose-h1 {
+    font-size: 40px;
   }
 }
 

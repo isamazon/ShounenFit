@@ -58,7 +58,10 @@ $font3: "Ceviche One", cursive;
       font-family: $font1;
       text-shadow: 10px 0px 5px black;
       @media screen and (max-width: 1000px) {
-        font-size: 70px;
+        font-size: 60px;
+      }
+      @media screen and (max-width: 633px) {
+        font-size: 40px;
       }
     }
     .video1 {
@@ -84,6 +87,9 @@ $font3: "Ceviche One", cursive;
     border-bottom: 1px solid white;
     @media screen and (max-width: 1000px) {
       font-size: 60px;
+    }
+    @media screen and (max-width: 633px) {
+      font-size: 40px;
     }
   }
 }

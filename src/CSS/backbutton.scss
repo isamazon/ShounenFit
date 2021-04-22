@@ -1,0 +1,46 @@
+// SCSS fonts and variables
+/*           FONTS                 */
+// Font 1
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Permanent+Marker&display=swap");
+$font1: "Bangers", cursive;
+// Font 2
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+$font2: "Permanent Marker", cursive;
+//  Font 3
+@import url("https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap");
+$font3: "Ceviche One", cursive;
+
+.backbutton-cont {
+  position: fixed;
+  background-color: none;
+  top: 10%;
+  z-index: 5;
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  .backbtn {
+    position: relative;
+    height: 100%;
+    width: 10%;
+    background-color: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .link-back {
+      width: 100%;
+      background-color: none;
+      text-align: center;
+      font-size: 40px;
+      font-family: $font1;
+      color: white;
+      text-shadow: 0px 8px 0px black;
+      transition: 0.5s;
+      &:hover {
+        text-decoration: none;
+        transform: translateX(-5px);
+      }
+    }
+  }
+}

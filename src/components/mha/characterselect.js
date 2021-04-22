@@ -42,7 +42,7 @@ function Charselect(props) {
 
                     </Col>
                     <Col xl={4} md={6} className='char-selec-col'>
-                    <Link to='/Equipment'
+                    <Link to={props.charpath4}
                              className='char-link char-4'
                             data-aos='fade-up'>
 
