@@ -1,0 +1,279 @@
+/*           FONTS                 */
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap");
+.landing-page-container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: none;
+}
+
+.landing-page-container .video1 {
+  position: fixed;
+  width: 100%;
+  z-index: -1;
+}
+
+@media (min-aspect-ratio: 16 / 9) {
+  .landing-page-container .video1 {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16 / 9) {
+  .landing-page-container .video1 {
+    width: auto;
+    height: 100%;
+  }
+}
+
+.landing-page-container .button-container {
+  position: relative;
+  bottom: 40%;
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: none;
+}
+
+.landing-page-container .button-container .gender-button {
+  position: relative;
+  height: 40%;
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background: rgba(0, 0, 0, 0.363);
+  margin: 0px 10px;
+  border: 2px solid white;
+  border-radius: 20px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.landing-page-container .button-container .gender-button:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  background: rgba(0, 0, 0, 0.763);
+}
+
+.landing-page-container .button-container .gender-button .male,
+.landing-page-container .button-container .gender-button .female {
+  background: none;
+  padding: 15px 40px;
+  color: white;
+  -webkit-transition: 1s;
+  transition: 1s;
+  font-family: "Bangers", cursive;
+}
+
+.landing-page-container .button-container .gender-button .male:hover,
+.landing-page-container .button-container .gender-button .female:hover {
+  text-decoration: none;
+}
+
+.landing-page-container .landing-page {
+  position: relative;
+  top: 5%;
+  background: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 90%;
+  width: 100%;
+}
+
+.landing-page-container .landing-page .header-col {
+  position: absolute;
+  background: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 30%;
+  width: 100%;
+  height: 10%;
+}
+
+.landing-page-container .landing-page .header-col .welcome-header {
+  position: relative;
+  background: none;
+  font-family: "Ceviche One", cursive;
+  color: white;
+  opacity: 1.8;
+  font-size: 80px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  letter-spacing: 10px;
+}
+
+.landing-page-container .landing-page .header-col .welcome-header:hover {
+  cursor: context-menu;
+}
+
+@media screen and (max-width: 990px) {
+  .landing-page-container .landing-page .header-col .welcome-header {
+    font-size: 50px;
+  }
+}
+
+.landing-page-container .landing-page .second-header {
+  position: absolute;
+  background: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 40%;
+  width: 100%;
+  height: 10%;
+  padding: 10px 0px;
+}
+
+.landing-page-container .landing-page .second-header .header-2 {
+  position: relative;
+}
+
+.landing-page-container .landing-page .second-header .header-2 h3 {
+  color: white;
+  font-family: "Bangers", cursive;
+  letter-spacing: 5px;
+  margin-right: 20px;
+  text-shadow: 0px 5px 5px black;
+}
+
+.landing-page-container .landing-page .second-header .header-2 h3::after {
+  content: " beginning";
+  -webkit-animation-name: head;
+          animation-name: head;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  color: white;
+  font-family: "Bangers", cursive;
+  letter-spacing: 5px;
+  text-shadow: 0px 5px 5px black;
+}
+
+@-webkit-keyframes head {
+  0% {
+    color: white;
+    content: " beginning";
+  }
+  25% {
+    color: white;
+    content: " beginning";
+  }
+  50% {
+    color: white;
+    content: " struggle";
+  }
+  75% {
+    color: white;
+    content: " battle";
+  }
+  80% {
+    color: white;
+  }
+  90% {
+    color: green;
+  }
+  100% {
+    color: green;
+    content: " victory";
+  }
+}
+
+@keyframes head {
+  0% {
+    color: white;
+    content: " beginning";
+  }
+  25% {
+    color: white;
+    content: " beginning";
+  }
+  50% {
+    color: white;
+    content: " struggle";
+  }
+  75% {
+    color: white;
+    content: " battle";
+  }
+  80% {
+    color: white;
+  }
+  90% {
+    color: green;
+  }
+  100% {
+    color: green;
+    content: " victory";
+  }
+}
+
+@media (max-width: 767px) {
+  .video1 {
+    display: none;
+  }
+  body {
+    background: url("");
+    background-size: cover;
+  }
+}
+
+@-webkit-keyframes hover1 {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes hover1 {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+/*# sourceMappingURL=heropage.css.map */

@@ -1,0 +1,19 @@
+.slider-container {
+  position: relative;
+  background: red;
+  height: 40%;
+  top: 10%;
+  width: 100%;
+}
+
+.slider-container .slide-1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: blue;
+}
+
+.slider-container .slide-1 h1 {
+  color: white;
+}
+/*# sourceMappingURL=heroslider.css.map */

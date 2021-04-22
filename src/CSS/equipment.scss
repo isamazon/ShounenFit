@@ -1,0 +1,109 @@
+// SCSS fonts and variables
+/*           FONTS                 */
+// Font 1
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Permanent+Marker&display=swap");
+$font1: "Bangers", cursive;
+// Font 2
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+$font2: "Permanent Marker", cursive;
+//  Font 3
+@import url("https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap");
+$font3: "Ceviche One", cursive;
+
+.Eq-m-cont {
+  position: relative;
+  background-color: black;
+  height: 100%;
+  .Eq-cont {
+    position: relative;
+    height: 100vh;
+    top: 10%;
+    .row-1 {
+      position: relative;
+      height: 100%;
+      display: flex;
+      h1 {
+        position: absolute;
+        color: white;
+        justify-self: center;
+        top: 10%;
+        width: 100%;
+        text-align: center;
+        font-size: 60px;
+        font-family: $font3;
+      }
+      .Eq-col,
+      .Eq-col-2,
+      .Eq-col-3 {
+        position: relative;
+        justify-self: center;
+        align-self: center;
+        height: 50%;
+        background: none;
+        .band-workouts,
+        .weight-workouts,
+        .body-workouts {
+          position: absolute;
+          height: 100%;
+          width: 90%;
+          background-repeat: no-repeat;
+          background-position: center;
+          transition: 0.5s;
+          border-radius: 15px;
+          &:hover {
+            text-decoration: none;
+            transform: translateY(-5px);
+          }
+          h1 {
+            position: relative;
+            top: 0;
+            color: white;
+          }
+        }
+        .band-workouts {
+          background: url("../assets/bands.png");
+        }
+        .weight-workouts {
+          background: url("../assets/dumbells.png");
+        }
+        .body-workouts {
+          background: url("../assets/pushups.png");
+        }
+      }
+    }
+  }
+}
+// greentheme
+.Green {
+  border: 4px solid white;
+  border: 4px solid white;
+  &:hover {
+    border: 4px solid rgb(13, 216, 114);
+    box-shadow: 0px 15px 10px rgb(13, 216, 114);
+  }
+}
+.greenH1 {
+  color: green;
+}
+// yellowtheme
+.Yellow {
+  border: 4px solid white;
+  &:hover {
+    border: 4px solid rgba(213, 216, 13, 1);
+    box-shadow: 0px 15px 10px rgb(127, 129, 1);
+  }
+}
+.yellowh1 {
+  color: rgba(213, 216, 13, 1);
+}
+// lightbluetheme
+.Lblue {
+  border: 4px solid white;
+  &:hover {
+    border: 4px solid rgba(0, 255, 255, 1.2);
+    box-shadow: 0px 15px 10px rgba(0, 255, 255, 1.2);
+  }
+}
+.Lblueh1 {
+  color: rgba(0, 255, 255, 1.2);
+}

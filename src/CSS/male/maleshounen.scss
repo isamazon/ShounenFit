@@ -1,0 +1,95 @@
+// SCSS fonts and variables
+/*           FONTS                 */
+// Font 1
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Permanent+Marker&display=swap");
+$font1: "Bangers", cursive;
+// Font 2
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+$font2: "Permanent Marker", cursive;
+//  Font 3
+@import url("https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap");
+$font3: "Ceviche One", cursive;
+
+.main-container {
+  position: relative;
+  background: none;
+  height: 95vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  .blurred-video {
+    position: relative;
+    width: 100%;
+    top: 0;
+    height: 400px;
+    background: black;
+    z-index: 1;
+    opacity: 0.8;
+    .video1 {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      filter: blur(50px);
+      top: 0;
+      z-index: -1;
+      left: 0;
+      @media screen and (max-width: 1000px) {
+        display: none;
+      }
+    }
+  }
+  .clear-video {
+    position: absolute;
+    width: 95%;
+    height: 400px;
+    top: 15%;
+    background: none;
+    z-index: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px -10px 30px 5px black;
+    border: 1px solid white;
+    h1 {
+      font-size: 100px;
+      letter-spacing: 5px;
+      color: white;
+      font-family: $font1;
+      text-shadow: 10px 0px 5px black;
+      @media screen and (max-width: 1000px) {
+        font-size: 70px;
+      }
+    }
+    .video1 {
+      object-fit: cover;
+      width: 100%;
+      height: 99.9%;
+      opacity: 1;
+      position: absolute;
+      background: black;
+      filter: blur(0px);
+      top: 0;
+      z-index: -1;
+      left: 0;
+    }
+  }
+  .choose-h1 {
+    position: absolute;
+    bottom: 5%;
+    letter-spacing: 10px;
+    color: white;
+    font-family: $font3;
+    font-size: 90px;
+    border-bottom: 1px solid white;
+    @media screen and (max-width: 1000px) {
+      font-size: 60px;
+    }
+  }
+}
+.anime-selection-cont {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  background: black;
+}

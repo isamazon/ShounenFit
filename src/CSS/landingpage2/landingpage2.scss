@@ -1,0 +1,84 @@
+// SCSS fonts and variables
+/*           FONTS                 */
+// Font 1
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Permanent+Marker&display=swap");
+$font1: "Bangers", cursive;
+// Font 2
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+$font2: "Fjalla One", sans-serif;
+//  Font 3
+@import url("https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap");
+$font3: "Ceviche One", cursive;
+$color1: #00b4d8;
+
+.page-2-fluid {
+  position: relative;
+  background-color: black;
+  height: 100%;
+  .page-2-container {
+    position: relative;
+    height: 100%;
+    background-color: none;
+    width: 100%;
+    .row-1 {
+      position: relative;
+      background-color: none;
+      height: 100vh;
+
+      .col-1 {
+        position: relative;
+        height: 100%;
+        top: 0%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: none;
+
+        h1 {
+          position: relative;
+          top: 10%;
+          letter-spacing: 5px;
+          color: white;
+          font-family: $font1;
+        }
+        p {
+          position: relative;
+          text-align: center;
+          color: white;
+          top: 10%;
+          padding: 0px 10px;
+          line-height: 30px;
+          font-family: $font2;
+          font-size: 25px;
+        }
+      }
+      .col-2 {
+        position: relative;
+        height: 90%;
+        top: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: none;
+
+        h1 {
+          position: relative;
+          top: 5%;
+          letter-spacing: 5px;
+          color: white;
+          font-family: $font1;
+        }
+        p {
+          position: relative;
+          text-align: center;
+          color: white;
+          top: 10%;
+          padding: 0px 20px;
+          line-height: 30px;
+          font-family: $font2;
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}

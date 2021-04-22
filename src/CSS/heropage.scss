@@ -1,0 +1,188 @@
+// SCSS fonts and variables
+/*           FONTS                 */
+// Font 1
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Permanent+Marker&display=swap");
+$font1: "Bangers", cursive;
+// Font 2
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+$font2: "Permanent Marker", cursive;
+//  Font 3
+@import url("https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap");
+$font3: "Ceviche One", cursive;
+
+.landing-page-container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: none;
+  .video1 {
+    position: fixed;
+    width: 100%;
+    z-index: -1;
+
+    @media (min-aspect-ratio: 16/9) {
+      width: 100%;
+      height: auto;
+    }
+    @media (max-aspect-ratio: 16/9) {
+      width: auto;
+      height: 100%;
+    }
+  }
+  .button-container {
+    position: relative;
+    bottom: 40%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    background: none;
+    // Male container
+    .gender-button {
+      position: relative;
+      height: 40%;
+      width: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      background: rgba(0, 0, 0, 0.363);
+      margin: 0px 10px;
+      border: 2px solid white;
+      border-radius: 20px;
+      transition: 1s;
+      &:hover {
+        transform: translateY(-5px);
+
+        background: rgba(0, 0, 0, 0.763);
+      }
+      .male,
+      .female {
+        background: none;
+        padding: 15px 40px;
+        color: white;
+        transition: 1s;
+        font-family: $font1;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .landing-page {
+    position: relative;
+    top: 5%;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90%;
+    width: 100%;
+    .header-col {
+      position: absolute;
+      background: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 30%;
+      width: 100%;
+      height: 10%;
+      .welcome-header {
+        position: relative;
+        background: none;
+        font-family: $font3;
+        color: white;
+        opacity: 1.8;
+        font-size: 80px;
+        transition: 1s;
+        letter-spacing: 10px;
+        &:hover {
+          cursor: context-menu;
+        }
+        @media screen and (max-width: 990px) {
+          font-size: 50px;
+        }
+      }
+    }
+    .second-header {
+      position: absolute;
+      background: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 40%;
+      width: 100%;
+      height: 10%;
+      padding: 10px 0px;
+      .header-2 {
+        position: relative;
+        h3 {
+          color: white;
+          font-family: $font1;
+          letter-spacing: 5px;
+          margin-right: 20px;
+          text-shadow: 0px 5px 5px black;
+        }
+        h3::after {
+          content: " beginning";
+          animation-name: head;
+          animation-duration: 15s;
+          animation-iteration-count: infinite;
+          color: white;
+          font-family: $font1;
+          letter-spacing: 5px;
+          text-shadow: 0px 5px 5px black;
+        }
+      }
+    }
+  }
+}
+
+@keyframes head {
+  0% {
+    color: white;
+    content: " beginning";
+  }
+  25% {
+    color: white;
+    content: " beginning";
+  }
+  50% {
+    color: white;
+    content: " struggle";
+  }
+  75% {
+    color: white;
+    content: " battle";
+  }
+  80% {
+    color: white;
+  }
+  90% {
+    color: green;
+  }
+  100% {
+    color: green;
+    content: " victory";
+  }
+}
+
+@media (max-width: 767px) {
+  .video1 {
+    display: none;
+  }
+  body {
+    background: url("");
+    background-size: cover;
+  }
+}
+
+@keyframes hover1 {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}

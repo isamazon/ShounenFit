@@ -1,0 +1,66 @@
+// SCSS fonts and variables
+/*           FONTS                 */
+// Font 1
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Permanent+Marker&display=swap");
+$font1: "Bangers", cursive;
+// Font 2
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+$font2: "Permanent Marker", cursive;
+//  Font 3
+@import url("https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap");
+$font3: "Ceviche One", cursive;
+
+.inner-selection-cont {
+  position: relative;
+  height: 100%;
+  background: none;
+  .selection-row {
+    top: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background: none;
+    .anime-col-1 {
+      position: relative;
+      background: none;
+      height: 20%;
+      width: 100%;
+      margin: 10px 0px;
+      display: flex;
+      .anime-1-btn {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: none;
+        transition: 0.5s;
+        &:hover {
+          transform: translateY(-5px);
+        }
+        .anime-link-1,
+        .anime-link-2 {
+          border: 4px solid white;
+          padding: 0px 100px;
+          border-radius: 30px;
+          color: white;
+          transition: 0.5s;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border &:hover {
+            list-style-type: none;
+            text-decoration: none;
+            color: white;
+          }
+          .link-img {
+            height: 150px;
+            width: 90%;
+          }
+        }
+      }
+    }
+  }
+}

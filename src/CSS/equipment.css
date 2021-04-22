@@ -1,0 +1,157 @@
+/*           FONTS                 */
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap");
+.Eq-m-cont {
+  position: relative;
+  background-color: black;
+  height: 100%;
+}
+
+.Eq-m-cont .Eq-cont {
+  position: relative;
+  height: 100vh;
+  top: 10%;
+}
+
+.Eq-m-cont .Eq-cont .row-1 {
+  position: relative;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Eq-m-cont .Eq-cont .row-1 h1 {
+  position: absolute;
+  color: white;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  top: 10%;
+  width: 100%;
+  text-align: center;
+  font-size: 60px;
+  font-family: "Ceviche One", cursive;
+}
+
+.Eq-m-cont .Eq-cont .row-1 .Eq-col,
+.Eq-m-cont .Eq-cont .row-1 .Eq-col-2,
+.Eq-m-cont .Eq-cont .row-1 .Eq-col-3 {
+  position: relative;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  height: 50%;
+  background: none;
+}
+
+.Eq-m-cont .Eq-cont .row-1 .Eq-col .band-workouts,
+.Eq-m-cont .Eq-cont .row-1 .Eq-col .weight-workouts,
+.Eq-m-cont .Eq-cont .row-1 .Eq-col .body-workouts,
+.Eq-m-cont .Eq-cont .row-1 .Eq-col-2 .band-workouts,
+.Eq-m-cont .Eq-cont .row-1 .Eq-col-2 .weight-workouts,
+.Eq-m-cont .Eq-cont .row-1 .Eq-col-2 .body-workouts,
+.Eq-m-cont .Eq-cont .row-1 .Eq-col-3 .band-workouts,
+.Eq-m-cont .Eq-cont .row-1 .Eq-col-3 .weight-workouts,
+.Eq-m-cont .Eq-cont .row-1 .Eq-col-3 .body-workouts {
+  position: absolute;
+  height: 100%;
+  width: 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 15px;
+}
+
+.Eq-m-cont .Eq-cont .row-1 .Eq-col .band-workouts:hover,
+.Eq-m-cont .Eq-cont .row-1 .Eq-col .weight-workouts:hover,
+.Eq-m-cont .Eq-cont .row-1 .Eq-col .body-workouts:hover,
+.Eq-m-cont .Eq-cont .row-1 .Eq-col-2 .band-workouts:hover,
+.Eq-m-cont .Eq-cont .row-1 .Eq-col-2 .weight-workouts:hover,
+.Eq-m-cont .Eq-cont .row-1 .Eq-col-2 .body-workouts:hover,
+.Eq-m-cont .Eq-cont .row-1 .Eq-col-3 .band-workouts:hover,
+.Eq-m-cont .Eq-cont .row-1 .Eq-col-3 .weight-workouts:hover,
+.Eq-m-cont .Eq-cont .row-1 .Eq-col-3 .body-workouts:hover {
+  text-decoration: none;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.Eq-m-cont .Eq-cont .row-1 .Eq-col .band-workouts h1,
+.Eq-m-cont .Eq-cont .row-1 .Eq-col .weight-workouts h1,
+.Eq-m-cont .Eq-cont .row-1 .Eq-col .body-workouts h1,
+.Eq-m-cont .Eq-cont .row-1 .Eq-col-2 .band-workouts h1,
+.Eq-m-cont .Eq-cont .row-1 .Eq-col-2 .weight-workouts h1,
+.Eq-m-cont .Eq-cont .row-1 .Eq-col-2 .body-workouts h1,
+.Eq-m-cont .Eq-cont .row-1 .Eq-col-3 .band-workouts h1,
+.Eq-m-cont .Eq-cont .row-1 .Eq-col-3 .weight-workouts h1,
+.Eq-m-cont .Eq-cont .row-1 .Eq-col-3 .body-workouts h1 {
+  position: relative;
+  top: 0;
+  color: white;
+}
+
+.Eq-m-cont .Eq-cont .row-1 .Eq-col .band-workouts,
+.Eq-m-cont .Eq-cont .row-1 .Eq-col-2 .band-workouts,
+.Eq-m-cont .Eq-cont .row-1 .Eq-col-3 .band-workouts {
+  background: url("../assets/bands.png");
+}
+
+.Eq-m-cont .Eq-cont .row-1 .Eq-col .weight-workouts,
+.Eq-m-cont .Eq-cont .row-1 .Eq-col-2 .weight-workouts,
+.Eq-m-cont .Eq-cont .row-1 .Eq-col-3 .weight-workouts {
+  background: url("../assets/dumbells.png");
+}
+
+.Eq-m-cont .Eq-cont .row-1 .Eq-col .body-workouts,
+.Eq-m-cont .Eq-cont .row-1 .Eq-col-2 .body-workouts,
+.Eq-m-cont .Eq-cont .row-1 .Eq-col-3 .body-workouts {
+  background: url("../assets/pushups.png");
+}
+
+.Green {
+  border: 4px solid white;
+  border: 4px solid white;
+}
+
+.Green:hover {
+  border: 4px solid #0dd872;
+  -webkit-box-shadow: 0px 15px 10px #0dd872;
+          box-shadow: 0px 15px 10px #0dd872;
+}
+
+.greenH1 {
+  color: green;
+}
+
+.Yellow {
+  border: 4px solid white;
+}
+
+.Yellow:hover {
+  border: 4px solid #d5d80d;
+  -webkit-box-shadow: 0px 15px 10px #7f8101;
+          box-shadow: 0px 15px 10px #7f8101;
+}
+
+.yellowh1 {
+  color: #d5d80d;
+}
+
+.Lblue {
+  border: 4px solid white;
+}
+
+.Lblue:hover {
+  border: 4px solid cyan;
+  -webkit-box-shadow: 0px 15px 10px cyan;
+          box-shadow: 0px 15px 10px cyan;
+}
+
+.Lblueh1 {
+  color: cyan;
+}
+/*# sourceMappingURL=equipment.css.map */
