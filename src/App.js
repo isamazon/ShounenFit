@@ -11,7 +11,8 @@ import DekuEquip from './components/mha/deku/deku-equip'
 import Allmightequip from './components/mha/allmight/allmightequipment'
 import Shotoequip from './components/mha/shoto/shotoequipment'
 import Bakugouequip from './components/mha/bakugou/bakugouequip'
-
+// Workouts
+import Dekuworkout1 from './components/mha/deku/dekubandworkout'
 
 function App() {
   return (
@@ -24,6 +25,8 @@ function App() {
       <Route exact path ='/shotoequipment' component={Shotoequip} />
       <Route exact path ='/bakugouequip' component={Bakugouequip} />
       <Route exact path ='/Femaleshounen' component={Femaleshounen} />
+      {/* Workouts */}
+      <Route exact path ='/dekubandworkout' component={Dekuworkout1} />
     </div>
   );
 }

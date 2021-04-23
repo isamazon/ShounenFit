@@ -1,0 +1,121 @@
+/*           FONTS                 */
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap");
+.Wlayout-m-container {
+  position: relative;
+  top: 10%;
+  background-color: none;
+  height: 100%;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.Wlayout-m-container .Wlayout-container {
+  position: relative;
+  background-color: none;
+  height: 100%;
+  top: 10%;
+}
+
+.Wlayout-m-container .Wlayout-container .Wlayout-row-1 {
+  position: relative;
+  height: 100%;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 20px;
+}
+
+.Wlayout-m-container .Wlayout-container .Wlayout-row-1 .col-1 {
+  position: relative;
+  background: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 400px;
+}
+
+.Wlayout-m-container .Wlayout-container .Wlayout-row-1 .col-1 .char-img {
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 550px) {
+  .Wlayout-m-container .Wlayout-container .Wlayout-row-1 .col-1 .char-img {
+    height: 80%;
+    width: 100%;
+  }
+}
+
+.Wlayout-m-container .Wlayout-container .Wlayout-row-1 .col-2 {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: none;
+  height: 400px;
+}
+
+@media screen and (max-width: 550px) {
+  .Wlayout-m-container .Wlayout-container .Wlayout-row-1 .col-2 {
+    height: 500px;
+  }
+}
+
+.Wlayout-m-container .Wlayout-container .Wlayout-row-1 .col-2 .hero-name {
+  width: 100%;
+  text-align: center;
+  background: none;
+  font-family: "Bangers", cursive;
+  font-size: 50px;
+  padding-top: 20px;
+}
+
+.Wlayout-m-container .Wlayout-container .Wlayout-row-1 .col-2 .hero-details {
+  width: 100%;
+  text-align: start;
+  background: none;
+  font-family: "Bangers", cursive;
+  font-size: 30px;
+  letter-spacing: 5px;
+  padding-left: 50px;
+}
+
+@media screen and (max-width: 550px) {
+  .Wlayout-m-container .Wlayout-container .Wlayout-row-1 .col-2 .hero-details {
+    text-align: center;
+    letter-spacing: 0px;
+  }
+}
+
+.Wlayout-m-container .Wlayout-container .Wlayout-row-1 .col-2 .p-description {
+  font-family: "Bangers", cursive;
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 2px;
+  padding: 10px 20px;
+  color: white;
+}
+
+.rowGreen {
+  border: 4px solid #00ffc8;
+  -webkit-box-shadow: 0px 0px 15px #12bb96;
+          box-shadow: 0px 0px 15px #12bb96;
+}
+
+.greenText {
+  color: #00ffc8;
+}
+/*# sourceMappingURL=workout1.css.map */

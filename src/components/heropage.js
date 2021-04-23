@@ -26,7 +26,7 @@ class Heropage extends React.Component {
                         <Link to='/maleshounen' className='male'>Male shounen</Link>
                     </div>
                     <div className='gender-button'>
-                        <Link className='female'>Female shounen</Link>
+                        <Link to='/femaleshounen' className='female'>Female shounen</Link>
                     </div>
 
                 </div>

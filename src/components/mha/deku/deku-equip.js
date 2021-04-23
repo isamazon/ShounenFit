@@ -13,9 +13,9 @@ function Dekuequip() {
             themeColor2='weight-workouts Green'
             themeColor3='body-workouts Green'    
             //Pathing
-            bandpath='/maleshounen'
-            weightpath='/femaleshounen'
-            bodypath='/femaleshounen'/> 
+            bandpath='/dekubandworkout'
+            weightpath='/'
+            bodypath='/'/> 
         </div>
     )
 }

@@ -19,20 +19,20 @@ function Charselect(props) {
         
             <Container className='char-selec-con'>
                 <Row className='char-selec-row'>
-                    <Col aos-data='fade-up' xl={4} md={6} className='char-selec-col'>
+                    <Col aos-data='fade-up' md={4} sm={6} className='char-selec-col'>
                         <Link to={props.charpath1} className={props.charclass1}
                         data-aos='fade-up'>
                             
                         </Link>
                     </Col>
-                    <Col xl={4} md={6} className='char-selec-col'>
+                    <Col md={4} sm={6} className='char-selec-col'>
                             <Link to={props.charpath2} className={props.charclass2}
                             
                             data-aos='fade-up'>
                                 
                             </Link>
                     </Col>
-                    <Col xl={4} md={6} className='char-selec-col'>
+                    <Col md={4} sm={6} className='char-selec-col'>
                             <Link to={props.charpath3}
                              className='char-link char-3'
                             data-aos='fade-up'>
@@ -41,7 +41,7 @@ function Charselect(props) {
                             </Link>
 
                     </Col>
-                    <Col xl={4} md={6} className='char-selec-col'>
+                    <Col md={4} sm={6} className='char-selec-col'>
                     <Link to={props.charpath4}
                              className='char-link char-4'
                             data-aos='fade-up'>
@@ -49,13 +49,13 @@ function Charselect(props) {
                                 
                             </Link>
                     </Col>
-                    <Col xl={4} md={6} className='char-selec-col'>
+                    <Col md={4} sm={6} className='char-selec-col'>
                     </Col>
-                    <Col xl={4} md={6} className='char-selec-col'>
+                    <Col md={4} sm={6} className='char-selec-col'>
                     </Col>
-                    <Col xl={4} md={6} className='char-selec-col'>
+                    <Col md={4} sm={6} className='char-selec-col'>
                     </Col>
-                    <Col xl={4} md={6} className='char-selec-col'>
+                    <Col md={4} sm={6} className='char-selec-col'>
                     </Col>
                 </Row>
             </Container>
