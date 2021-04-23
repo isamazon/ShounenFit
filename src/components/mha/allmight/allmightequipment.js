@@ -13,7 +13,7 @@ function Allmightequip() {
             themeColor2='weight-workouts Yellow'
             themeColor3='body-workouts Yellow'    
             //Pathing
-            bandpath='/maleshounen'
+            bandpath='/allmightbandworkout'
             weightpath='/femaleshounen'
             bodypath='/femaleshounen'/> 
         </div>

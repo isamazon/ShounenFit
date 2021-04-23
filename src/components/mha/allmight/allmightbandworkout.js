@@ -7,32 +7,32 @@ import { Container, Col, Row } from 'react-bootstrap'
 // CSS
 import '../../../CSS/workouts/workout1.css'
 // assets
-import deku from '../../../assets/deku.png'
+import allmight from '../../../assets/allmightHC.png'
 
-function Dekuworkout1() {
+function Allmightworkout1() {
     return (
         <div>
            <Workoutheader 
-           charimg={deku}
+           charimg={allmight}
            imgClass='char-img'
-           rowTheme='Wlayout-row-1 rowGreen' 
+           rowTheme='Wlayout-row-1 rowYellow' 
            col1='col-1 greenTheme' 
            col2='col-2 greentheme'
-           charName='Izuku Midorya'
-           heroName='Deku'
-           heroHeight='166cm'
+           charName='Yogi Toshinori'
+           heroName='Allmight'
+           heroHeight='218.44cm'
            heroBodytype='Ectomorph'
            charDesc='Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo porro omnis harum quod, culpa sint recusandae neque minima delectus, esse vitae totam labore a ducimus doloremque ipsa! Expedita, consectetur nulla.'
-           pDescription='p-description greenText'
-           headerTheme='hero-name greenText'
-           heroDetails='hero-details greenText'
+           pDescription='p-description yellowText'
+           headerTheme='hero-name yellowText'
+           heroDetails='hero-details yellowText'
            /> 
             <Workoutlayout
-            workoutH1='Deku band workout'
-            workoutHeader='workouth1 green-color'
-            row1='row-1 green-border' />
+            workoutH1='Allmight band workout'
+            workoutHeader='workouth1 yellow-color'
+            row1='row-1 yellow-border' />
         </div>
     )
 }
 
-export default Dekuworkout1
+export default Allmightworkout1
