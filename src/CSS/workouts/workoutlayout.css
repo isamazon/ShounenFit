@@ -3,12 +3,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap");
 .main-container {
+  height: 100%;
   position: relative;
 }
 
 .main-container .cont-fluid {
   position: relative;
-  height: 1500px;
+  height: 100%;
   background: black;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -39,6 +40,36 @@
 .main-container .cont-fluid .cont-inner-main .row-1 {
   position: relative;
   height: 100%;
+  margin: 50px 0px;
+}
+
+.main-container .cont-fluid .cont-inner-main .row-1 .col-1 {
+  position: relative;
+  height: 85%;
+  background: none;
+  border-radius: 10px;
+  height: 200px;
+  padding: 10px 0px;
+}
+
+.main-container .cont-fluid .cont-inner-main .row-1 .col-1 .bodypart-img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.main-container .cont-fluid .cont-inner-main .row-1 .col-2 {
+  position: relative;
+  height: 85%;
+  height: 200px;
+  background: blue;
+}
+
+.main-container .cont-fluid .cont-inner-main .row-1 .col-3 {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  background: green;
 }
 
 .green-color {
@@ -48,6 +79,10 @@
 .green-border {
   border: 4px solid #00ffc8;
   border-radius: 20px;
+}
+
+.green-svgs {
+  fill: #00ffc8;
 }
 
 .yellow-color {

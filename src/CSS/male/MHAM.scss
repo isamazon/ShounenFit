@@ -23,6 +23,8 @@ $font3: "Ceviche One", cursive;
     top: 0;
     height: 400px;
     background: none;
+    display: flex;
+    justify-content: center;
     z-index: 1;
     opacity: 0.8;
     .video1 {
@@ -51,6 +53,10 @@ $font3: "Ceviche One", cursive;
     justify-content: center;
     box-shadow: 0px -10px 30px 5px black;
     border: 1px solid white;
+    @media screen and (max-width: 1000px) {
+      width: 100%;
+      border: none;
+    }
     img {
       height: 300px;
       width: 50%;
@@ -78,7 +84,6 @@ $font3: "Ceviche One", cursive;
     color: white;
     font-family: $font3;
     font-size: 90px;
-    border-bottom: 1px solid white;
     @media screen and (max-width: 1000px) {
       font-size: 60px;
     }

@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 // Dependencies'
 // CSS/assets
-import '../CSS/male/maleshounen.css'
+import '../CSS/male/MHAM.css'
 
 class Videoheader extends Component {
     render() {
         return (
-            <div>
+            <div className='mha-cont-m'>
                 <div className='main-container'>
                     <div className="blurred-video">
                         <video className='video1' autoPlay loop muted>

@@ -7,7 +7,7 @@ import Videoheader from './components/videoheader'
 import AOS from 'aos'
 import { Container } from 'react-bootstrap'
 // CSS/assets
-import './CSS/male/maleshounen.css'
+import './CSS/male/MHAM.css'
 import video1 from './assets/maleshounenmp4.mp4'
 
 

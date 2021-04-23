@@ -5,7 +5,7 @@
 .Wlayout-m-container {
   position: relative;
   top: 10%;
-  background-color: none;
+  background-color: black;
   height: 100%;
   padding-top: 100px;
   padding-bottom: 50px;
@@ -46,6 +46,8 @@
 .Wlayout-m-container .Wlayout-container .Wlayout-row-1 .col-1 .char-img {
   height: 100%;
   width: 100%;
+  -webkit-animation: fadein 2.5s;
+          animation: fadein 2.5s;
 }
 
 @media screen and (max-width: 550px) {
@@ -81,6 +83,8 @@
   font-family: "Bangers", cursive;
   font-size: 50px;
   padding-top: 20px;
+  -webkit-animation: fadeleft 1.5s;
+          animation: fadeleft 1.5s;
 }
 
 .Wlayout-m-container .Wlayout-container .Wlayout-row-1 .col-2 .hero-details {
@@ -91,6 +95,8 @@
   font-size: 30px;
   letter-spacing: 5px;
   padding-left: 50px;
+  -webkit-animation: faderight 1.5s;
+          animation: faderight 1.5s;
 }
 
 @media screen and (max-width: 550px) {
@@ -107,6 +113,8 @@
   letter-spacing: 2px;
   padding: 10px 20px;
   color: white;
+  -webkit-animation: fadeup 1.5s;
+          animation: fadeup 1.5s;
 }
 
 .rowGreen {
@@ -127,5 +135,101 @@
 
 .yellowText {
   color: #d5d80d;
+}
+
+@-webkit-keyframes fadeup {
+  0% {
+    opacity: 0%;
+    -webkit-transform: translateY(55px);
+            transform: translateY(55px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes fadeup {
+  0% {
+    opacity: 0%;
+    -webkit-transform: translateY(55px);
+            transform: translateY(55px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes fadeleft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-80px);
+            transform: translateX(-80px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes fadeleft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-80px);
+            transform: translateX(-80px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes faderight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(80px);
+            transform: translateX(80px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes faderight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(80px);
+            transform: translateX(80px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=workout1.css.map */

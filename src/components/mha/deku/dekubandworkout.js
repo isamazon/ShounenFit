@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 // Components
 import Workoutheader from '../workoutheroheader'
 import Workoutlayout from '../../workoutlayout'
 // Dependancies
 import { Container, Col, Row } from 'react-bootstrap'
+import AOS from 'aos'
 // CSS
 import '../../../CSS/workouts/workout1.css'
 // assets
@@ -30,7 +31,17 @@ function Dekuworkout1() {
             <Workoutlayout
             workoutH1='Deku band workout'
             workoutHeader='workouth1 green-color'
-            row1='row-1 green-border' />
+            row1='row-1 green-border' 
+            // Columns
+            col1='col-1'
+            col2='col-2'
+            col3='col-3'
+            // imgs
+            bpimgclass='bodypart-img'
+            svgColor='rgb(0, 255, 200)'
+            width='100%'
+            height='100%'
+            />
         </div>
     )
 }

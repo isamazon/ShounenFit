@@ -17,7 +17,7 @@ class Equipment extends Component {
                 <Container className='Eq-cont'>
                     <Row className='row-1'>
                         <h1 className={this.props.h1color}>Choose your equipment</h1>
-                        <Col xl={4} className='Eq-col'>
+                        <Col md={4} xs={12} className='Eq-col'>
                             <Link 
                             to={this.props.bandpath}
                             className={this.props.themeColor1}>
@@ -25,7 +25,7 @@ class Equipment extends Component {
                                 
                             </Link>
                         </Col>
-                        <Col xl={4} className='Eq-col-2'>
+                        <Col md={4} xs={12} className='Eq-col-2'>
                             <Link>
                                 <Link 
                                 to={this.props.weightpath}
@@ -34,7 +34,7 @@ class Equipment extends Component {
                                 </Link>
                             </Link>
                         </Col>
-                        <Col xl={4} className='Eq-col-3'>
+                        <Col md={4} xs={12} className='Eq-col-3'>
                             
                             <Link
                             to={this.props.bodypath}
