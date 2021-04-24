@@ -43,8 +43,9 @@
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  height: 50%;
+  height: 350px;
   background: none;
+  margin: 10px 0px;
 }
 
 .Eq-m-cont .Eq-cont .row-1 .Eq-col .band-workouts,
@@ -59,11 +60,19 @@
   position: absolute;
   height: 100%;
   width: 90%;
-  background-repeat: no-repeat;
-  background-position: center;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .Eq-m-cont .Eq-cont .row-1 .Eq-col .band-workouts:hover,
@@ -80,36 +89,32 @@
           transform: translateY(-5px);
 }
 
-.Eq-m-cont .Eq-cont .row-1 .Eq-col .band-workouts h1,
-.Eq-m-cont .Eq-cont .row-1 .Eq-col .weight-workouts h1,
-.Eq-m-cont .Eq-cont .row-1 .Eq-col .body-workouts h1,
-.Eq-m-cont .Eq-cont .row-1 .Eq-col-2 .band-workouts h1,
-.Eq-m-cont .Eq-cont .row-1 .Eq-col-2 .weight-workouts h1,
-.Eq-m-cont .Eq-cont .row-1 .Eq-col-2 .body-workouts h1,
-.Eq-m-cont .Eq-cont .row-1 .Eq-col-3 .band-workouts h1,
-.Eq-m-cont .Eq-cont .row-1 .Eq-col-3 .weight-workouts h1,
-.Eq-m-cont .Eq-cont .row-1 .Eq-col-3 .body-workouts h1 {
+.Eq-m-cont .Eq-cont .row-1 .Eq-col .band-workouts .h1-position,
+.Eq-m-cont .Eq-cont .row-1 .Eq-col .weight-workouts .h1-position,
+.Eq-m-cont .Eq-cont .row-1 .Eq-col .body-workouts .h1-position,
+.Eq-m-cont .Eq-cont .row-1 .Eq-col-2 .band-workouts .h1-position,
+.Eq-m-cont .Eq-cont .row-1 .Eq-col-2 .weight-workouts .h1-position,
+.Eq-m-cont .Eq-cont .row-1 .Eq-col-2 .body-workouts .h1-position,
+.Eq-m-cont .Eq-cont .row-1 .Eq-col-3 .band-workouts .h1-position,
+.Eq-m-cont .Eq-cont .row-1 .Eq-col-3 .weight-workouts .h1-position,
+.Eq-m-cont .Eq-cont .row-1 .Eq-col-3 .body-workouts .h1-position {
   position: relative;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   top: 0;
   color: white;
 }
 
-.Eq-m-cont .Eq-cont .row-1 .Eq-col .band-workouts,
-.Eq-m-cont .Eq-cont .row-1 .Eq-col-2 .band-workouts,
-.Eq-m-cont .Eq-cont .row-1 .Eq-col-3 .band-workouts {
-  background: url("../assets/bands.png");
-}
-
-.Eq-m-cont .Eq-cont .row-1 .Eq-col .weight-workouts,
-.Eq-m-cont .Eq-cont .row-1 .Eq-col-2 .weight-workouts,
-.Eq-m-cont .Eq-cont .row-1 .Eq-col-3 .weight-workouts {
-  background: url("../assets/dumbells.png");
-}
-
-.Eq-m-cont .Eq-cont .row-1 .Eq-col .body-workouts,
-.Eq-m-cont .Eq-cont .row-1 .Eq-col-2 .body-workouts,
-.Eq-m-cont .Eq-cont .row-1 .Eq-col-3 .body-workouts {
-  background: url("../assets/pushups.png");
+.Eq-m-cont .Eq-cont .row-1 .Eq-col .band-workouts .SVG,
+.Eq-m-cont .Eq-cont .row-1 .Eq-col .weight-workouts .SVG,
+.Eq-m-cont .Eq-cont .row-1 .Eq-col .body-workouts .SVG,
+.Eq-m-cont .Eq-cont .row-1 .Eq-col-2 .band-workouts .SVG,
+.Eq-m-cont .Eq-cont .row-1 .Eq-col-2 .weight-workouts .SVG,
+.Eq-m-cont .Eq-cont .row-1 .Eq-col-2 .body-workouts .SVG,
+.Eq-m-cont .Eq-cont .row-1 .Eq-col-3 .band-workouts .SVG,
+.Eq-m-cont .Eq-cont .row-1 .Eq-col-3 .weight-workouts .SVG,
+.Eq-m-cont .Eq-cont .row-1 .Eq-col-3 .body-workouts .SVG {
+  position: relative;
 }
 
 .Green {
@@ -123,8 +128,12 @@
           box-shadow: 0px 15px 10px #0dd872;
 }
 
-.greenH1 {
-  color: green;
+.greenText {
+  color: white;
+}
+
+.greenText:hover {
+  color: #0dd872;
 }
 
 .Yellow {

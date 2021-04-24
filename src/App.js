@@ -2,6 +2,7 @@ import React from 'react'
 import './App.css';
 import {Route } from 'react-router-dom'
 // Main pages
+import Nav from './components/navbar'
 import Home from './Home'
 import Maleshounen from './maleshounen'
 import MHAM from './mhapage'
@@ -17,6 +18,7 @@ import Allmightworkout1 from './components/mha/allmight/allmightbandworkout'
 function App() {
   return (
     <div className="app">
+      <Nav />
       <Route exact path='/' component={Home} />
       <Route exact path='/maleshounen' component={Maleshounen}/>
       <Route exact path='/MHAM' component={MHAM} />

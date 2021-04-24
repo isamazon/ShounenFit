@@ -12,7 +12,7 @@ class Workoutheader extends Component {
     render() {
         return (
             <div>
-                <Nav />
+                
                 <Container fluid className='Wlayout-m-container'>
                     <Container className='Wlayout-container'>
                         <Row className={this.props.rowTheme}>

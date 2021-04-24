@@ -9,7 +9,7 @@ function Home() {
     
     return (
         <div className='home-container'>
-            <Nav />
+            
             <Heropage />
             <Landingpage2/>
         </div>

@@ -20,7 +20,7 @@ import deku from './assets/dekuHC.png'
 function MHAM() {
     return (
         <div>
-            <Nav />
+            
             <Backbutton backroute='/maleshounen' />
             <div className='mha-cont-m'>
                 <div className="blurred-video">
