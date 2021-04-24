@@ -1,16 +1,15 @@
 import React from 'react'
-import abs from '../../assets/bodyparts/absSvg.svg'
 
-function Abs(props) {
-    return (
-        <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
- width={props.width} height={props.height} viewBox="0 0 900.000000 900.000000"
+function Abs(props: React.SVGProps<SVGSVGElement>) {
+    return (    
+        <svg version="1.0" xmlns="http://www.w3.org/2000/svg" {...props}
+ width="" height="" viewBox="0 0 900.000000 900.000000"
  preserveAspectRatio="xMidYMid meet">
 <metadata>
 Created by potrace 1.10, written by Peter Selinger 2001-2011
 </metadata>
 <g transform="translate(0.000000,900.000000) scale(0.100000,-0.100000)"
-fill={props.svgColor} stroke="none">
+fill={props.color} stroke="none">
 <path d="M3435 8759 c-122 -52 -328 -157 -395 -202 -36 -24 -100 -68 -143 -98
 -196 -135 -358 -227 -434 -245 -15 -3 -48 -12 -73 -19 -91 -26 -457 -76 -550
 -75 -47 1 -268 -28 -360 -46 -185 -37 -374 -101 -575 -195 -161 -75 -261 -185
@@ -78,7 +77,6 @@ c-261 0 -495 -2 -520 -6z"/>
 -377 51 -262 2 -289 0 -339 -18z"/>
 </g>
 </svg>
-
     )
 }
 

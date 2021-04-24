@@ -6,7 +6,18 @@ import AOS from 'aos'
 import '../CSS/workouts/workoutlayout.css'
 // Assets 
 import Chest from '../components/bodyparts/chest'
-import Abs from '../components/bodyparts/abs'
+import Arms from '../components/bodyparts/arms'
+import Back from '../components/bodyparts/back'
+import Abs from './bodyparts/abdominals'
+import Legs from './bodyparts/legs'
+// Female BP
+import Fabs from './bodyparts/Fabs'
+import Farms from './bodyparts/Farms'
+import Fglutes from './bodyparts/Fglutes'
+import Fchest from './bodyparts/Fchest'
+import Fback from './bodyparts/Fback'
+// components 
+import Workoutaccord from './workoutaccordion'
 
 function Workoutlayout(props) {
 
@@ -27,14 +38,15 @@ function Workoutlayout(props) {
                         <Row className={props.row1} data-aos='flip-up'
                         data-aos-duration='1000'>
                             <Col md={5} xs={12} className={props.col1}>
-                                <Chest svgColor={props.svgColor} width={props.width} height={props.height} />
+                            <Chest height='100%' width='100%' color='rgb(0, 255, 200)'/>
                             </Col>
                             <Col md={7} xs={12}
                             className={props.col2}>
+                                <h1> {props.bodypartworkout} </h1>
                             </Col>
                             <Col md={12} xs={12}
                             className={props.col3}>
-
+                                
                             </Col>
                         </Row>
 

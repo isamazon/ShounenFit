@@ -10647,9 +10647,9 @@
     "tweetnacl" "~0.14.0"
 
 "ssri@^6.0.1":
-  "integrity" "sha512-3Wge10hNcT1Kur4PDFwEieXSCMCJs/7WvSACcrMYrNp+b8kDL1/0wJch5Ni2WrtwEa2IO8OsVfeKIciKCDx/QA=="
-  "resolved" "https://registry.npmjs.org/ssri/-/ssri-6.0.1.tgz"
-  "version" "6.0.1"
+  "integrity" "sha512-cepbSq/neFK7xB6A50KHN0xHDotYzq58wWCa5LeWqnPrHG8GzfEjO/4O8kpmcGW+oaxkvhEJCWgbgNk4/ZV93Q=="
+  "resolved" "https://registry.npmjs.org/ssri/-/ssri-6.0.2.tgz"
+  "version" "6.0.2"
   dependencies:
     "figgy-pudding" "^3.5.1"
 
@@ -11361,6 +11361,11 @@
   "integrity" "sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c="
   "resolved" "https://registry.npmjs.org/typedarray/-/typedarray-0.0.6.tgz"
   "version" "0.0.6"
+
+"typescript@^3.2.1 || ^4", "typescript@^4.2.4", "typescript@>=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta":
+  "integrity" "sha512-V+evlYHZnQkaz8TRBuxTA92yZBPotr5H+WhQ7bD3hZUndx5tGOa1fuCgeSjxAzM1RiN5IzvadIXTVefuuwZCRg=="
+  "resolved" "https://registry.npmjs.org/typescript/-/typescript-4.2.4.tgz"
+  "version" "4.2.4"
 
 "uncontrollable@^7.0.0", "uncontrollable@^7.2.1":
   "integrity" "sha512-svtcfoTADIB0nT9nltgjujTi7BzVmwjZClOmskKu/E8FW9BXzg9os8OLr4f8Dlnk0rYWJIWr4wv9eKUXiQvQwQ=="

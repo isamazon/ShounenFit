@@ -37,10 +37,7 @@ function Dekuworkout1() {
             col2='col-2'
             col3='col-3'
             // imgs
-            bpimgclass='bodypart-img'
-            svgColor='rgb(0, 255, 200)'
-            width='100%'
-            height='100%'
+            bodypartworkout='Chest workout'
             />
         </div>
     )
