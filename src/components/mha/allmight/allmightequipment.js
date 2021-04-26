@@ -8,10 +8,13 @@ function Allmightequip() {
         <div>
            <Equipment 
             // Styling
-            h1color='yellowh1'
+            h1Class='h1-position yellowh1'
             themeColor1='band-workouts Yellow'
             themeColor2='weight-workouts Yellow'
-            themeColor3='body-workouts Yellow'    
+            themeColor3='body-workouts Yellow'
+            // Bands
+            bandSVG='yellowSVG' 
+            SVGcolor='rgba(213, 216, 13, 1)'  
             //Pathing
             bandpath='/allmightbandworkout'
             weightpath='/femaleshounen'

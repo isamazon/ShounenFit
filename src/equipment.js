@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 // Components
-import Nav from './components/navbar'
 import { Container, Row, Col } from 'react-bootstrap'
 // CSS and assets
 import './CSS/equipment.css'

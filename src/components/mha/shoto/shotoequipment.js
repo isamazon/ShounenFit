@@ -8,11 +8,14 @@ function Shotoequip() {
         <div>
            <Equipment 
             // Styling
-            h1color='Lblueh1'
+            h1Class='h1-position'
             themeColor1='band-workouts Lblue'
             themeColor2='weight-workouts Lblue'
             themeColor3='body-workouts Lblue'    
-            //Pathing
+            // Bands/equipment
+            bandSVG='greenSVG' 
+            SVGcolor='rgba(0, 255, 255, 1.2)' 
+            //Pathing            
             bandpath='/maleshounen'
             weightpath='/femaleshounen'
             bodypath='/femaleshounen'/> 
