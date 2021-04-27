@@ -3,7 +3,7 @@ import React from 'react'
 function Chest(props: React.SVGProps<SVGSVGElement>) {
     return (
         <svg version="1.0" xmlns="http://www.w3.org/2000/svg" {...props}
-        width='' height='' viewBox="0 0 900.000000 900.000000"
+        width='100%' height='100%' viewBox="0 0 900.000000 900.000000"
         preserveAspectRatio="xMidYMid meet">
         <metadata>
         Created by potrace 1.10, written by Peter Selinger 2001-2011

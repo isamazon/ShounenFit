@@ -5,20 +5,19 @@ import AOS from 'aos'
 // CSS
 import '../CSS/workouts/workoutlayout.css'
 // Assets 
-import Chest from '../components/bodyparts/chest'
-import Arms from '../components/bodyparts/arms'
-import Back from '../components/bodyparts/back'
-import Abs from './bodyparts/abdominals'
-import Legs from './bodyparts/legs'
-// Female BP
-import Fabs from './bodyparts/Fabs'
-import Farms from './bodyparts/Farms'
-import Fglutes from './bodyparts/Fglutes'
-import Fchest from './bodyparts/Fchest'
-import Fback from './bodyparts/Fback'
+// import Chest from '../components/bodyparts/chest'
+// import Arms from '../components/bodyparts/arms'
+// import Back from '../components/bodyparts/back'
+// import Abs from './bodyparts/abdominals'
+// import Legs from './bodyparts/legs'
+// // Female BP
+// import Fabs from './bodyparts/Fabs'
+// import Farms from './bodyparts/Farms'
+// import Fglutes from './bodyparts/Fglutes'
+// import Fchest from './bodyparts/Fchest'
+// import Fback from './bodyparts/Fback'
 // components 
 import Workoutaccord from './workoutaccordion'
-
 
 function Workoutlayout(props) {
 
@@ -39,12 +38,12 @@ function Workoutlayout(props) {
                         <Row className={props.row1} data-aos='flip-up'
                         data-aos-duration='1000'>
                             {/* Workout picture */}
-                            <Col md={5} xs={12} className={props.col1}>
-                            <Chest height='100%' width='100%' color={props.svgColor}/>
+                            <Col md={5} xs={12} className='col-1'>
+                                {props.svg}
                             </Col>
                             {/* Workout desc */}
                             <Col md={7} xs={12}
-                            className={props.col2}>
+                            className='col-2'>
                                 <h1 className={props.h1Color}> {props.bodypartworkout1} 
                                 </h1>
                                 <p className={props.pClass}>
@@ -53,10 +52,10 @@ function Workoutlayout(props) {
                             </Col>
                             {/* Accordion Column */}
                             <Col md={12} xs={12}
-                            className={props.col3}>
+                            className='col-3'>
                                 <Workoutaccord />
                             </Col>
-                        </Row>             
+                        </Row>                      
                     </Container>
                 </Container>
             </div>

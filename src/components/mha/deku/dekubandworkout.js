@@ -9,16 +9,20 @@ import AOS from 'aos'
 import '../../../CSS/workouts/workout1.css'
 // assets
 import deku from '../../../assets/deku.png'
+import Chestpng from '../../../assets/bodyparts/chestsvg.svg'
 // Assets 
 import Chest from '../../bodyparts/chest'
 import Arms from '../../bodyparts/chest'
-import Back from '../../bodyparts/chest'
+import Back from '../../bodyparts/back'
 import Abs from '../../bodyparts/chest'
 import Legs from '../../bodyparts/legs'
 
 
 function Dekuworkout1() {
+    const chestSVG = <Chest height='100%' width='100%' color='rgb(0, 255, 200)' />
+    const backSVG = <Back height='100%' width='100%' color='rgb(0, 255, 200)' />
     return (
+
         <div>
            <Workoutheader 
            charimg={deku}
@@ -41,18 +45,23 @@ function Dekuworkout1() {
             workoutH1='Deku band workouts'
             workoutHeader='workouth1 green-color'
             row1='row-1 green-border' 
-            svgColor='rgb(0, 255, 200)'
+            svg={chestSVG}
             h1Color='workout-name green-color'
             pClass='workout-desc green-color'
             // Workout descriptions
             workoutDesc1='Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, corporis! Eaque corporis perspiciatis doloremque totam laudantium '
-            // Columns
-            col1='col-1'
-            col2='col-2'
-            col3='col-3'
             // imgs
             bodypartworkout1='Chest workout'
-            
+            />
+            <Workoutlayout
+            row1='row-1 green-border' 
+            svg={backSVG}
+            h1Color='workout-name green-color'
+            pClass='workout-desc green-color'
+            // Workout descriptions
+            workoutDesc1='Back workouts are essential to '
+            // imgs
+            bodypartworkout1='Back workout'
             />
         </div>
     )

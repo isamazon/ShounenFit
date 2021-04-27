@@ -51,11 +51,18 @@
   border-radius: 10px;
   height: 200px;
   padding: 10px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.main-container .cont-fluid .cont-inner-main .row-1 .col-1 img,
-.main-container .cont-fluid .cont-inner-main .row-2 .col-1 img {
+.main-container .cont-fluid .cont-inner-main .row-1 .col-1 .img-class,
+.main-container .cont-fluid .cont-inner-main .row-2 .col-1 .img-class {
   position: relative;
+  height: 100%;
 }
 
 .main-container .cont-fluid .cont-inner-main .row-1 .col-2,
@@ -170,6 +177,7 @@
 .svg-class {
   height: 100%;
   width: 100%;
+  background: url("../../assets/bodyparts/chestsvg.svg");
 }
 
 .green-color {
@@ -182,10 +190,6 @@
   border-radius: 20px;
   -webkit-box-shadow: 0px 0px 10px #9dffea;
           box-shadow: 0px 0px 10px #9dffea;
-}
-
-.green-svgs {
-  fill: #00ffc8;
 }
 
 .yellow-color {

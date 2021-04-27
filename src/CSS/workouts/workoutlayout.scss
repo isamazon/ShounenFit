@@ -44,8 +44,11 @@ $font3: "Ceviche One", cursive;
           border-radius: 10px;
           height: 200px;
           padding: 10px 0px;
-          img {
+          display: flex;
+          justify-content: center;
+          .img-class {
             position: relative;
+            height: 100%;
           }
         }
         .col-2 {
@@ -123,6 +126,7 @@ $font3: "Ceviche One", cursive;
 .svg-class {
   height: 100%;
   width: 100%;
+  background: url("../../assets/bodyparts/chestsvg.svg");
 }
 
 // Green theme
@@ -135,9 +139,7 @@ $font3: "Ceviche One", cursive;
   border-radius: 20px;
   box-shadow: 0px 0px 10px rgb(157, 255, 234);
 }
-.green-svgs {
-  fill: rgb(0, 255, 200);
-}
+
 // Yellow theme
 .yellow-color {
   color: rgba(213, 216, 13, 1);
