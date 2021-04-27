@@ -36,12 +36,15 @@ $font3: "Ceviche One", cursive;
         justify-content: center;
         align-items: center;
         height: 400px;
+        @media screen and (max-width: 550px) {
+          height: 250px;
+        }
         .char-img {
           height: 100%;
           width: 100%;
           animation: fadein 2.5s;
           @media screen and (max-width: 550px) {
-            height: 80%;
+            height: 95%;
             width: 100%;
           }
         }
@@ -52,6 +55,7 @@ $font3: "Ceviche One", cursive;
         flex-direction: column;
         background: none;
         height: 400px;
+        justify-content: center;
         @media screen and (max-width: 550px) {
           height: 500px;
         }
@@ -63,6 +67,10 @@ $font3: "Ceviche One", cursive;
           font-size: 50px;
           padding-top: 20px;
           animation: fadeleft 1.5s;
+          @media screen and (max-width: 550px) {
+            font-size: 35px;
+            padding: none;
+          }
         }
         .hero-details {
           width: 100%;
@@ -73,10 +81,11 @@ $font3: "Ceviche One", cursive;
           letter-spacing: 5px;
           padding-left: 50px;
           animation: faderight 1.5s;
-
           @media screen and (max-width: 550px) {
-            text-align: center;
             letter-spacing: 0px;
+            text-align: center;
+            padding: 0;
+            font-size: 25px;
           }
         }
         .p-description {

@@ -1,5 +1,4 @@
 import React from 'react'
-import chest from '../../assets/bodyparts/chestsvg.svg'
 
 function Chest(props: React.SVGProps<SVGSVGElement>) {
     return (

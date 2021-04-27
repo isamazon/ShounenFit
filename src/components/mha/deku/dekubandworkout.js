@@ -9,6 +9,13 @@ import AOS from 'aos'
 import '../../../CSS/workouts/workout1.css'
 // assets
 import deku from '../../../assets/deku.png'
+// Assets 
+import Chest from '../../bodyparts/chest'
+import Arms from '../../bodyparts/chest'
+import Back from '../../bodyparts/chest'
+import Abs from '../../bodyparts/chest'
+import Legs from '../../bodyparts/legs'
+
 
 function Dekuworkout1() {
     return (
@@ -28,16 +35,24 @@ function Dekuworkout1() {
            headerTheme='hero-name greenText'
            heroDetails='hero-details greenText'
            /> 
+
+
             <Workoutlayout
-            workoutH1='Deku band workout'
+            workoutH1='Deku band workouts'
             workoutHeader='workouth1 green-color'
             row1='row-1 green-border' 
+            svgColor='rgb(0, 255, 200)'
+            h1Color='workout-name green-color'
+            pClass='workout-desc green-color'
+            // Workout descriptions
+            workoutDesc1='Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, corporis! Eaque corporis perspiciatis doloremque totam laudantium '
             // Columns
             col1='col-1'
             col2='col-2'
             col3='col-3'
             // imgs
-            bodypartworkout='Chest workout'
+            bodypartworkout1='Chest workout'
+            
             />
         </div>
     )

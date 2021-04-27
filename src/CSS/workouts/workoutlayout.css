@@ -37,39 +37,134 @@
   height: 100%;
 }
 
-.main-container .cont-fluid .cont-inner-main .row-1 {
+.main-container .cont-fluid .cont-inner-main .row-1,
+.main-container .cont-fluid .cont-inner-main .row-2 {
   position: relative;
   height: 100%;
   margin: 50px 0px;
 }
 
-.main-container .cont-fluid .cont-inner-main .row-1 .col-1 {
+.main-container .cont-fluid .cont-inner-main .row-1 .col-1,
+.main-container .cont-fluid .cont-inner-main .row-2 .col-1 {
   position: relative;
-  height: 85%;
-  background: none;
+  height: 100%;
   border-radius: 10px;
   height: 200px;
   padding: 10px 0px;
 }
 
-.main-container .cont-fluid .cont-inner-main .row-1 .col-1 .bodypart-img {
+.main-container .cont-fluid .cont-inner-main .row-1 .col-1 img,
+.main-container .cont-fluid .cont-inner-main .row-2 .col-1 img {
+  position: relative;
+}
+
+.main-container .cont-fluid .cont-inner-main .row-1 .col-2,
+.main-container .cont-fluid .cont-inner-main .row-2 .col-2 {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 85%;
+  height: 200px;
+  background: none;
+}
+
+.main-container .cont-fluid .cont-inner-main .row-1 .col-2 .workout-name,
+.main-container .cont-fluid .cont-inner-main .row-2 .col-2 .workout-name {
+  padding-top: 10px;
+}
+
+.main-container .cont-fluid .cont-inner-main .row-1 .col-2 .workout-desc,
+.main-container .cont-fluid .cont-inner-main .row-2 .col-2 .workout-desc {
+  font-family: "Bangers", cursive;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 2px;
+  padding: 0px 30px;
+}
+
+.main-container .cont-fluid .cont-inner-main .row-1 .col-3,
+.main-container .cont-fluid .cont-inner-main .row-2 .col-3 {
   position: relative;
   height: 100%;
   width: 100%;
+  background: none;
 }
 
-.main-container .cont-fluid .cont-inner-main .row-1 .col-2 {
+.main-container .cont-fluid .cont-inner-main .row-1 .col-3 .accordion-1,
+.main-container .cont-fluid .cont-inner-main .row-2 .col-3 .accordion-1 {
   position: relative;
-  height: 85%;
-  height: 200px;
-  background: blue;
-}
-
-.main-container .cont-fluid .cont-inner-main .row-1 .col-3 {
-  position: relative;
-  height: 50px;
   width: 100%;
-  background: green;
+}
+
+.main-container .cont-fluid .cont-inner-main .row-1 .col-3 .accordion-1 .card-1,
+.main-container .cont-fluid .cont-inner-main .row-2 .col-3 .accordion-1 .card-1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: none;
+}
+
+.main-container .cont-fluid .cont-inner-main .row-1 .col-3 .accordion-1 .card-1 .accordion-toggle,
+.main-container .cont-fluid .cont-inner-main .row-2 .col-3 .accordion-1 .card-1 .accordion-toggle {
+  color: white;
+  font-family: "Bangers", cursive;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 40px;
+}
+
+.main-container .cont-fluid .cont-inner-main .row-1 .col-3 .accordion-1 .card-1 .card-body,
+.main-container .cont-fluid .cont-inner-main .row-2 .col-3 .accordion-1 .card-1 .card-body {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-container .cont-fluid .cont-inner-main .row-1 .col-3 .accordion-1 .card-1 .card-body .acc-row-1,
+.main-container .cont-fluid .cont-inner-main .row-2 .col-3 .accordion-1 .card-1 .card-body .acc-row-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.main-container .cont-fluid .cont-inner-main .row-1 .col-3 .accordion-1 .card-1 .card-body .acc-row-1 .acc-col-1,
+.main-container .cont-fluid .cont-inner-main .row-2 .col-3 .accordion-1 .card-1 .card-body .acc-row-1 .acc-col-1 {
+  background: palevioletred;
+  height: 300px;
+  width: 100%;
+}
+
+.main-container .cont-fluid .cont-inner-main .row-1 .col-3 .accordion-1 .card-1 .card-body .acc-row-1 .acc-col-2,
+.main-container .cont-fluid .cont-inner-main .row-2 .col-3 .accordion-1 .card-1 .card-body .acc-row-1 .acc-col-2 {
+  background: peru;
+  height: 300px;
+  width: 100%;
+}
+
+.invisible-row {
+  display: none;
 }
 
 .svg-class {
@@ -79,6 +174,7 @@
 
 .green-color {
   color: #00ffc8;
+  font-family: "Bangers", cursive;
 }
 
 .green-border {

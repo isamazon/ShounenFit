@@ -9,13 +9,22 @@ import '../CSS/workouts/workoutlayout.css'
 class Workoutaccord extends Component {
     render() {
         return (
-                <Accordion defaultActiveKey="0">
-                    <Card>
-                    <Accordion.Toggle as={Card.Header} eventKey="0">
-                        Click me!
+                <Accordion className='accordion-1'>
+                    <Card className='card-1'>
+                    <Accordion.Toggle as={Card.Header} eventKey="0" className='accordion-toggle'>
+                        Click here for workout
                     </Accordion.Toggle>
-                    <Accordion.Collapse eventKey="0">
-                        <Card.Body>Hello! I'm the body</Card.Body>
+                    <Accordion.Collapse eventKey="0" >
+                        <Card.Body className='card-body'>
+                            <h1>Set 1</h1>
+                            <Row className='acc-row-1'>
+                                <Col md={5} xs={12} className='acc-col-1'>
+                                </Col>
+                                <Col md={7} xs={12}className='acc-col-2'>
+                                </Col>
+                            </Row>
+                            
+                        </Card.Body>
                     </Accordion.Collapse>
                     </Card>
                 </Accordion>

@@ -43,6 +43,12 @@
   height: 400px;
 }
 
+@media screen and (max-width: 550px) {
+  .Wlayout-m-container .Wlayout-container .Wlayout-row-1 .col-1 {
+    height: 250px;
+  }
+}
+
 .Wlayout-m-container .Wlayout-container .Wlayout-row-1 .col-1 .char-img {
   height: 100%;
   width: 100%;
@@ -52,7 +58,7 @@
 
 @media screen and (max-width: 550px) {
   .Wlayout-m-container .Wlayout-container .Wlayout-row-1 .col-1 .char-img {
-    height: 80%;
+    height: 95%;
     width: 100%;
   }
 }
@@ -68,6 +74,9 @@
           flex-direction: column;
   background: none;
   height: 400px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media screen and (max-width: 550px) {
@@ -87,6 +96,13 @@
           animation: fadeleft 1.5s;
 }
 
+@media screen and (max-width: 550px) {
+  .Wlayout-m-container .Wlayout-container .Wlayout-row-1 .col-2 .hero-name {
+    font-size: 35px;
+    padding: none;
+  }
+}
+
 .Wlayout-m-container .Wlayout-container .Wlayout-row-1 .col-2 .hero-details {
   width: 100%;
   text-align: start;
@@ -101,8 +117,10 @@
 
 @media screen and (max-width: 550px) {
   .Wlayout-m-container .Wlayout-container .Wlayout-row-1 .col-2 .hero-details {
-    text-align: center;
     letter-spacing: 0px;
+    text-align: center;
+    padding: 0;
+    font-size: 25px;
   }
 }
 

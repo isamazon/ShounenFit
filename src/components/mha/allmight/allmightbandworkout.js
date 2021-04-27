@@ -30,7 +30,21 @@ function Allmightworkout1() {
             <Workoutlayout
             workoutH1='Allmight band workout'
             workoutHeader='workouth1 yellow-color'
-            row1='row-1 yellow-border' />
+            // Rows
+            row1='row-1 yellow-border' 
+            row2='row-2 yellow border'
+            svgColor='rgba(213, 216, 13, 1)'
+            h1Color='yellow-color'
+            // Columns
+            col1='col-1'
+            col2='col-2'
+            col3='col-3'
+            // imgs
+            bodypartworkout1='Chest workout'
+            bodypartworkout2='Back workout'
+            bodypartworkout3='Leg workout'
+            bodypartworkout4='Abs workout'
+            bodypartworkout5='Arms workout' />
         </div>
     )
 }
