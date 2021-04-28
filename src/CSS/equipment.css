@@ -14,12 +14,29 @@
   top: 10%;
 }
 
+@media screen and (max-width: 770px) {
+  .Eq-m-cont .Eq-cont {
+    height: 100%;
+  }
+}
+
 .Eq-m-cont .Eq-cont .row-1 {
   position: relative;
   height: 100%;
+  top: 0;
+  background: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media screen and (max-width: 770px) {
+  .Eq-m-cont .Eq-cont .row-1 {
+    position: relative;
+    top: 100%;
+    height: 900px;
+    background: none;
+  }
 }
 
 .Eq-m-cont .Eq-cont .row-1 h1 {
@@ -34,6 +51,19 @@
   font-family: "Ceviche One", cursive;
 }
 
+@media screen and (max-width: 770px) {
+  .Eq-m-cont .Eq-cont .row-1 h1 {
+    top: 8%;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .Eq-m-cont .Eq-cont .row-1 h1 {
+    font-size: 40px;
+  }
+}
+
 .Eq-m-cont .Eq-cont .row-1 .Eq-col,
 .Eq-m-cont .Eq-cont .row-1 .Eq-col-2,
 .Eq-m-cont .Eq-cont .row-1 .Eq-col-3 {
@@ -46,6 +76,15 @@
   height: 350px;
   background: none;
   margin: 10px 0px;
+}
+
+@media screen and (max-width: 770px) {
+  .Eq-m-cont .Eq-cont .row-1 .Eq-col,
+  .Eq-m-cont .Eq-cont .row-1 .Eq-col-2,
+  .Eq-m-cont .Eq-cont .row-1 .Eq-col-3 {
+    height: 200px;
+    margin: 0px;
+  }
 }
 
 .Eq-m-cont .Eq-cont .row-1 .Eq-col .band-workouts,
