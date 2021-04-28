@@ -14,7 +14,7 @@ class Func1 extends React.Component {
     render() {
         const {text} = this.state
         return (
-            <Container className='landing-page'>
+            <Container  className='landing-page'>
                 <Col xl={12} className='header-col'>
                     <div
                     className='welcome-header'>
@@ -24,7 +24,7 @@ class Func1 extends React.Component {
                 <Col xl={12} 
                 className='second-header'>
                     <div className="header-2">
-                        <h3>
+                        <h3 className='header3'>
                         Like you, every shounen has a      
                         </h3>
                     </div>

@@ -15,11 +15,19 @@ $font3: "Ceviche One", cursive;
   height: 100vh;
   width: 100%;
   background: none;
+  @media screen and (max-width: 800px) {
+    background-image: url("../assets/shounenbackground.png");
+    background-repeat: no-repeat;
+
+    background-position: center;
+  }
   .video1 {
     position: fixed;
     width: 100%;
     z-index: -1;
-
+    @media screen and (max-width: 800px) {
+      display: none;
+    }
     @media (min-aspect-ratio: 16/9) {
       width: 100%;
       height: auto;
@@ -53,16 +61,18 @@ $font3: "Ceviche One", cursive;
       transition: 1s;
       &:hover {
         transform: translateY(-5px);
-
         background: rgba(0, 0, 0, 0.763);
       }
       .male,
       .female {
         background: none;
-        padding: 15px 40px;
+        padding: 15px 30px;
         color: white;
         transition: 1s;
         font-family: $font1;
+        @media screen and (max-width: 500px) {
+          padding: 15px 20px;
+        }
         &:hover {
           text-decoration: none;
         }
@@ -87,6 +97,7 @@ $font3: "Ceviche One", cursive;
       align-items: center;
       top: 30%;
       width: 100%;
+      left: 0;
       height: 10%;
       .welcome-header {
         position: relative;
@@ -101,7 +112,9 @@ $font3: "Ceviche One", cursive;
           cursor: context-menu;
         }
         @media screen and (max-width: 990px) {
-          font-size: 50px;
+          font-size: 40px;
+          text-align: center;
+          letter-spacing: 5;
         }
       }
     }
@@ -114,15 +127,26 @@ $font3: "Ceviche One", cursive;
       top: 40%;
       width: 100%;
       height: 10%;
-      padding: 10px 0px;
+      padding: 0px 0px;
+      left: 0;
       .header-2 {
         position: relative;
-        h3 {
+        background: none;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        .header3 {
           color: white;
           font-family: $font1;
           letter-spacing: 5px;
           margin-right: 20px;
+          font-size: 25px;
           text-shadow: 0px 5px 5px black;
+          @media screen and( max-width: 500px) {
+            font-size: 15px;
+            margin-right: 0px;
+            letter-spacing: 0px;
+          }
         }
         h3::after {
           content: " beginning";

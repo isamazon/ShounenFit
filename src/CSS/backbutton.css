@@ -53,4 +53,42 @@
   -webkit-transform: translateX(-5px);
           transform: translateX(-5px);
 }
+
+.scroll-up-btn-ctn {
+  position: fixed;
+  width: 60px;
+  right: 10px;
+  height: 60px;
+  bottom: 10px;
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.scroll-up-btn-ctn .arrow-up {
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.scroll-up-btn-ctn .arrow-up:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.green-btn {
+  color: #0dd872;
+}
+
+.green-btn:hover {
+  color: #0a6e3c;
+}
 /*# sourceMappingURL=backbutton.css.map */

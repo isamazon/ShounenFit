@@ -44,3 +44,32 @@ $font3: "Ceviche One", cursive;
     }
   }
 }
+
+// Scroll up button
+.scroll-up-btn-ctn {
+  position: fixed;
+  width: 60px;
+  right: 10px;
+  height: 60px;
+  bottom: 10px;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .arrow-up {
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s;
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+}
+
+// Green scrolltotop btn
+.green-btn {
+  color: rgb(13, 216, 114);
+  &:hover {
+    color: rgb(10, 110, 60);
+  }
+}

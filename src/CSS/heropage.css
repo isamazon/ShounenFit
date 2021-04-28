@@ -9,10 +9,24 @@
   background: none;
 }
 
+@media screen and (max-width: 800px) {
+  .landing-page-container {
+    background-image: url("../assets/shounenbackground.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
 .landing-page-container .video1 {
   position: fixed;
   width: 100%;
   z-index: -1;
+}
+
+@media screen and (max-width: 800px) {
+  .landing-page-container .video1 {
+    display: none;
+  }
 }
 
 @media (min-aspect-ratio: 16 / 9) {
@@ -78,11 +92,18 @@
 .landing-page-container .button-container .gender-button .male,
 .landing-page-container .button-container .gender-button .female {
   background: none;
-  padding: 15px 40px;
+  padding: 15px 30px;
   color: white;
   -webkit-transition: 1s;
   transition: 1s;
   font-family: "Bangers", cursive;
+}
+
+@media screen and (max-width: 500px) {
+  .landing-page-container .button-container .gender-button .male,
+  .landing-page-container .button-container .gender-button .female {
+    padding: 15px 20px;
+  }
 }
 
 .landing-page-container .button-container .gender-button .male:hover,
@@ -122,6 +143,7 @@
           align-items: center;
   top: 30%;
   width: 100%;
+  left: 0;
   height: 10%;
 }
 
@@ -143,7 +165,9 @@
 
 @media screen and (max-width: 990px) {
   .landing-page-container .landing-page .header-col .welcome-header {
-    font-size: 50px;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 5;
   }
 }
 
@@ -162,19 +186,37 @@
   top: 40%;
   width: 100%;
   height: 10%;
-  padding: 10px 0px;
+  padding: 0px 0px;
+  left: 0;
 }
 
 .landing-page-container .landing-page .second-header .header-2 {
   position: relative;
+  background: none;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.landing-page-container .landing-page .second-header .header-2 h3 {
+.landing-page-container .landing-page .second-header .header-2 .header3 {
   color: white;
   font-family: "Bangers", cursive;
   letter-spacing: 5px;
   margin-right: 20px;
+  font-size: 25px;
   text-shadow: 0px 5px 5px black;
+}
+
+@media screen and (max-width: 500px) {
+  .landing-page-container .landing-page .second-header .header-2 .header3 {
+    font-size: 15px;
+    margin-right: 0px;
+    letter-spacing: 0px;
+  }
 }
 
 .landing-page-container .landing-page .second-header .header-2 h3::after {

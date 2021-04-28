@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 // Components
 import Workoutheader from '../workoutheroheader'
 import Workoutlayout from '../../workoutlayout'
+import Scrolltop from '../../scrolltotop'
 // Dependancies
 import { Container, Col, Row } from 'react-bootstrap'
 import AOS from 'aos'
@@ -34,6 +35,7 @@ function Dekuworkout1() {
     return (
 
         <div>
+            <Scrolltop scrolltopclass='scroll-up-btn-ctn green-btn' arrowup='arrow-up' />
            <Workoutheader 
            charimg={deku}
            imgClass='char-img'
