@@ -56,20 +56,15 @@ function Nav() {
               <Link to='/' className='nav-links' onClick={closeMobileMenu}>About</Link>
             </li>
             {/* Dropdown 1 */}
-            <li className='nav-item'   
-              onMouseEnter={onMouseEnter}
-              onMouseLeave={onMouseLeave}>
+            <li className='nav-item'   >
               <Link to='/Maleshounen' className='nav-links' onClick={closeMobileMenu}>Male Shounen</Link>
-              {dropdown && <Dropdown />}
             </li>
             {/* Dropdown 2 */}
-            <li className='nav-item'
-            onMouseEnter={onMouseEnter}
-            onMouseLeave={onMouseLeave}>
+            <li className='nav-item'>
               <Link to='/Femaleshounen' className='nav-links' onClick= {closeMobileMenu}>
                 Female Shounen
               </Link>
-              {dropdown && <Dropdown />}
+              
             </li>
             <li className='nav-item'>
               <Link to='/' className='nav-links' onClick={closeMobileMenu}>Contact</Link>

@@ -4,8 +4,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Bangers&family=Permanent+Marker&display=swap");
 $font1: "Bangers", cursive;
 // Font 2
-@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
-$font2: "Permanent Marker", cursive;
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+$font2: "Roboto Condensed", sans-serif;
 //  Font 3
 @import url("https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap");
 $font3: "Ceviche One", cursive;
@@ -17,27 +17,29 @@ $font3: "Ceviche One", cursive;
   .cont-fluid {
     position: relative;
     height: 100%;
-    background: black;
+    background: #090d0f;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    .workouth1 {
-      position: relative;
-      z-index: 1;
-      text-align: center;
-      font-family: $font1;
-      font-size: 60px;
-      letter-spacing: 5px;
-    }
+
     .cont-inner-main {
       position: relative;
       height: 100%;
+      .workouth1 {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        font-family: $font1;
+        font-size: 55px;
+        letter-spacing: 5px;
+        transition: 0.5s;
+      }
       .row-1,
       .row-2 {
         position: relative;
         height: 100%;
-        margin: 50px 0px;
-
+        margin: 30px 0px;
+        transition: 0.5s;
         .col-1 {
           position: relative;
           height: 100%;
@@ -45,6 +47,7 @@ $font3: "Ceviche One", cursive;
           height: 200px;
           padding: 10px 0px;
           display: flex;
+          align-items: center;
           justify-content: center;
           .img-class {
             position: relative;
@@ -63,11 +66,16 @@ $font3: "Ceviche One", cursive;
             padding-top: 10px;
           }
           .workout-desc {
-            font-family: $font1;
+            font-family: $font2;
             font-size: 20px;
             text-align: center;
             letter-spacing: 2px;
             padding: 0px 30px;
+            color: white;
+            @media screen and (max-width: 500px) {
+              height: 130px;
+              overflow-y: scroll;
+            }
           }
         }
         .col-3 {
@@ -88,8 +96,14 @@ $font3: "Ceviche One", cursive;
                 font-family: $font1;
                 cursor: pointer;
                 display: flex;
-                justify-content: center;
+                justify-content: flex-start;
+                padding-left: 50px;
                 font-size: 40px;
+                @media screen and (max-width: 700px) {
+                  font-size: 25px;
+                  padding: 0px;
+                  justify-content: center;
+                }
               }
 
               .card-body {
@@ -131,13 +145,15 @@ $font3: "Ceviche One", cursive;
 
 // Green theme
 .green-color {
-  color: rgb(0, 255, 200);
+  color: rgb(13, 216, 114);
   font-family: $font1;
 }
 .green-border {
-  border: 4px solid rgb(0, 255, 200);
+  border: 4px solid rgb(13, 216, 114);
   border-radius: 20px;
-  box-shadow: 0px 0px 10px rgb(157, 255, 234);
+  &:hover {
+    box-shadow: 0px 5px 10px rgb(13, 216, 114);
+  }
 }
 
 // Yellow theme
@@ -147,5 +163,7 @@ $font3: "Ceviche One", cursive;
 .yellow-border {
   border: 4px solid rgba(213, 216, 13, 1);
   border-radius: 20px;
-  box-shadow: 0px 0px 10px rgb(253, 255, 129);
+  &:hover {
+    box-shadow: 0px 0px 10px rgb(253, 255, 129);
+  }
 }

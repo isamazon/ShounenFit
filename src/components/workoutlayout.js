@@ -30,13 +30,17 @@ function Workoutlayout(props) {
         return (
             <div className='main-container'>
                 <Container fluid className='cont-fluid'>
-                    <h1 className={props.workoutHeader}>
-                        {props.workoutH1} 
-                    </h1>
+
                     <Container className='cont-inner-main'>
+                        <h1
+                            data-aos='fade-up'
+                            data-aos-duration='1500'
+                            className={props.workoutHeader}>
+                                {props.workoutH1} 
+                        </h1>
                         {/* Workout 1 */}
                         <Row className={props.row1} data-aos='flip-up'
-                        data-aos-duration='1000'>
+                        data-aos-duration='1500'>
                             {/* Workout picture */}
                             <Col md={5} xs={12} className='col-1'>
                                 {props.svg}
@@ -53,7 +57,9 @@ function Workoutlayout(props) {
                             {/* Accordion Column */}
                             <Col md={12} xs={12}
                             className='col-3'>
-                                <Workoutaccord />
+                                <Workoutaccord
+                                
+                                />
                             </Col>
                         </Row>                      
                     </Container>
