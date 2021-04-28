@@ -13,72 +13,112 @@ $color1: #00b4d8;
 
 .page-2-fluid {
   position: relative;
-  background-color: black;
-  height: 100%;
-  .page-2-container {
-    position: relative;
-    height: 100%;
-    background-color: none;
-    width: 100%;
-    .row-1 {
-      position: relative;
-      background-color: none;
-      height: 100vh;
-
-      .col-1 {
-        position: relative;
-        height: 100%;
-        top: 0%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: none;
-
-        h1 {
-          position: relative;
-          top: 10%;
-          letter-spacing: 5px;
-          color: white;
-          font-family: $font1;
-        }
-        p {
-          position: relative;
-          text-align: center;
-          color: white;
-          top: 10%;
-          padding: 0px 10px;
-          line-height: 30px;
-          font-family: $font2;
-          font-size: 25px;
-        }
-      }
-      .col-2 {
-        position: relative;
-        height: 90%;
-        top: 10%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: none;
-
-        h1 {
-          position: relative;
-          top: 5%;
-          letter-spacing: 5px;
-          color: white;
-          font-family: $font1;
-        }
-        p {
-          position: relative;
-          text-align: center;
-          color: white;
-          top: 10%;
-          padding: 0px 20px;
-          line-height: 30px;
-          font-family: $font2;
-          font-size: 25px;
-        }
-      }
-    }
-  }
+  height: 100vh;
+  background: rgb(0, 0, 0);
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(17, 79, 77, 1) 46%,
+    rgba(17, 157, 151, 1) 77%,
+    rgba(0, 255, 245, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(17, 79, 77, 1) 46%,
+    rgba(17, 157, 151, 1) 77%,
+    rgba(0, 255, 245, 1) 100%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(17, 79, 77, 1) 46%,
+    rgba(17, 157, 151, 1) 77%,
+    rgba(0, 255, 245, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#00fff5",GradientType=1);
 }
+
+// White to blue
+// background: rgb(245, 245, 245);
+// background: linear-gradient(
+//   180deg,
+//   rgba(245, 245, 245, 1) 0%,
+//   rgba(245, 245, 245, 1) 31%,
+//   rgba(185, 243, 255, 1) 65%,
+//   rgba(0, 208, 250, 1) 99%
+// );
+
+// .page-2-fluid {
+//   position: relative;
+
+//   height: 100%;
+//   .page-2-container {
+//     position: relative;
+//     height: 100%;
+//     background-color: #090d0f;
+//     width: 100%;
+//     .row-1 {
+//       position: relative;
+//       background-color: #090d0f;
+//       height: 100vh;
+//       @media screen and (max-width: 767px) {
+//         height: 100%;
+//       }
+//       .col-1 {
+//         position: relative;
+//         height: 100%;
+//         top: 0%;
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         background-color: red;
+
+//         h1 {
+//           position: relative;
+//           top: 10%;
+//           letter-spacing: 5px;
+//           color: white;
+//           font-family: $font1;
+//         }
+//         p {
+//           position: relative;
+//           text-align: center;
+//           color: white;
+//           top: 10%;
+//           padding: 0px 10px;
+//           line-height: 30px;
+//           font-family: $font2;
+//           font-size: 25px;
+//         }
+//       }
+//       .col-2 {
+//         position: relative;
+//         height: 90%;
+//         top: 10%;
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         background-color: none;
+
+//         h1 {
+//           position: relative;
+//           top: 5%;
+//           letter-spacing: 5px;
+//           color: white;
+//           font-family: $font1;
+//         }
+//         p {
+//           position: relative;
+//           text-align: center;
+//           color: white;
+//           top: 10%;
+//           padding: 0px 20px;
+//           line-height: 30px;
+//           font-family: $font2;
+//           font-size: 25px;
+//         }
+//       }
+//     }
+//   }
+// }

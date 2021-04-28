@@ -1,7 +1,7 @@
 .slider-container {
   position: relative;
-  background: red;
-  height: 40%;
+  background: black;
+  height: 350px;
   top: 10%;
   width: 100%;
 }

@@ -4,92 +4,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap");
 .page-2-fluid {
   position: relative;
-  background-color: black;
-  height: 100%;
-}
-
-.page-2-fluid .page-2-container {
-  position: relative;
-  height: 100%;
-  background-color: none;
-  width: 100%;
-}
-
-.page-2-fluid .page-2-container .row-1 {
-  position: relative;
-  background-color: none;
   height: 100vh;
-}
-
-.page-2-fluid .page-2-container .row-1 .col-1 {
-  position: relative;
-  height: 100%;
-  top: 0%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: none;
-}
-
-.page-2-fluid .page-2-container .row-1 .col-1 h1 {
-  position: relative;
-  top: 10%;
-  letter-spacing: 5px;
-  color: white;
-  font-family: "Bangers", cursive;
-}
-
-.page-2-fluid .page-2-container .row-1 .col-1 p {
-  position: relative;
-  text-align: center;
-  color: white;
-  top: 10%;
-  padding: 0px 10px;
-  line-height: 30px;
-  font-family: "Fjalla One", sans-serif;
-  font-size: 25px;
-}
-
-.page-2-fluid .page-2-container .row-1 .col-2 {
-  position: relative;
-  height: 90%;
-  top: 10%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: none;
-}
-
-.page-2-fluid .page-2-container .row-1 .col-2 h1 {
-  position: relative;
-  top: 5%;
-  letter-spacing: 5px;
-  color: white;
-  font-family: "Bangers", cursive;
-}
-
-.page-2-fluid .page-2-container .row-1 .col-2 p {
-  position: relative;
-  text-align: center;
-  color: white;
-  top: 10%;
-  padding: 0px 20px;
-  line-height: 30px;
-  font-family: "Fjalla One", sans-serif;
-  font-size: 25px;
+  background: black;
+  background: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(46%, #114f4d), color-stop(77%, #119d97), to(#00fff5));
+  background: linear-gradient(180deg, black 0%, #114f4d 46%, #119d97 77%, #00fff5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#00fff5",GradientType=1);
 }
 /*# sourceMappingURL=landingpage2.css.map */

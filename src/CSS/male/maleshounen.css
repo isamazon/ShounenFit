@@ -4,7 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap");
 .main-container {
   position: relative;
-  background: none;
+  background: #090d0f;
   height: 95vh;
   width: 100%;
   display: -webkit-box;
@@ -20,7 +20,7 @@
   width: 100%;
   top: 0;
   height: 400px;
-  background: black;
+  background: #090d0f;
   z-index: 1;
   opacity: 0.8;
 }
@@ -54,9 +54,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -66,6 +63,10 @@
 }
 
 .main-container .clear-video h1 {
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 100px;
   letter-spacing: 5px;
   color: white;
@@ -92,7 +93,10 @@
   height: 99.9%;
   opacity: 1;
   position: absolute;
-  background: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #090d0f;
   -webkit-filter: blur(0px);
           filter: blur(0px);
   top: 0;
@@ -128,6 +132,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: black;
+  background: #090d0f;
 }
 /*# sourceMappingURL=maleshounen.css.map */
