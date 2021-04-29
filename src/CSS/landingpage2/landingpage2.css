@@ -4,10 +4,123 @@
 @import url("https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap");
 .page-2-fluid {
   position: relative;
-  height: 100vh;
-  background: black;
-  background: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(46%, #114f4d), color-stop(77%, #119d97), to(#00fff5));
-  background: linear-gradient(180deg, black 0%, #114f4d 46%, #119d97 77%, #00fff5 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#00fff5",GradientType=1);
+  height: 90vh;
+  background: whitesmoke;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(90%, whitesmoke), to(#00eee5));
+  background: linear-gradient(180deg, whitesmoke 90%, #00eee5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f5f5f5",endColorstr="#00eee5",GradientType=1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1;
+}
+
+@media screen and (max-width: 800px) {
+  .page-2-fluid {
+    height: 100%;
+  }
+}
+
+.page-2-fluid .row-1 {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: none;
+}
+
+.page-2-fluid .row-1 .col-1 {
+  position: relative;
+  background: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-right: 100px;
+}
+
+@media screen and (max-width: 800px) {
+  .page-2-fluid .row-1 .col-1 {
+    height: 500px;
+    padding-right: 0px;
+  }
+}
+
+.page-2-fluid .row-1 .col-1 h1 {
+  position: relative;
+  top: 20%;
+  font-size: 50px;
+  letter-spacing: 10px;
+  text-align: center;
+  font-family: "Bangers", cursive;
+}
+
+.page-2-fluid .row-1 .col-1 p {
+  font-size: 20px;
+  position: relative;
+  top: 20%;
+  text-align: center;
+  width: 100%;
+  background: none;
+  padding-bottom: 50px;
+  border-bottom: 2px solid black;
+}
+
+.page-2-fluid .row-1 .col-2 {
+  position: relative;
+  background: none;
+  height: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .page-2-fluid .row-1 .col-2 {
+    height: 500px;
+  }
+}
+
+.page-2-fluid .row-1 .col-2 .char-slider {
+  position: relative;
+  top: 5%;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: none;
+}
+
+.page-2-fluid .row-1 .col-2 .char-slider .video1 {
+  position: relative;
+  height: 110%;
+  width: 110%;
+  background: none;
+}
+
+@media screen and (max-width: 780px) {
+  .page-2-fluid .row-1 .col-2 .char-slider .video1 {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.page-2-fluid .row-1 .col-2 .char-slider .char-img {
+  position: absolute;
+}
+
+@media screen and (max-width: 800px) {
+  .page-2-fluid .row-1 .col-2 .char-slider .char-img {
+    height: 300px;
+    width: 300px;
+  }
 }
 /*# sourceMappingURL=landingpage2.css.map */

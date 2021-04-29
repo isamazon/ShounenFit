@@ -13,30 +13,100 @@ $color1: #00b4d8;
 
 .page-2-fluid {
   position: relative;
-  height: 100vh;
-  background: rgb(0, 0, 0);
+  height: 90vh;
+  background: rgb(245, 245, 245);
   background: -moz-linear-gradient(
     180deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(17, 79, 77, 1) 46%,
-    rgba(17, 157, 151, 1) 77%,
-    rgba(0, 255, 245, 1) 100%
+    rgba(245, 245, 245, 1) 90%,
+    rgba(0, 238, 229, 1) 100%
   );
   background: -webkit-linear-gradient(
     180deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(17, 79, 77, 1) 46%,
-    rgba(17, 157, 151, 1) 77%,
-    rgba(0, 255, 245, 1) 100%
+    rgba(245, 245, 245, 1) 90%,
+    rgba(0, 238, 229, 1) 100%
   );
   background: linear-gradient(
     180deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(17, 79, 77, 1) 46%,
-    rgba(17, 157, 151, 1) 77%,
-    rgba(0, 255, 245, 1) 100%
+    rgba(245, 245, 245, 1) 90%,
+    rgba(0, 238, 229, 1) 100%
   );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#00fff5",GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f5f5f5",endColorstr="#00eee5",GradientType=1);
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  @media screen and (max-width: 800px) {
+    height: 100%;
+  }
+  .row-1 {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: none;
+    .col-1 {
+      position: relative;
+      background: none;
+      display: flex;
+      flex-direction: column;
+      padding-right: 100px;
+      @media screen and (max-width: 800px) {
+        height: 500px;
+        padding-right: 0px;
+      }
+      h1 {
+        position: relative;
+        top: 20%;
+        font-size: 50px;
+        letter-spacing: 10px;
+        text-align: center;
+        font-family: $font1;
+      }
+      p {
+        font-size: 20px;
+        position: relative;
+        top: 20%;
+        text-align: center;
+        width: 100%;
+        background: none;
+        padding-bottom: 50px;
+        border-bottom: 2px solid black;
+      }
+    }
+
+    .col-2 {
+      position: relative;
+      background: none;
+      height: 100%;
+      @media screen and (max-width: 800px) {
+        height: 500px;
+      }
+      .char-slider {
+        position: relative;
+        top: 5%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: none;
+        .video1 {
+          position: relative;
+          height: 110%;
+          width: 110%;
+          background: none;
+          @media screen and (max-width: 780px) {
+            height: 100%;
+            width: 100%;
+          }
+        }
+        .char-img {
+          position: absolute;
+          @media screen and (max-width: 800px) {
+            height: 300px;
+            width: 300px;
+          }
+        }
+      }
+    }
+  }
 }
 
 // White to blue
@@ -48,6 +118,30 @@ $color1: #00b4d8;
 //   rgba(185, 243, 255, 1) 65%,
 //   rgba(0, 208, 250, 1) 99%
 // );
+
+// Black to blue
+// background: -moz-linear-gradient(
+//     180deg,
+//     rgba(0, 0, 0, 1) 0%,
+//     rgba(17, 79, 77, 1) 46%,
+//     rgba(17, 157, 151, 1) 77%,
+//     rgba(0, 255, 245, 1) 100%
+//   );
+//   background: -webkit-linear-gradient(
+//     180deg,
+//     rgba(0, 0, 0, 1) 0%,
+//     rgba(17, 79, 77, 1) 46%,
+//     rgba(17, 157, 151, 1) 77%,
+//     rgba(0, 255, 245, 1) 100%
+//   );
+//   background: linear-gradient(
+//     180deg,
+//     rgba(0, 0, 0, 1) 0%,
+//     rgba(17, 79, 77, 1) 46%,
+//     rgba(17, 157, 151, 1) 77%,
+//     rgba(0, 255, 245, 1) 100%
+//   );
+//   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#00fff5",GradientType=1);
 
 // .page-2-fluid {
 //   position: relative;
