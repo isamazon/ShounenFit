@@ -4,11 +4,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap");
 .page-2-fluid {
   position: relative;
-  height: 90vh;
-  background: whitesmoke;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(90%, whitesmoke), to(#00eee5));
-  background: linear-gradient(180deg, whitesmoke 90%, #00eee5 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f5f5f5",endColorstr="#00eee5",GradientType=1);
+  height: 1000px;
+  background: #090d0f;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,6 +52,7 @@
   position: relative;
   top: 20%;
   font-size: 50px;
+  color: white;
   letter-spacing: 10px;
   text-align: center;
   font-family: "Bangers", cursive;
@@ -67,8 +65,134 @@
   text-align: center;
   width: 100%;
   background: none;
+  color: white;
   padding-bottom: 50px;
-  border-bottom: 2px solid black;
+}
+
+.page-2-fluid .row-1 .col-1 .svg-btn-ctn {
+  position: relative;
+  top: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 150px;
+  width: 100%;
+  background: none;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  margin-bottom: 50px;
+}
+
+.page-2-fluid .row-1 .col-1 .svg-btn-ctn .dekusvg {
+  cursor: pointer;
+  padding: 0px -5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.page-2-fluid .row-1 .col-1 .svg-btn-ctn .dekusvg:hover {
+  fill: #16fa74;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.page-2-fluid .row-1 .col-1 .svg-btn-ctn .zenitsusvg {
+  cursor: pointer;
+  padding: 0px -5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.page-2-fluid .row-1 .col-1 .svg-btn-ctn .zenitsusvg:hover {
+  fill: yel low;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.page-2-fluid .row-1 .col-1 .svg-btn-ctn .mikasasvg {
+  cursor: pointer;
+  padding: 0px -5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.page-2-fluid .row-1 .col-1 .svg-btn-ctn .mikasasvg:hover {
+  fill: #b61d0a;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.page-2-fluid .row-1 .col-1 .svg-btn-ctn .erensvg {
+  cursor: pointer;
+  padding: 0px -5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.page-2-fluid .row-1 .col-1 .svg-btn-ctn .erensvg:hover {
+  fill: #11def8;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.page-2-fluid .row-1 .col-1 .svg-btn-ctn .allmightsvg {
+  cursor: pointer;
+  padding: 0px -5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.page-2-fluid .row-1 .col-1 .svg-btn-ctn .allmightsvg:hover {
+  fill: #fbe514;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.page-2-fluid .row-1 .col-1 .svg-btn-ctn .zenitsusvg {
+  cursor: pointer;
+  padding: 0px -5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.page-2-fluid .row-1 .col-1 .svg-btn-ctn .zenitsusvg:hover {
+  fill: #fbe514;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.page-2-fluid .row-1 .col-1 .svg-btn-ctn .bakugousvg {
+  cursor: pointer;
+  padding: 0px -5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.page-2-fluid .row-1 .col-1 .svg-btn-ctn .bakugousvg:hover {
+  fill: #f0880c;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.page-2-fluid .row-1 .col-1 .svg-btn-ctn .gojousvg {
+  cursor: pointer;
+  padding: 0px -5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.page-2-fluid .row-1 .col-1 .svg-btn-ctn .gojousvg:hover {
+  fill: #5e076b;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
 }
 
 .page-2-fluid .row-1 .col-2 {
@@ -100,9 +224,9 @@
 }
 
 .page-2-fluid .row-1 .col-2 .char-slider .video1 {
-  position: relative;
-  height: 110%;
-  width: 110%;
+  position: absolute;
+  height: 900px;
+  width: 900px;
   background: none;
 }
 
@@ -113,14 +237,38 @@
   }
 }
 
+.page-2-fluid .row-1 .col-2 .char-slider .border-img {
+  position: absolute;
+  height: 1000px;
+  z-index: 1;
+  opacity: 0.9;
+}
+
+@media screen and (max-width: 800px) {
+  .page-2-fluid .row-1 .col-2 .char-slider .border-img {
+    top: 20%;
+    height: 600px;
+    width: 600px;
+  }
+}
+
 .page-2-fluid .row-1 .col-2 .char-slider .char-img {
   position: absolute;
+  height: 600px;
+  top: 15%;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 800px) {
   .page-2-fluid .row-1 .col-2 .char-slider .char-img {
-    height: 300px;
-    width: 300px;
+    top: 30%;
+    height: 400px;
   }
+}
+
+.lp-3-cont {
+  position: relative;
+  height: 100vh;
+  background: #090d0f;
 }
 /*# sourceMappingURL=landingpage2.css.map */

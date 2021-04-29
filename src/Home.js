@@ -3,7 +3,7 @@ import React from 'react'
 import Heropage from './components/heropage'
 import Nav from './components/navbar'
 import Landingpage2 from './components/landingpage2/landingpage2'
-
+import Landingpage3 from './components/landingpage3/landingpage3'
 function Home() {
 
     
@@ -12,6 +12,7 @@ function Home() {
             
             <Heropage />
             <Landingpage2/>
+            <Landingpage3 />
         </div>
     )
 }
