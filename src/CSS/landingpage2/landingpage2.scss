@@ -35,7 +35,10 @@ $color1: #00b4d8;
       padding-right: 100px;
       @media screen and (max-width: 800px) {
         height: 500px;
+        position: relative;
         padding-right: 0px;
+        align-items: center;
+        justify-content: center;
       }
       h1 {
         position: relative;
@@ -45,6 +48,9 @@ $color1: #00b4d8;
         letter-spacing: 10px;
         text-align: center;
         font-family: $font1;
+        @media screen and (max-width: 500px) {
+          font-size: 30px;
+        }
       }
       p {
         font-size: 20px;
@@ -68,13 +74,17 @@ $color1: #00b4d8;
         border-top: 2px solid white;
         border-bottom: 2px solid white;
         margin-bottom: 50px;
+        @media screen and (max-width: 500px) {
+          position: absolute;
+          top: 0;
+        }
         .dekusvg {
           cursor: pointer;
           padding: 0px -5px;
           transition: 0.5s;
           z-index: 1;
           &:hover {
-            fill: #16fa74;
+            fill: #46efd8;
             transform: translateY(-10px);
           }
         }
@@ -101,7 +111,7 @@ $color1: #00b4d8;
           padding: 0px -5px;
           transition: 0.5s;
           &:hover {
-            fill: #11def8;
+            fill: #16fa74;
             transform: translateY(-10px);
           }
         }
@@ -142,6 +152,63 @@ $color1: #00b4d8;
           }
         }
       }
+      .hero-workout-btn {
+        position: absolute;
+        height: 20%;
+        bottom: 20%;
+        width: 85%;
+        background: none;
+        display: flex;
+        z-index: 3;
+        align-items: center;
+        justify-content: center;
+        .h1-default {
+          display: flex;
+          height: 60%;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          border: 3px solid black;
+          border-bottom-left-radius: 20px;
+          border-top-right-radius: 20px;
+          font-family: $font1;
+          font-size: 40px;
+          transition: 0.5s;
+          text-decoration: none;
+          color: white;
+          &:hover {
+            background: none;
+            transform: translateY(5px);
+            border: 3px solid white;
+            border-bottom-left-radius: 0px;
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 20px;
+            border-top-left-radius: 20px;
+          }
+        }
+      }
+    }
+    .dekuBG {
+      background: #46efd8;
+    }
+    .zenitsuBG {
+      background: #fbe514;
+    }
+    .gojouBG {
+      background: #5e076b;
+    }
+    .mikasaBG {
+      background: #b61d0a;
+    }
+    .nezukoBG {
+      background: #f485d4;
+    }
+    .erenBG {
+      background: #16fa74;
+    }
+    .bakugouBG {
+      background: #f0880c;
     }
 
     .col-2 {
@@ -164,6 +231,8 @@ $color1: #00b4d8;
           height: 900px;
           width: 900px;
           background: none;
+          transition: 0.5s;
+          animation: fadein 1s;
           @media screen and (max-width: 780px) {
             height: 100%;
             width: 100%;
@@ -176,9 +245,9 @@ $color1: #00b4d8;
           opacity: 0.9;
           // display: none;
           @media screen and (max-width: 800px) {
-            top: 20%;
-            height: 600px;
-            width: 600px;
+            top: 0%;
+            height: 300px;
+            width: 300px;
           }
         }
         .char-img {
@@ -188,7 +257,8 @@ $color1: #00b4d8;
           cursor: pointer;
           @media screen and (max-width: 800px) {
             top: 30%;
-            height: 400px;
+            height: 350px;
+            width: 100%;
           }
         }
       }
@@ -199,4 +269,15 @@ $color1: #00b4d8;
   position: relative;
   height: 100vh;
   background: rgb(9, 13, 15);
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
