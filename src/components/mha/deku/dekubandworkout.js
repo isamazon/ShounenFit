@@ -19,6 +19,7 @@ import Abs from '../../bodyparts/chest'
 import Legs from '../../bodyparts/legs'
 import Triceps from '../../bodyparts/triceps'
 import Shoulders from '../../bodyparts/shouders'
+import Workoutguide from '../../workoutguide'
 
 function Dekuworkout1() {
     
@@ -51,7 +52,11 @@ function Dekuworkout1() {
            headerTheme='hero-name greenText'
            heroDetails='hero-details greenText'
            /> 
-
+           <Workoutguide 
+           colclass='guide-col green-border'
+           colclass2='guide-col-2 green-border'
+           icons='icon'
+           themecolor='guide-h1 green-color' />
             {/* CHEST WORKOUT */}
             <Workoutlayout
             workoutH1='Band push(Chest, legs, tricep) workouts'

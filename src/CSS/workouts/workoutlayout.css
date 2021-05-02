@@ -2,9 +2,83 @@
 @import url("https://fonts.googleapis.com/css2?family=Bangers&family=Permanent+Marker&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap");
+.workoutguide-cont-fluid {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: #090d0f;
+  padding-bottom: 100px;
+}
+
+.workoutguide-cont-fluid .workout-guide-cont {
+  position: relative;
+  height: 100%;
+  background: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.workoutguide-cont-fluid .workout-guide-cont .guide-col {
+  position: relative;
+  height: 600px;
+  margin-right: 10px;
+  border-radius: 20px;
+  background: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.workoutguide-cont-fluid .workout-guide-cont .guide-col .icon {
+  position: relative;
+  top: 5%;
+  color: #01cc67;
+  border-radius: 50%;
+}
+
+.workoutguide-cont-fluid .workout-guide-cont .guide-col .guide-h1 {
+  position: relative;
+  top: 10%;
+}
+
+.workoutguide-cont-fluid .workout-guide-cont .guide-col p {
+  text-align: center;
+  padding: 0px 20px;
+  font-size: 20px;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.workoutguide-cont-fluid .workout-guide-cont .guide-col-2 {
+  position: relative;
+  height: 600px;
+  margin-left: 10px;
+  border-radius: 20px;
+  background: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 .main-container {
   height: 100%;
   position: relative;
+  background: #090d0f;
 }
 
 .main-container .cont-fluid {

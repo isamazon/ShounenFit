@@ -19,6 +19,7 @@ import '../CSS/workouts/workoutlayout.css'
 // components 
 import Workoutaccord from './workoutaccordion'
 
+
 function Workoutlayout(props) {
 
 

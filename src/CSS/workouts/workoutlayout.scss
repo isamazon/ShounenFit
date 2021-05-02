@@ -10,9 +10,61 @@ $font2: "Roboto Condensed", sans-serif;
 @import url("https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap");
 $font3: "Ceviche One", cursive;
 
+.workoutguide-cont-fluid {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: #090d0f;
+  padding-bottom: 100px;
+  .workout-guide-cont {
+    position: relative;
+    height: 100%;
+    background: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    .guide-col {
+      position: relative;
+      height: 600px;
+      margin-right: 10px;
+      border-radius: 20px;
+      background: none;
+      transition: 0.5s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .icon {
+        position: relative;
+        top: 5%;
+        color: rgb(1, 204, 103);
+        border-radius: 50%;
+      }
+      .guide-h1 {
+        position: relative;
+        top: 10%;
+      }
+      p {
+        text-align: center;
+        padding: 0px 20px;
+        font-size: 20px;
+        color: white;
+        letter-spacing: 2px;
+      }
+    }
+    .guide-col-2 {
+      position: relative;
+      height: 600px;
+      margin-left: 10px;
+      border-radius: 20px;
+      background: none;
+      transition: 0.5s;
+    }
+  }
+}
 .main-container {
   height: 100%;
   position: relative;
+  background: #090d0f;
   // Fluid container
   .cont-fluid {
     position: relative;
