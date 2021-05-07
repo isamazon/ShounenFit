@@ -2,11 +2,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Bangers&family=Permanent+Marker&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap");
+.parent-container {
+  position: relative;
+  background: #090d0f;
+}
+
 .workoutguide-cont-fluid {
   position: relative;
   height: 100%;
   width: 100%;
-  background: #090d0f;
+  background: none;
   padding-bottom: 100px;
 }
 
@@ -73,18 +78,46 @@
   background: none;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.workoutguide-cont-fluid .workout-guide-cont .guide-col-2 .structure-h1 {
+  position: relative;
+  top: 20px;
+  width: 100%;
+  text-align: center;
+  background: none;
+}
+
+.workoutguide-cont-fluid .workout-guide-cont .guide-col-2 h2 {
+  position: relative;
+  top: 30px;
+}
+
+.workoutguide-cont-fluid .workout-guide-cont .guide-col-2 p {
+  position: relative;
+  color: white;
+  top: 30px;
+  font-family: "Roboto Condensed", sans-serif;
+  text-align: start;
 }
 
 .main-container {
   height: 100%;
   position: relative;
-  background: #090d0f;
+  background: none;
 }
 
 .main-container .cont-fluid {
   position: relative;
   height: 100%;
-  background: #090d0f;
+  background: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

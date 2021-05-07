@@ -35,7 +35,7 @@ function Dekuworkout1() {
     }
     return (
 
-        <div>
+        <div className='parent-container'>
             <Scrolltop scrolltopclass='scroll-up-btn-ctn green-btn' arrowup='arrow-up' />
            <Workoutheader 
            charimg={deku}
@@ -47,7 +47,7 @@ function Dekuworkout1() {
            heroName='Deku'
            heroHeight='166cm'
            heroBodytype='Ectomorph'
-           charDesc='Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo porro omnis harum quod, culpa sint recusandae neque minima delectus, esse vitae totam labore a ducimus doloremque ipsa! Expedita, consectetur nulla.'
+           charDesc='If you dont have an entire beach to clean up near you then you can give these band workouts a try, These workouts are perfect for an ectomorph which is a typically smaller frame'
            pDescription='p-description greenText'
            headerTheme='hero-name greenText'
            heroDetails='hero-details greenText'
@@ -56,7 +56,8 @@ function Dekuworkout1() {
            colclass='guide-col green-border'
            colclass2='guide-col-2 green-border'
            icons='icon'
-           themecolor='guide-h1 green-color' />
+           themecolor='guide-h1 green-color'
+           structureh1='structure-h1 green-color' />
             {/* CHEST WORKOUT */}
             <Workoutlayout
             workoutH1='Band push(Chest, legs, tricep) workouts'

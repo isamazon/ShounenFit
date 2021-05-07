@@ -9,12 +9,15 @@ $font2: "Roboto Condensed", sans-serif;
 //  Font 3
 @import url("https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap");
 $font3: "Ceviche One", cursive;
-
+.parent-container {
+  position: relative;
+  background: #090d0f;
+}
 .workoutguide-cont-fluid {
   position: relative;
   height: 100%;
   width: 100%;
-  background: #090d0f;
+  background: none;
   padding-bottom: 100px;
   .workout-guide-cont {
     position: relative;
@@ -58,18 +61,39 @@ $font3: "Ceviche One", cursive;
       border-radius: 20px;
       background: none;
       transition: 0.5s;
+      display: flex;
+      flex-direction: column;
+
+      .structure-h1 {
+        position: relative;
+        top: 20px;
+        width: 100%;
+        text-align: center;
+        background: none;
+      }
+      h2 {
+        position: relative;
+        top: 30px;
+      }
+      p {
+        position: relative;
+        color: white;
+        top: 30px;
+        font-family: $font2;
+        text-align: start;
+      }
     }
   }
 }
 .main-container {
   height: 100%;
   position: relative;
-  background: #090d0f;
+  background: none;
   // Fluid container
   .cont-fluid {
     position: relative;
     height: 100%;
-    background: #090d0f;
+    background: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -197,7 +221,7 @@ $font3: "Ceviche One", cursive;
 
 // Green theme
 .green-color {
-  color: rgb(13, 216, 114);
+  color: #0dd872;
   font-family: $font1;
 }
 .green-border {
