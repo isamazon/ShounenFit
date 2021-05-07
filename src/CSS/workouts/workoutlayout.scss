@@ -26,6 +26,9 @@ $font3: "Ceviche One", cursive;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    @media screen and (max-width: 1000px) {
+      flex-direction: column;
+    }
     .guide-col {
       position: relative;
       height: 600px;
@@ -36,22 +39,36 @@ $font3: "Ceviche One", cursive;
       display: flex;
       flex-direction: column;
       align-items: center;
+      margin-bottom: 20px;
+      padding: 50px 0px;
       .icon {
         position: relative;
-        top: 5%;
+        top: 2%;
         color: rgb(1, 204, 103);
         border-radius: 50%;
       }
       .guide-h1 {
         position: relative;
         top: 10%;
+        margin-bottom: 10px;
+        @media screen and (max-width: 1200px) {
+          text-align: center;
+          font-size: 35px;
+        }
+        @media screen and (max-width: 500px) {
+          text-align: center;
+          font-size: 25px;
+        }
       }
-      p {
+      .guide-p {
+        position: relative;
         text-align: center;
         padding: 0px 20px;
         font-size: 20px;
         color: white;
         letter-spacing: 2px;
+        top: 10%;
+        background: none;
       }
     }
     .guide-col-2 {
@@ -63,7 +80,10 @@ $font3: "Ceviche One", cursive;
       transition: 0.5s;
       display: flex;
       flex-direction: column;
-
+      @media screen and (max-width: 1000px) {
+        padding: 50px 10px;
+        margin-top: 20px;
+      }
       .structure-h1 {
         position: relative;
         top: 20px;
@@ -74,6 +94,9 @@ $font3: "Ceviche One", cursive;
       h2 {
         position: relative;
         top: 30px;
+        @media screen and (max-width: 1000px) {
+          text-align: center;
+        }
       }
       p {
         position: relative;
@@ -81,6 +104,10 @@ $font3: "Ceviche One", cursive;
         top: 30px;
         font-family: $font2;
         text-align: start;
+        @media screen and (max-width: 1000px) {
+          text-align: center;
+          padding: 0px 20px;
+        }
       }
     }
   }
