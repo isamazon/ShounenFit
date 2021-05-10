@@ -1,21 +1,9 @@
 import React, { Component, useEffect } from "react";
 // Dependancies
-import { Container, Row, Col, Accordion } from "react-bootstrap";
+import { Container, Row, Col, Accordion, Card } from "react-bootstrap";
 import AOS from "aos";
 // CSS
-import "../CSS/workouts/workoutlayout.css";
-// Assets
-// import Chest from '../components/bodyparts/chest'
-// import Arms from '../components/bodyparts/arms'
-// import Back from '../components/bodyparts/back'
-// import Abs from './bodyparts/abdominals'
-// import Legs from './bodyparts/legs'
-// // Female BP
-// import Fabs from './bodyparts/Fabs'
-// import Farms from './bodyparts/Farms'
-// import Fglutes from './bodyparts/Fglutes'
-// import Fchest from './bodyparts/Fchest'
-// import Fback from './bodyparts/Fback'
+import "../../CSS/workouts/workoutlayout.css";
 // components
 import Workoutaccord from "./workoutaccordion";
 
@@ -53,11 +41,33 @@ function Workoutlayout(props) {
             </Col>
             {/* Accordion Column */}
             <Col md={12} xs={12} className="col-3">
-              <Workoutaccord
-                setH1={props.setH1}
-                workoutGif={props.workoutGif}
-                workoutGifclass={props.workoutGifclass}
-              />
+              <Accordion className="accordion-1">
+                <Card className="card-1">
+                  <Accordion.Toggle
+                    as={Card.Header}
+                    eventKey="0"
+                    className="accordion-toggle"
+                  >
+                    Click here for workout
+                  </Accordion.Toggle>
+                  <Accordion.Collapse eventKey="0">
+                    <Workoutaccord
+                      row={props.row}
+                      setH1={props.setH1}
+                      workoutGif={props.workoutGif}
+                      workoutGif2={props.workoutGif2}
+                      workoutGif3={props.workoutGif3}
+                      ownershipP={props.ownershipP}
+                      workoutTitle={props.workoutTitle}
+                      workoutTitle2={props.workoutTitle2}
+                      workoutTitle3={props.workoutTitle3}
+                      workoutDescription={props.workoutDescription}
+                      workouth1class={props.workouth1class}
+                      workoutpclass={props.workoutpclass}
+                    />
+                  </Accordion.Collapse>
+                </Card>
+              </Accordion>
             </Col>
           </Row>
         </Container>

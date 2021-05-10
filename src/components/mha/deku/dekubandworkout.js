@@ -1,8 +1,9 @@
 import React, { useEffect } from "react";
 // Components
 import Workoutheader from "../workoutheroheader";
-import Workoutlayout from "../../workoutlayout";
+import Workoutlayout from "../../workoutlayout/workoutlayout";
 import Scrolltop from "../../scrolltotop";
+import Workoutguide from "../../workoutlayout/workoutguide";
 // Dependancies
 import { Container, Col, Row } from "react-bootstrap";
 import AOS from "aos";
@@ -19,7 +20,10 @@ import Abs from "../../bodyparts/chest";
 import Legs from "../../bodyparts/legs";
 import Triceps from "../../bodyparts/triceps";
 import Shoulders from "../../bodyparts/shouders";
-import Workoutguide from "../../workoutguide";
+
+// Workout gifs
+import chestband1 from "../../../assets/workoutvids/bandchest1.gif";
+import chestband2 from "../../../assets/workoutvids/bandchest2.gif";
 
 function Dekuworkout1() {
   const SVGS = {
@@ -62,7 +66,9 @@ function Dekuworkout1() {
         themecolorP="guide-p green-color"
         structureh1="structure-h1 green-color"
       />
-      {/* CHEST WORKOUT */}
+      {/* 
+      CHEST WORKOUT *******************************************************************
+       */}
       <Workoutlayout
         workoutH1="Band push(Chest, legs, tricep) workouts"
         workoutHeader="workouth1 green-color"
@@ -74,8 +80,23 @@ function Dekuworkout1() {
         workoutDesc1="Lorem ipsum dolor sit amet consectetur adipisicing elit.  "
         // imgs
         bodypartworkout1="Chest workout"
+        // Accordion workout props
+        row="acc-row-1"
+        setH1="set-h1"
+        workoutGif={chestband1}
+        workoutGif2={chestband2}
+        workoutGif3={chestband2}
+        ownershipP="The following video is owned by athleanx.com"
+        workoutTitle="Banded saw"
+        workoutTitle2="Crossover pushups or Pushups"
+        workoutTitle3="Wrap around press"
+        workoutDescription="The first band chest workout is a pushing action with a band blah blah blah band blah blah blah band blah blah blahband blah blah blah"
+        workouth1class="workout-name-h1 green-color"
+        workoutpclass="workout-desc-p"
       />
-      {/* Shoulder WORKOUT */}
+      {/* 
+      Shoulder WORKOUT ***************************************************************
+       */}
       <Workoutlayout
         row1="row-1 green-border"
         svg={SVGS.shoulders}
@@ -87,7 +108,9 @@ function Dekuworkout1() {
         bodypartworkout1="Shoulder workout"
       />
 
-      {/* TRICEP WORKOUT */}
+      {/* 
+      TRICEP WORKOUT *****************************************************************
+       */}
       <Workoutlayout
         row1="row-1 green-border"
         svg={SVGS.triceps}
@@ -142,9 +165,3 @@ function Dekuworkout1() {
 }
 
 export default Dekuworkout1;
-
-// const chestSVG = <Chest height='100%' width='100%' color='rgb(13, 216, 114)' />
-//     const backSVG = <Back height='100%' width='100%' color='rgb(13, 216, 114)' />
-//     const armsSvg = <Arms height='100%' width='100%' color='rgb(13, 216, 114)' />
-//     const AbsSVG = <Abs height='100%' width='100%' color='rgb(13, 216, 114)' />
-//     const LegsSVG = <Legs height='100%' width='100%' color='rgb(13, 216, 114)' />

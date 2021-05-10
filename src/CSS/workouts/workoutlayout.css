@@ -120,6 +120,7 @@
   .workoutguide-cont-fluid .workout-guide-cont .guide-col-2 {
     padding: 50px 10px;
     margin-top: 20px;
+    height: 100%;
   }
 }
 
@@ -329,6 +330,14 @@
           flex-direction: column;
 }
 
+.main-container .cont-fluid .cont-inner-main .row-1 .col-3 .accordion-1 .card-1 .card-body .set-h1,
+.main-container .cont-fluid .cont-inner-main .row-2 .col-3 .accordion-1 .card-1 .card-body .set-h1 {
+  color: white;
+  font-size: 60px;
+  font-family: "Bangers", cursive;
+  text-align: start;
+}
+
 .main-container .cont-fluid .cont-inner-main .row-1 .col-3 .accordion-1 .card-1 .card-body .acc-row-1,
 .main-container .cont-fluid .cont-inner-main .row-2 .col-3 .accordion-1 .card-1 .card-body .acc-row-1 {
   display: -webkit-box;
@@ -338,20 +347,58 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  margin-bottom: 20px;
 }
 
 .main-container .cont-fluid .cont-inner-main .row-1 .col-3 .accordion-1 .card-1 .card-body .acc-row-1 .acc-col-1,
 .main-container .cont-fluid .cont-inner-main .row-2 .col-3 .accordion-1 .card-1 .card-body .acc-row-1 .acc-col-1 {
-  background: palevioletred;
+  background: none;
   height: 300px;
   width: 100%;
 }
 
+.main-container .cont-fluid .cont-inner-main .row-1 .col-3 .accordion-1 .card-1 .card-body .acc-row-1 .acc-col-1 .ownership-p,
+.main-container .cont-fluid .cont-inner-main .row-2 .col-3 .accordion-1 .card-1 .card-body .acc-row-1 .acc-col-1 .ownership-p {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  background: none;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.274);
+}
+
 .main-container .cont-fluid .cont-inner-main .row-1 .col-3 .accordion-1 .card-1 .card-body .acc-row-1 .acc-col-2,
 .main-container .cont-fluid .cont-inner-main .row-2 .col-3 .accordion-1 .card-1 .card-body .acc-row-1 .acc-col-2 {
-  background: peru;
+  background: none;
   height: 300px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: none;
+}
+
+.main-container .cont-fluid .cont-inner-main .row-1 .col-3 .accordion-1 .card-1 .card-body .acc-row-1 .acc-col-2 .workout-name-h1,
+.main-container .cont-fluid .cont-inner-main .row-2 .col-3 .accordion-1 .card-1 .card-body .acc-row-1 .acc-col-2 .workout-name-h1 {
+  position: relative;
+  background: none;
+  width: 100%;
+  padding: 10px 0px;
+  text-align: center;
+}
+
+.main-container .cont-fluid .cont-inner-main .row-1 .col-3 .accordion-1 .card-1 .card-body .acc-row-1 .acc-col-2 .workout-desc-p,
+.main-container .cont-fluid .cont-inner-main .row-2 .col-3 .accordion-1 .card-1 .card-body .acc-row-1 .acc-col-2 .workout-desc-p {
+  position: relative;
+  background: none;
+  padding: 10px 30px;
+  text-align: center;
+  color: white;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .invisible-row {

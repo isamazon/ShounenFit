@@ -83,6 +83,7 @@ $font3: "Ceviche One", cursive;
       @media screen and (max-width: 1000px) {
         padding: 50px 10px;
         margin-top: 20px;
+        height: 100%;
       }
       .structure-h1 {
         position: relative;
@@ -213,18 +214,52 @@ $font3: "Ceviche One", cursive;
                 position: relative;
                 display: flex;
                 flex-direction: column;
+                .set-h1 {
+                  color: white;
+                  font-size: 60px;
+                  font-family: $font1;
+                  text-align: start;
+                }
                 .acc-row-1 {
                   display: flex;
                   flex-direction: row;
+                  margin-bottom: 20px;
+
                   .acc-col-1 {
-                    background: palevioletred;
+                    background: none;
                     height: 300px;
                     width: 100%;
+                    .ownership-p {
+                      position: absolute;
+                      bottom: 0;
+                      text-align: center;
+                      background: none;
+                      width: 100%;
+                      color: rgba(255, 255, 255, 0.274);
+                    }
                   }
                   .acc-col-2 {
-                    background: peru;
+                    background: none;
                     height: 300px;
                     width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    background: none;
+                    .workout-name-h1 {
+                      position: relative;
+                      background: none;
+                      width: 100%;
+                      padding: 10px 0px;
+                      text-align: center;
+                    }
+                    .workout-desc-p {
+                      position: relative;
+                      background: none;
+                      padding: 10px 30px;
+                      text-align: center;
+                      color: white;
+                      font-family: $font2;
+                    }
                   }
                 }
               }
