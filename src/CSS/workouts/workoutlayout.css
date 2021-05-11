@@ -401,6 +401,18 @@
   font-family: "Roboto Condensed", sans-serif;
 }
 
+.main-container .cont-fluid .cont-inner-main .row-1 .col-3 .accordion-1 .card-1 .card-body .acc-row-1 .repeat-h1,
+.main-container .cont-fluid .cont-inner-main .row-2 .col-3 .accordion-1 .card-1 .card-body .acc-row-1 .repeat-h1 {
+  position: relative;
+  background: none;
+  width: 100%;
+  text-align: center;
+}
+
+.display-none {
+  display: none;
+}
+
 .invisible-row {
   display: none;
 }

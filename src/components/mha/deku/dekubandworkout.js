@@ -24,17 +24,67 @@ import Shoulders from "../../bodyparts/shouders";
 // Workout gifs
 import chestband1 from "../../../assets/workoutvids/bandchest1.gif";
 import chestband2 from "../../../assets/workoutvids/bandchest2.gif";
+import chestband3 from "../../../assets/workoutvids/bandchest3.gif";
+import chestband4 from "../../../assets/workoutvids/bandchest4.gif";
+import chestband5 from "../../../assets/workoutvids/bandchest5.gif";
 
 function Dekuworkout1() {
   const SVGS = {
-    chest: <Chest height="100%" width="100%" color="rgb(13, 216, 114)" />,
-    back: <Back height="100%" width="100%" color="rgb(13, 216, 114)" />,
-    arms: <Arms height="100%" width="100%" color="rgb(13, 216, 114)" />,
-    abs: <Abs height="100%" width="100%" color="rgb(13, 216, 114)" />,
-    legs: <Legs height="100%" width="100%" color="rgb(13, 216, 114)" />,
-    triceps: <Triceps height="100%" width="100%" color="rgb(13, 216, 114)" />,
+    chest: (
+      <Chest
+        className="svg"
+        height="100%"
+        width="100%"
+        color="rgb(13, 216, 114)"
+      />
+    ),
+    back: (
+      <Back
+        className="svg"
+        height="100%"
+        width="100%"
+        color="rgb(13, 216, 114)"
+      />
+    ),
+    arms: (
+      <Arms
+        className="svg"
+        height="100%"
+        width="100%"
+        color="rgb(13, 216, 114)"
+      />
+    ),
+    abs: (
+      <Abs
+        className="svg"
+        height="100%"
+        width="100%"
+        color="rgb(13, 216, 114)"
+      />
+    ),
+    legs: (
+      <Legs
+        className="svg"
+        height="100%"
+        width="100%"
+        color="rgb(13, 216, 114)"
+      />
+    ),
+    triceps: (
+      <Triceps
+        className="svg"
+        height="100%"
+        width="100%"
+        color="rgb(13, 216, 114)"
+      />
+    ),
     shoulders: (
-      <Shoulders height="100%" width="100%" color="rgb(13, 216, 114)" />
+      <Shoulders
+        className="svg"
+        height="100%"
+        width="100%"
+        color="rgb(13, 216, 114)"
+      />
     ),
   };
   return (
@@ -42,8 +92,10 @@ function Dekuworkout1() {
       <Scrolltop
         scrolltopclass="scroll-up-btn-ctn green-btn"
         arrowup="arrow-up"
+        scrollTo="charheader"
       />
       <Workoutheader
+        charheader="charheader"
         charimg={deku}
         imgClass="char-img"
         rowTheme="Wlayout-row-1 rowGreen"
@@ -81,18 +133,23 @@ function Dekuworkout1() {
         // imgs
         bodypartworkout1="Chest workout"
         // Accordion workout props
-        row="acc-row-1"
+        row="acc-row-1 "
         setH1="set-h1"
         workoutGif={chestband1}
         workoutGif2={chestband2}
-        workoutGif3={chestband2}
+        workoutGif3={chestband3}
+        workoutGif4={chestband4}
+        workoutGif5={chestband2}
+        workoutGif6={chestband2}
         ownershipP="The following video is owned by athleanx.com"
         workoutTitle="Banded saw"
         workoutTitle2="Crossover pushups or Pushups"
         workoutTitle3="Wrap around press"
+        workoutTitle4="Upper chest extension"
         workoutDescription="The first band chest workout is a pushing action with a band blah blah blah band blah blah blah band blah blah blahband blah blah blah"
         workouth1class="workout-name-h1 green-color"
         workoutpclass="workout-desc-p"
+        repeatH1="repeat-h1 green-color"
       />
       {/* 
       Shoulder WORKOUT ***************************************************************

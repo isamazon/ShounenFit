@@ -5,6 +5,7 @@ import "../../CSS/landingpage2/landingpage2.css";
 import { Container, Col, Row } from "react-bootstrap";
 import { Slider } from "react-slick";
 import { Link } from "react-router-dom";
+
 // Components
 import Heroslide from "../landingpage2/heroslide";
 // Character imgs
@@ -58,6 +59,7 @@ class Landingpage2 extends React.Component {
           <Col md={7} xs={12} className="col-2">
             <div className="char-slider">
               {/* video goes here */}
+
               <video
                 className="video1"
                 src={this.state.video}
@@ -65,6 +67,7 @@ class Landingpage2 extends React.Component {
                 autoPlay
                 loop
               ></video>
+
               <img src={Bborder} className="border-img" alt="" />
               <img className="char-img" src={this.state.charimg} alt="" />
             </div>

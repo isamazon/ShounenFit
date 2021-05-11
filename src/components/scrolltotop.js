@@ -3,12 +3,15 @@ import { Component } from "react";
 import "../CSS/backbutton.css";
 // Icons
 import { FaArrowCircleUp } from "react-icons/fa";
-
+// Dependencies
+import { Link } from "react-scroll";
 class Scrolltop extends Component {
   render() {
     return (
       <div className={this.props.scrolltopclass}>
-        <FaArrowCircleUp size="50px" className={this.props.arrowup} />
+        <Link to={this.props.scrollTo} spy={true} smooth={true}>
+          <FaArrowCircleUp size="50px" className={this.props.arrowup} />
+        </Link>
       </div>
     );
   }

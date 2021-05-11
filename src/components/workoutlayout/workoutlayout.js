@@ -6,6 +6,7 @@ import AOS from "aos";
 import "../../CSS/workouts/workoutlayout.css";
 // components
 import Workoutaccord from "./workoutaccordion";
+import LazyLoad from "react-lazy-load";
 
 function Workoutlayout(props) {
   useEffect(() => {
@@ -32,7 +33,7 @@ function Workoutlayout(props) {
           >
             {/* Workout picture */}
             <Col md={5} xs={12} className="col-1">
-              {props.svg}
+              <LazyLoad height="100%">{props.svg}</LazyLoad>
             </Col>
             {/* Workout desc */}
             <Col md={7} xs={12} className="col-2">
@@ -57,13 +58,16 @@ function Workoutlayout(props) {
                       workoutGif={props.workoutGif}
                       workoutGif2={props.workoutGif2}
                       workoutGif3={props.workoutGif3}
+                      workoutGif4={props.workoutGif4}
                       ownershipP={props.ownershipP}
                       workoutTitle={props.workoutTitle}
                       workoutTitle2={props.workoutTitle2}
                       workoutTitle3={props.workoutTitle3}
+                      workoutTitle4={props.workoutTitle4}
                       workoutDescription={props.workoutDescription}
                       workouth1class={props.workouth1class}
                       workoutpclass={props.workoutpclass}
+                      repeatH1={props.repeatH1}
                     />
                   </Accordion.Collapse>
                 </Card>

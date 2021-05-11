@@ -261,6 +261,12 @@ $font3: "Ceviche One", cursive;
                       font-family: $font2;
                     }
                   }
+                  .repeat-h1 {
+                    position: relative;
+                    background: none;
+                    width: 100%;
+                    text-align: center;
+                  }
                 }
               }
             }
@@ -269,6 +275,9 @@ $font3: "Ceviche One", cursive;
       }
     }
   }
+}
+.display-none {
+  display: none;
 }
 
 .invisible-row {
