@@ -5,7 +5,7 @@ import "../../CSS/landingpage2/landingpage2.css";
 import { Container, Col, Row } from "react-bootstrap";
 import { Slider } from "react-slick";
 import { Link } from "react-router-dom";
-
+import LazyLoad from "react-lazy-load";
 // Components
 import Heroslide from "../landingpage2/heroslide";
 // Character imgs
@@ -31,7 +31,7 @@ import pinkvideo from "../../assets/pinkcirclevid.mp4";
 import Wborder from "../../assets/icon/whitecircleframe.png";
 import Bborder from "../../assets/icon/blackcircleframe.png";
 // Charcter
-import Dekusvg from "../../components/icons/deku";
+import Dekusvg from "../../components/icons/dekujs";
 import Zenitsusvg from "../../components/icons/zenitsu";
 import Mikasasvg from "../../components/icons/mikasa";
 import Erensvg from "../../components/icons/eren";
@@ -80,99 +80,101 @@ class Landingpage2 extends React.Component {
               as the cornerstone of this project is to inspire all anime fans to
               reach their goals and become the best shoune the can become
             </p>
-            <div className="svg-btn-ctn">
-              <Dekusvg
-                onClick={() =>
-                  this.setState({
-                    video: dekuvideo,
-                    charimg: deku,
-                    nameClass: "h1-default dekuBG",
-                    charName: "Dekus",
-                  })
-                }
-                className="dekusvg"
-                fill="#fff"
-                height="50px"
-              />
-              <Zenitsusvg
-                onClick={() =>
-                  this.setState({
-                    video: yellowvideo,
-                    charimg: zenitsu,
-                    nameClass: "h1-default zenitsuBG",
-                    charName: "Zenitsu",
-                  })
-                }
-                className="zenitsusvg"
-                fill="#fff"
-                height="50px"
-              />
-              <Mikasasvg
-                onClick={() =>
-                  this.setState({
-                    video: redvideo,
-                    charimg: mikasa,
-                    nameClass: "h1-default mikasaBG",
-                    charName: "Mikasas",
-                  })
-                }
-                className="mikasasvg"
-                fill="#fff"
-                height="50px"
-              />
-              <Allmightsvg
-                onClick={() =>
-                  this.setState({
-                    video: pinkvideo,
-                    charimg: nezuko,
-                    nameClass: "h1-default nezukoBG",
-                    charName: "Nezukos",
-                  })
-                }
-                className="allmightsvg"
-                fill="#fff"
-                height="50px"
-              />
-              <Erensvg
-                onClick={() =>
-                  this.setState({
-                    video: greenvideo,
-                    charimg: eren,
-                    nameClass: "h1-default erenBG",
-                    charName: "Erens",
-                  })
-                }
-                className="erensvg"
-                fill="#fff"
-                height="50px"
-              />
-              <Bakugousvg
-                onClick={() =>
-                  this.setState({
-                    video: orangevideo,
-                    charimg: bakugou,
-                    nameClass: "h1-default bakugouBG",
-                    charName: "Bakugous",
-                  })
-                }
-                className="bakugousvg"
-                fill="#fff"
-                height="50px"
-              />
-              <Gojousvg
-                onClick={() =>
-                  this.setState({
-                    video: purplevideo,
-                    charimg: gojou,
-                    charName: "Gojous",
-                    nameClass: "h1-default gojouBG",
-                  })
-                }
-                className="gojousvg"
-                fill="#fff"
-                height="50px"
-              />
-            </div>
+            <LazyLoad height="100%" width="100%">
+              <div className="svg-btn-ctn">
+                <Dekusvg
+                  onClick={() =>
+                    this.setState({
+                      video: dekuvideo,
+                      charimg: deku,
+                      nameClass: "h1-default dekuBG",
+                      charName: "Dekus",
+                    })
+                  }
+                  className="dekusvg"
+                  fill="#fff"
+                  height="50px"
+                />
+                <Zenitsusvg
+                  onClick={() =>
+                    this.setState({
+                      video: yellowvideo,
+                      charimg: zenitsu,
+                      nameClass: "h1-default zenitsuBG",
+                      charName: "Zenitsu",
+                    })
+                  }
+                  className="zenitsusvg"
+                  fill="#fff"
+                  height="50px"
+                />
+                <Mikasasvg
+                  onClick={() =>
+                    this.setState({
+                      video: redvideo,
+                      charimg: mikasa,
+                      nameClass: "h1-default mikasaBG",
+                      charName: "Mikasas",
+                    })
+                  }
+                  className="mikasasvg"
+                  fill="#fff"
+                  height="50px"
+                />
+                <Allmightsvg
+                  onClick={() =>
+                    this.setState({
+                      video: pinkvideo,
+                      charimg: nezuko,
+                      nameClass: "h1-default nezukoBG",
+                      charName: "Nezukos",
+                    })
+                  }
+                  className="allmightsvg"
+                  fill="#fff"
+                  height="50px"
+                />
+                <Erensvg
+                  onClick={() =>
+                    this.setState({
+                      video: greenvideo,
+                      charimg: eren,
+                      nameClass: "h1-default erenBG",
+                      charName: "Erens",
+                    })
+                  }
+                  className="erensvg"
+                  fill="#fff"
+                  height="50px"
+                />
+                <Bakugousvg
+                  onClick={() =>
+                    this.setState({
+                      video: orangevideo,
+                      charimg: bakugou,
+                      nameClass: "h1-default bakugouBG",
+                      charName: "Bakugous",
+                    })
+                  }
+                  className="bakugousvg"
+                  fill="#fff"
+                  height="50px"
+                />
+                <Gojousvg
+                  onClick={() =>
+                    this.setState({
+                      video: purplevideo,
+                      charimg: gojou,
+                      charName: "Gojous",
+                      nameClass: "h1-default gojouBG",
+                    })
+                  }
+                  className="gojousvg"
+                  fill="#fff"
+                  height="50px"
+                />
+              </div>
+            </LazyLoad>
             <div className="hero-workout-btn">
               <Link to={this.state.path} className={this.state.nameClass}>
                 Click here for {this.state.charName} workout

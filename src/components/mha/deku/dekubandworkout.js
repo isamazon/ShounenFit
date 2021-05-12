@@ -91,6 +91,7 @@ function Dekuworkout1() {
     <div className="parent-container">
       <Scrolltop
         scrolltopclass="scroll-up-btn-ctn green-btn"
+        scrolltophidden="scroll-up-btn-hidden"
         arrowup="arrow-up"
         scrollTo="charheader"
       />

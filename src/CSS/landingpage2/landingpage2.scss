@@ -81,6 +81,8 @@ $color1: #00b4d8;
         @media screen and (max-width: 500px) {
           position: absolute;
           top: 0;
+          left: 0;
+          z-index: 10;
         }
         .dekusvg {
           cursor: pointer;
@@ -188,6 +190,8 @@ $color1: #00b4d8;
           color: black;
           @media screen and(max-width: 550px) {
             font-size: 25px;
+            height: 100%;
+            top: 0;
           }
 
           &:hover {

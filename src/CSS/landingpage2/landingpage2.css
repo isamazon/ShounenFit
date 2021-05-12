@@ -114,6 +114,8 @@
   .page-2-fluid .row-1 .col-1 .svg-btn-ctn {
     position: absolute;
     top: 0;
+    left: 0;
+    z-index: 10;
   }
 }
 
@@ -275,6 +277,8 @@
 @media screen and (max-width: 550px) {
   .page-2-fluid .row-1 .col-1 .hero-workout-btn .h1-default {
     font-size: 25px;
+    height: 100%;
+    top: 0;
   }
 }
 

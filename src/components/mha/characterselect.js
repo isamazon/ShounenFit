@@ -38,13 +38,7 @@ function Charselect(props) {
             data-aos="fade-up"
           ></Link>
         </Col>
-        <Col md={4} sm={6} className="char-selec-col">
-          <Link
-            to={props.charpath4}
-            className="char-link char-4"
-            data-aos="fade-up"
-          ></Link>
-        </Col>
+
         <Col md={4} sm={6} className="char-selec-col"></Col>
         <Col md={4} sm={6} className="char-selec-col"></Col>
         <Col md={4} sm={6} className="char-selec-col"></Col>

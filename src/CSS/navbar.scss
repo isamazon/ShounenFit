@@ -28,6 +28,9 @@ $font3: "Ceviche One", cursive;
   align-items: center;
   padding: 20px 0px;
   transition: 0.5s;
+  @media screen and (max-width: 968px) {
+    background: black;
+  }
 
   .brand {
     position: absolute;
@@ -117,6 +120,7 @@ nav.active {
 
   .nav-menu {
     display: flex;
+    align-items: center;
     flex-direction: column;
     width: 100%;
     height: 90vh;
@@ -130,6 +134,9 @@ nav.active {
   .nav-menu.active {
     background: black;
     left: 0;
+    display: flex;
+    align-items: center;
+    height: 100vh;
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 1;

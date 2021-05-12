@@ -28,6 +28,12 @@
   transition: 0.5s;
 }
 
+@media screen and (max-width: 968px) {
+  .nav {
+    background: black;
+  }
+}
+
 .nav .brand {
   position: absolute;
   color: white;
@@ -132,6 +138,9 @@ nav.active {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -148,6 +157,13 @@ nav.active {
   .nav-menu.active {
     background: black;
     left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100vh;
     opacity: 1;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;

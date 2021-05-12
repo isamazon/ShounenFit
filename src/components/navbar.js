@@ -54,11 +54,7 @@ function Nav() {
             Home
           </Link>
         </li>
-        <li className="nav-item">
-          <Link to="/" className="nav-links" onClick={closeMobileMenu}>
-            About
-          </Link>
-        </li>
+
         {/* Dropdown 1 */}
         <li className="nav-item">
           <Link
@@ -83,6 +79,11 @@ function Nav() {
           <Link to="/" className="nav-links" onClick={closeMobileMenu}>
             Contact
           </Link>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <Link></Link>
         </li>
       </ul>
     </nav>

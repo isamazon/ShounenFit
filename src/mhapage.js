@@ -14,8 +14,6 @@ import Nav from "./components/navbar";
 
 import Backbutton from "./components/backbutton";
 import Charselect from "./components/mha/characterselect";
-// character assets
-import deku from "./assets/dekuHC.png";
 
 function MHAM() {
   return (

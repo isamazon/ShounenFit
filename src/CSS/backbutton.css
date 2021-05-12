@@ -70,6 +70,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-animation: fadein 1s;
+          animation: fadein 1s;
 }
 
 .scroll-up-btn-ctn .arrow-up {
@@ -82,6 +86,14 @@
 .scroll-up-btn-ctn .arrow-up:hover {
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
+}
+
+.scroll-up-btn-hidden {
+  display: none;
+  -webkit-transition: 0.5;
+  transition: 0.5;
+  -webkit-animation: fadeout 1s;
+          animation: fadeout 1s;
 }
 
 .green-btn {
@@ -98,5 +110,41 @@
 
 .yellow-btn:hover {
   color: #787a07;
+}
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 /*# sourceMappingURL=backbutton.css.map */
