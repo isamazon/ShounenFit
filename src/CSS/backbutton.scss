@@ -74,3 +74,10 @@ $font3: "Ceviche One", cursive;
     color: rgb(10, 110, 60);
   }
 }
+
+.yellow-btn {
+  color: rgba(213, 216, 13, 1);
+  &:hover {
+    color: rgb(120, 122, 7);
+  }
+}

@@ -165,6 +165,26 @@ function Dekuworkout1() {
         workoutDesc1="Lorem ipsum dolor sit amet consectetur adipisicing elit.  "
         // imgs
         bodypartworkout1="Shoulder workout"
+        // Accordion workout props
+        row="acc-row-1 "
+        setH1="set-h1"
+        workoutGif={chestband1}
+        workoutGif2={chestband2}
+        workoutGif3={chestband3}
+        workoutGif4={chestband4}
+        workoutGif5={chestband5}
+        workoutGif6={chestband2}
+        ownershipP="The following video is owned by athleanx.com"
+        workoutTitle="Shoulder workout 1"
+        workoutTitle2="Crossover pushups or Pushups"
+        workoutTitle3="Wrap around press"
+        workoutTitle4="Upper chest extension"
+        workoutTitle5="Punch out extensions"
+        workoutTitle6="workout 6"
+        workoutDescription1="The first band chest workout is a pushing action with a band blah blah blah band blah blah blah band blah blah blahband blah blah blah"
+        workouth1class="workout-name-h1 green-color"
+        workoutpclass="workout-desc-p"
+        repeatH1="repeat-h1 green-color"
       />
 
       {/* 
@@ -179,6 +199,26 @@ function Dekuworkout1() {
         workoutDesc1="Your triceps make up more than two-thirds of your upper-arm mass. Building thick, developed triceps means building thick, developed arms. And with bands its possible to build that muscle"
         // imgs
         bodypartworkout1="Tricep workout"
+        // Accordion workout props
+        row="acc-row-1 "
+        setH1="set-h1"
+        workoutGif={chestband1}
+        workoutGif2={chestband2}
+        workoutGif3={chestband3}
+        workoutGif4={chestband4}
+        workoutGif5={chestband5}
+        workoutGif6={chestband2}
+        ownershipP="The following video is owned by athleanx.com"
+        workoutTitle="Shoulder workout 1"
+        workoutTitle2="Crossover pushups or Pushups"
+        workoutTitle3="Wrap around press"
+        workoutTitle4="Upper chest extension"
+        workoutTitle5="Punch out extensions"
+        workoutTitle6="workout 6"
+        workoutDescription1="The first band chest workout is a pushing action with a band blah blah blah band blah blah blah band blah blah blahband blah blah blah"
+        workouth1class="workout-name-h1 green-color"
+        workoutpclass="workout-desc-p"
+        repeatH1="repeat-h1 green-color"
       />
 
       {/* Back workouts */}
@@ -194,6 +234,26 @@ function Dekuworkout1() {
         // imgs
         bodypartworkout1="Back workout"
         // Accordion workout
+        // Accordion workout props
+        row="acc-row-1 "
+        setH1="set-h1"
+        workoutGif={chestband1}
+        workoutGif2={chestband2}
+        workoutGif3={chestband3}
+        workoutGif4={chestband4}
+        workoutGif5={chestband5}
+        workoutGif6={chestband2}
+        ownershipP="The following video is owned by athleanx.com"
+        workoutTitle="Shoulder workout 1"
+        workoutTitle2="Crossover pushups or Pushups"
+        workoutTitle3="Wrap around press"
+        workoutTitle4="Upper chest extension"
+        workoutTitle5="Punch out extensions"
+        workoutTitle6="workout 6"
+        workoutDescription1="The first band chest workout is a pushing action with a band blah blah blah band blah blah blah band blah blah blahband blah blah blah"
+        workouth1class="workout-name-h1 green-color"
+        workoutpclass="workout-desc-p"
+        repeatH1="repeat-h1 green-color"
       />
       {/* ARM WORKOUTS */}
       <Workoutlayout
@@ -206,6 +266,26 @@ function Dekuworkout1() {
         // imgs
         bodypartworkout1="Bicep workout"
         // Accordion workout
+        // Accordion workout props
+        row="acc-row-1 "
+        setH1="set-h1"
+        workoutGif={chestband1}
+        workoutGif2={chestband2}
+        workoutGif3={chestband3}
+        workoutGif4={chestband4}
+        workoutGif5={chestband5}
+        workoutGif6={chestband2}
+        ownershipP="The following video is owned by athleanx.com"
+        workoutTitle="Shoulder workout 1"
+        workoutTitle2="Crossover pushups or Pushups"
+        workoutTitle3="Wrap around press"
+        workoutTitle4="Upper chest extension"
+        workoutTitle5="Punch out extensions"
+        workoutTitle6="workout 6"
+        workoutDescription1="The first band chest workout is a pushing action with a band blah blah blah band blah blah blah band blah blah blahband blah blah blah"
+        workouth1class="workout-name-h1 green-color"
+        workoutpclass="workout-desc-p"
+        repeatH1="repeat-h1 green-color"
       />
       <Workoutlayout
         workoutH1="Leg/Cardio workouts"
@@ -218,6 +298,26 @@ function Dekuworkout1() {
         workoutDesc1="Lorem ipsum dolor sit amet consectetur adipisicing elit.  "
         // imgs
         bodypartworkout1="Leg workout"
+        // Accordion workout props
+        row="acc-row-1 "
+        setH1="set-h1"
+        workoutGif={chestband1}
+        workoutGif2={chestband2}
+        workoutGif3={chestband3}
+        workoutGif4={chestband4}
+        workoutGif5={chestband5}
+        workoutGif6={chestband2}
+        ownershipP="The following video is owned by athleanx.com"
+        workoutTitle="Shoulder workout 1"
+        workoutTitle2="Crossover pushups or Pushups"
+        workoutTitle3="Wrap around press"
+        workoutTitle4="Upper chest extension"
+        workoutTitle5="Punch out extensions"
+        workoutTitle6="workout 6"
+        workoutDescription1="The first band chest workout is a pushing action with a band blah blah blah band blah blah blah band blah blah blahband blah blah blah"
+        workouth1class="workout-name-h1 green-color"
+        workoutpclass="workout-desc-p"
+        repeatH1="repeat-h1 green-color"
       />
     </div>
   );

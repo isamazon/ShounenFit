@@ -11,7 +11,11 @@ class Workoutguide extends Component {
         <Container className="workout-guide-cont">
           <FaTimes />
           <Col lg={5} xs={12} className={this.props.colclass}>
-            <FaQuestionCircle className={this.props.icons} size="100px" />
+            <FaQuestionCircle
+              color="white"
+              className={this.props.icons}
+              size="100px"
+            />
             <h1 className={this.props.themecolor}>Dont know where to start?</h1>
             <p className={this.props.themecolorP}>
               The hardest thing about starting to workout is knowing where to

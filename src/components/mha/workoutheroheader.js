@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 // Components
-import Nav from "../navbar";
+
 // Dependancies
 import { Container, Col, Row } from "react-bootstrap";
 // CSS
