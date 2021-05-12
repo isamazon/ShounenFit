@@ -8,8 +8,13 @@ import { Link } from "react-scroll";
 class Scrolltop extends Component {
   render() {
     return (
-      <div className={this.props.scrolltopclass}>
-        <Link to={this.props.scrollTo} spy={true} smooth={true}>
+      <div>
+        <Link
+          className={this.props.scrolltopclass}
+          to={this.props.scrollTo}
+          spy={true}
+          smooth={true}
+        >
           <FaArrowCircleUp size="50px" className={this.props.arrowup} />
         </Link>
       </div>

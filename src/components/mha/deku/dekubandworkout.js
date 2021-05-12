@@ -129,7 +129,7 @@ function Dekuworkout1() {
         h1Color="workout-name green-color"
         pClass="workout-desc green-color"
         // Workout descriptions
-        workoutDesc1="Lorem ipsum dolor sit amet consectetur adipisicing elit.  "
+        workoutDesc1="This chest workout uses bands to target specific parts of the chest to increase overall mass with just the use of bands take 15-30 second breaks after each workout before going on to the next"
         // imgs
         bodypartworkout1="Chest workout"
         // Accordion workout props
@@ -139,14 +139,16 @@ function Dekuworkout1() {
         workoutGif2={chestband2}
         workoutGif3={chestband3}
         workoutGif4={chestband4}
-        workoutGif5={chestband2}
+        workoutGif5={chestband5}
         workoutGif6={chestband2}
         ownershipP="The following video is owned by athleanx.com"
         workoutTitle="Banded saw"
         workoutTitle2="Crossover pushups or Pushups"
         workoutTitle3="Wrap around press"
         workoutTitle4="Upper chest extension"
-        workoutDescription="The first band chest workout is a pushing action with a band blah blah blah band blah blah blah band blah blah blahband blah blah blah"
+        workoutTitle5="Punch out extensions"
+        workoutTitle6="workout 6"
+        workoutDescription1="The first band chest workout is a pushing action with a band blah blah blah band blah blah blah band blah blah blahband blah blah blah"
         workouth1class="workout-name-h1 green-color"
         workoutpclass="workout-desc-p"
         repeatH1="repeat-h1 green-color"

@@ -136,7 +136,7 @@
 }
 
 .svg {
-  z-index: -5;
+  z-index: 5;
 }
 
 .rowGreen {
