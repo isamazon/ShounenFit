@@ -54,7 +54,7 @@ class Landingpage2 extends React.Component {
 
   render() {
     return (
-      <Container fluid className="page-2-fluid">
+      <Container fluid className={this.props.sectionlp2}>
         <Row className="row-1">
           <Col md={7} xs={12} className="col-2">
             <div className="char-slider">
@@ -65,13 +65,15 @@ class Landingpage2 extends React.Component {
                 src={this.state.video}
                 type="video/mp4"
                 autoPlay
+                playsInline
                 loop
               ></video>
 
               <img src={Bborder} className="border-img" alt="" />
               <img className="char-img" src={this.state.charimg} alt="" />
-            </div>
+            </div>{" "}
           </Col>
+
           <Col md={5} xs={12} className="col-1">
             <h1>Why shounen fit?</h1>
             <p>
@@ -80,8 +82,9 @@ class Landingpage2 extends React.Component {
               as the cornerstone of this project is to inspire all anime fans to
               reach their goals and become the best shoune the can become
             </p>
-            <LazyLoad height="100%" width="100%">
-              <div className="svg-btn-ctn">
+
+            <div className="svg-btn-ctn">
+              <LazyLoad height="100%" width="100%">
                 <Dekusvg
                   onClick={() =>
                     this.setState({
@@ -95,6 +98,8 @@ class Landingpage2 extends React.Component {
                   fill="#fff"
                   height="50px"
                 />
+              </LazyLoad>
+              <LazyLoad height="100%" width="100%">
                 <Zenitsusvg
                   onClick={() =>
                     this.setState({
@@ -108,6 +113,8 @@ class Landingpage2 extends React.Component {
                   fill="#fff"
                   height="50px"
                 />
+              </LazyLoad>
+              <LazyLoad height="100%" width="100%">
                 <Mikasasvg
                   onClick={() =>
                     this.setState({
@@ -121,6 +128,8 @@ class Landingpage2 extends React.Component {
                   fill="#fff"
                   height="50px"
                 />
+              </LazyLoad>
+              <LazyLoad height="100%" width="100%">
                 <Allmightsvg
                   onClick={() =>
                     this.setState({
@@ -134,6 +143,8 @@ class Landingpage2 extends React.Component {
                   fill="#fff"
                   height="50px"
                 />
+              </LazyLoad>
+              <LazyLoad height="100%" width="100%">
                 <Erensvg
                   onClick={() =>
                     this.setState({
@@ -147,6 +158,8 @@ class Landingpage2 extends React.Component {
                   fill="#fff"
                   height="50px"
                 />
+              </LazyLoad>
+              <LazyLoad height="100%" width="100%">
                 <Bakugousvg
                   onClick={() =>
                     this.setState({
@@ -160,6 +173,8 @@ class Landingpage2 extends React.Component {
                   fill="#fff"
                   height="50px"
                 />
+              </LazyLoad>
+              <LazyLoad height="100%" width="100%">
                 <Gojousvg
                   onClick={() =>
                     this.setState({
@@ -173,8 +188,9 @@ class Landingpage2 extends React.Component {
                   fill="#fff"
                   height="50px"
                 />
-              </div>
-            </LazyLoad>
+              </LazyLoad>
+            </div>
+
             <div className="hero-workout-btn">
               <Link to={this.state.path} className={this.state.nameClass}>
                 Click here for {this.state.charName} workout

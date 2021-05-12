@@ -55,9 +55,15 @@ $font3: "Ceviche One", cursive;
             text-decoration: none;
             color: white;
           }
+          @media screen and (max-width: 500px) {
+            padding: 0px 0px;
+          }
           .link-img {
             height: 150px;
             width: 90%;
+            @media screen and (max-width: 500px) {
+              width: 100%;
+            }
           }
         }
       }

@@ -12,18 +12,31 @@ class Videoheader extends Component {
         <div className="main-container">
           <div className="blurred-video">
             <LazyLoad>
-              <video className="video1" playsInline autoPlay loop muted>
-                <source src={this.props.video} type="video/mp4" />
+              <video
+                className="video1"
+                poster={this.props.posterimg}
+                playsInline
+                autoPlay
+                loop
+                muted
+              >
+                <source src={this.props.video} playsInline type="video/mp4" />
               </video>
             </LazyLoad>
           </div>
           <div className="clear-video">
             <h1> Welcome {this.props.gender} shounen</h1>
-            <LazyLoad>
-              <video className="video1" playsInline autoPlay loop muted>
-                <source src={this.props.video} type="video/mp4" />
-              </video>
-            </LazyLoad>
+
+            <video
+              className="video1"
+              playsInline
+              poster={this.props.posterimg}
+              autoPlay
+              loop
+              muted
+            >
+              <source src={this.props.video} playsInline type="video/mp4" />
+            </video>
           </div>
           <h1 className="choose-h1">Choose Your anime</h1>
         </div>

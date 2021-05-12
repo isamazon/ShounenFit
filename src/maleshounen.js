@@ -10,6 +10,7 @@ import { Container } from "react-bootstrap";
 // CSS/assets
 import "./CSS/male/MHAM.css";
 import video1 from "./assets/maleshounenmp4.mp4";
+import poster from "./assets/maleshounenmp4.png";
 
 function Maleshounen() {
   useEffect(() => {
@@ -19,7 +20,7 @@ function Maleshounen() {
 
   return (
     <div>
-      <Videoheader gender="male" video={video1} />
+      <Videoheader gender="male" video={video1} posterimg={poster} />
       <Container fluid className="anime-selection-cont">
         <Selection />
       </Container>

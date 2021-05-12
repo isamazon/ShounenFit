@@ -7,6 +7,7 @@ import Workoutguide from "../../workoutlayout/workoutguide";
 // Dependancies
 import { Container, Col, Row } from "react-bootstrap";
 import AOS from "aos";
+import LazyLoad from "react-lazy-load";
 // CSS
 import "../../../CSS/workouts/workout1.css";
 // assets
@@ -27,70 +28,104 @@ import chestband2 from "../../../assets/workoutvids/bandchest2.gif";
 import chestband3 from "../../../assets/workoutvids/bandchest3.gif";
 import chestband4 from "../../../assets/workoutvids/bandchest4.gif";
 import chestband5 from "../../../assets/workoutvids/bandchest5.gif";
+import { gsap, TimelineLite, Power3 } from "gsap/all";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 function Dekuworkout1() {
+  let t1 = new TimelineLite({ delay: 0 });
+  useEffect(() => {
+    t1.from(".nothing", { y: -15, opacity: 0, ease: "none" }, "Start");
+
+    gsap.from(".trigger1", {
+      duration: 0.5,
+      x: "-200",
+      opacity: 0,
+      ease: "ease-in",
+      ScrollTrigger: {
+        trigger: "workoutguide-cont-fluid",
+        start: "top 90%",
+        end: "bottom 60%",
+        toggleActions: "restart complete reverse reset",
+      },
+    });
+  });
   const SVGS = {
     chest: (
-      <Chest
-        className="svg"
-        height="100%"
-        width="100%"
-        color="rgb(13, 216, 114)"
-      />
+      <LazyLoad height="100%" width="100%">
+        <Chest
+          className="svg"
+          height="100%"
+          width="100%"
+          color="rgb(13, 216, 114)"
+        />
+      </LazyLoad>
     ),
     back: (
-      <Back
-        className="svg"
-        height="100%"
-        width="100%"
-        color="rgb(13, 216, 114)"
-      />
+      <LazyLoad height="100%" width="100%">
+        <Back
+          className="svg"
+          height="100%"
+          width="100%"
+          color="rgb(13, 216, 114)"
+        />
+      </LazyLoad>
     ),
     arms: (
-      <Arms
-        className="svg"
-        height="100%"
-        width="100%"
-        color="rgb(13, 216, 114)"
-      />
+      <LazyLoad height="100%" width="100%">
+        <Arms
+          className="svg"
+          height="100%"
+          width="100%"
+          color="rgb(13, 216, 114)"
+        />
+      </LazyLoad>
     ),
     abs: (
-      <Abs
-        className="svg"
-        height="100%"
-        width="100%"
-        color="rgb(13, 216, 114)"
-      />
+      <LazyLoad height="100%" width="100%">
+        <Abs
+          className="svg"
+          height="100%"
+          width="100%"
+          color="rgb(13, 216, 114)"
+        />
+      </LazyLoad>
     ),
     legs: (
-      <Legs
-        className="svg"
-        height="100%"
-        width="100%"
-        color="rgb(13, 216, 114)"
-      />
+      <LazyLoad height="100%" width="100%">
+        <Legs
+          className="svg"
+          height="100%"
+          width="100%"
+          color="rgb(13, 216, 114)"
+        />
+      </LazyLoad>
     ),
     triceps: (
-      <Triceps
-        className="svg"
-        height="100%"
-        width="100%"
-        color="rgb(13, 216, 114)"
-      />
+      <LazyLoad height="100%" width="100%">
+        <Triceps
+          className="svg"
+          height="100%"
+          width="100%"
+          color="rgb(13, 216, 114)"
+        />
+      </LazyLoad>
     ),
     shoulders: (
-      <Shoulders
-        className="svg"
-        height="100%"
-        width="100%"
-        color="rgb(13, 216, 114)"
-      />
+      <LazyLoad height="100%" width="100%">
+        <Shoulders
+          className="svg"
+          height="100%"
+          width="100%"
+          color="rgb(13, 216, 114)"
+        />
+      </LazyLoad>
     ),
   };
   return (
     <div className="parent-container">
       <Scrolltop
-        scrolltopclass="scroll-up-btn-ctn green-btn"
+        scrolltopclass="scroll-up-btn-ctn green-btn "
         scrolltophidden="scroll-up-btn-hidden"
         arrowup="arrow-up"
         scrollTo="charheader"
@@ -112,7 +147,8 @@ function Dekuworkout1() {
         heroDetails="hero-details greenText"
       />
       <Workoutguide
-        colclass="guide-col green-border"
+        container="workoutguide-cont-fluid"
+        colclass="guide-col green-border trigger1"
         colclass2="guide-col-2 green-border"
         icons="icon"
         themecolor="guide-h1 green-color"
@@ -125,7 +161,7 @@ function Dekuworkout1() {
       <Workoutlayout
         workoutH1="Band push(Chest, legs, tricep) workouts"
         workoutHeader="workouth1 green-color"
-        row1="row-1 green-border"
+        row1="row-1 green-border trigger2"
         svg={SVGS.chest}
         h1Color="workout-name green-color"
         pClass="workout-desc green-color"

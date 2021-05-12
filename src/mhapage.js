@@ -21,7 +21,7 @@ function MHAM() {
       <Backbutton backroute="/maleshounen" />
       <div className="mha-cont-m">
         <div className="blurred-video">
-          <video className="video1" autoPlay loop muted>
+          <video className="video1" autoPlay playsInline loop muted>
             <source src={video1} type="video/mp4" />
           </video>
         </div>

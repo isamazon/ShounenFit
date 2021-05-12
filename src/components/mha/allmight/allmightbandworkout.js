@@ -7,6 +7,7 @@ import Workoutguide from "../../workoutlayout/workoutguide";
 // Dependancies
 import { Container, Col, Row } from "react-bootstrap";
 import AOS from "aos";
+import LazyLoad from "react-lazy-load";
 // CSS
 import "../../../CSS/workouts/workout1.css";
 // assets
@@ -31,60 +32,74 @@ import chestband5 from "../../../assets/workoutvids/bandchest5.gif";
 function Dekuworkout1() {
   const SVGS = {
     chest: (
-      <Chest
-        className="svg"
-        height="100%"
-        width="100%"
-        color="rgba(213, 216, 13, 1)"
-      />
+      <LazyLoad height="100%" width="100%">
+        <Chest
+          className="svg"
+          height="100%"
+          width="100%"
+          color="rgba(213, 216, 13, 1)"
+        />
+      </LazyLoad>
     ),
     back: (
-      <Back
-        className="svg"
-        height="100%"
-        width="100%"
-        color="rgba(213, 216, 13, 1)"
-      />
+      <LazyLoad height="100%" width="100%">
+        <Back
+          className="svg"
+          height="100%"
+          width="100%"
+          color="rgba(213, 216, 13, 1)"
+        />
+      </LazyLoad>
     ),
     arms: (
-      <Arms
-        className="svg"
-        height="100%"
-        width="100%"
-        color="rgba(213, 216, 13, 1)"
-      />
+      <LazyLoad height="100%" width="100%">
+        <Arms
+          className="svg"
+          height="100%"
+          width="100%"
+          color="rgba(213, 216, 13, 1)"
+        />
+      </LazyLoad>
     ),
     abs: (
-      <Abs
-        className="svg"
-        height="100%"
-        width="100%"
-        color="rgba(213, 216, 13, 1)"
-      />
+      <LazyLoad height="100%" width="100%">
+        <Abs
+          className="svg"
+          height="100%"
+          width="100%"
+          color="rgba(213, 216, 13, 1)"
+        />
+      </LazyLoad>
     ),
     legs: (
-      <Legs
-        className="svg"
-        height="100%"
-        width="100%"
-        color="rgba(213, 216, 13, 1)"
-      />
+      <LazyLoad height="100%" width="100%">
+        <Legs
+          className="svg"
+          height="100%"
+          width="100%"
+          color="rgba(213, 216, 13, 1)"
+        />
+      </LazyLoad>
     ),
     triceps: (
-      <Triceps
-        className="svg"
-        height="100%"
-        width="100%"
-        color="rgba(213, 216, 13, 1)"
-      />
+      <LazyLoad height="100%" width="100%">
+        <Triceps
+          className="svg"
+          height="100%"
+          width="100%"
+          color="rgba(213, 216, 13, 1)"
+        />
+      </LazyLoad>
     ),
     shoulders: (
-      <Shoulders
-        className="svg"
-        height="100%"
-        width="100%"
-        color="rgba(213, 216, 13, 1)"
-      />
+      <LazyLoad height="100%" width="100%">
+        <Shoulders
+          className="svg"
+          height="100%"
+          width="100%"
+          color="rgba(213, 216, 13, 1)"
+        />
+      </LazyLoad>
     ),
   };
   return (

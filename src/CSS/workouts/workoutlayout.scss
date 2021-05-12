@@ -137,6 +137,10 @@ $font3: "Ceviche One", cursive;
         font-size: 55px;
         letter-spacing: 5px;
         transition: 0.5s;
+        @media screen and (max-width: 780px) {
+          font-size: 30px;
+          letter-spacing: 0px;
+        }
       }
       .row-1,
       .row-2 {
@@ -177,7 +181,7 @@ $font3: "Ceviche One", cursive;
             padding: 0px 30px;
             color: white;
             @media screen and (max-width: 500px) {
-              height: 130px;
+              height: 230px;
               overflow-y: scroll;
             }
           }

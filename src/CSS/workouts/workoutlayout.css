@@ -196,6 +196,13 @@
   transition: 0.5s;
 }
 
+@media screen and (max-width: 780px) {
+  .main-container .cont-fluid .cont-inner-main .workouth1 {
+    font-size: 30px;
+    letter-spacing: 0px;
+  }
+}
+
 .main-container .cont-fluid .cont-inner-main .row-1,
 .main-container .cont-fluid .cont-inner-main .row-2 {
   position: relative;
@@ -265,7 +272,7 @@
 @media screen and (max-width: 500px) {
   .main-container .cont-fluid .cont-inner-main .row-1 .col-2 .workout-desc,
   .main-container .cont-fluid .cont-inner-main .row-2 .col-2 .workout-desc {
-    height: 130px;
+    height: 230px;
     overflow-y: scroll;
   }
 }

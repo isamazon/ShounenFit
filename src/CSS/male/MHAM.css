@@ -74,7 +74,8 @@
 @media screen and (max-width: 1000px) {
   .mha-cont-m .clear-video {
     width: 100%;
-    border: none;
+    border: 0px solid white;
+    top: 0%;
   }
 }
 
@@ -116,6 +117,13 @@
 @media screen and (max-width: 1000px) {
   .mha-cont-m h1 {
     font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .mha-cont-m h1 {
+    font-size: 40px;
+    text-align: center;
   }
 }
 

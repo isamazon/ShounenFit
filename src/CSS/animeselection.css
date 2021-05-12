@@ -81,9 +81,23 @@ border .inner-selection-cont .selection-row .anime-col-1 .anime-1-btn .anime-lin
   color: white;
 }
 
+@media screen and (max-width: 500px) {
+  .inner-selection-cont .selection-row .anime-col-1 .anime-1-btn .anime-link-1,
+  .inner-selection-cont .selection-row .anime-col-1 .anime-1-btn .anime-link-2 {
+    padding: 0px 0px;
+  }
+}
+
 .inner-selection-cont .selection-row .anime-col-1 .anime-1-btn .anime-link-1 .link-img,
 .inner-selection-cont .selection-row .anime-col-1 .anime-1-btn .anime-link-2 .link-img {
   height: 150px;
   width: 90%;
+}
+
+@media screen and (max-width: 500px) {
+  .inner-selection-cont .selection-row .anime-col-1 .anime-1-btn .anime-link-1 .link-img,
+  .inner-selection-cont .selection-row .anime-col-1 .anime-1-btn .anime-link-2 .link-img {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=animeselection.css.map */

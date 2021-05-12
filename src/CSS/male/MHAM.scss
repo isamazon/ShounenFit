@@ -55,7 +55,8 @@ $font3: "Ceviche One", cursive;
     border: 1px solid white;
     @media screen and (max-width: 1000px) {
       width: 100%;
-      border: none;
+      border: 0px solid white;
+      top: 0%;
     }
     img {
       height: 300px;
@@ -86,6 +87,10 @@ $font3: "Ceviche One", cursive;
     font-size: 90px;
     @media screen and (max-width: 1000px) {
       font-size: 60px;
+    }
+    @media screen and (max-width: 500px) {
+      font-size: 40px;
+      text-align: center;
     }
   }
 }

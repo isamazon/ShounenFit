@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 // Dependencies
 import { Link } from "react-router-dom";
+import { BiLogIn } from "react-icons/bi";
 // Components
-import Dropdown from "./Dropdown";
+
 // CSS
 import "../CSS/navbar.css";
 
@@ -81,8 +82,8 @@ function Nav() {
           </Link>
         </li>
         <li className="nav-signin">
-          <Link to="/" className="signinlink">
-            Sign in
+          <Link to="/login" className="signinlink">
+            Sign in <BiLogIn className="icon" size="30px" />
           </Link>
         </li>
       </ul>

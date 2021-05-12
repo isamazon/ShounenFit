@@ -33,7 +33,7 @@ function Workoutlayout(props) {
           >
             {/* Workout picture */}
             <Col md={5} xs={12} className="col-1">
-              <LazyLoad height="100%">{props.svg}</LazyLoad>
+              {props.svg}
             </Col>
             {/* Workout desc */}
             <Col md={7} xs={12} className="col-2">
