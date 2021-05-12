@@ -16,7 +16,7 @@ function Nav() {
   const closeMobileMenu = () => setClick(false);
 
   const onMouseEnter = () => {
-    if (window.innerWidth < 960) {
+    if (window.innerWidth < 1000) {
       setDropdown(false);
     } else {
       setDropdown(true);
@@ -24,7 +24,7 @@ function Nav() {
   };
 
   const onMouseLeave = () => {
-    if (window.innerWidth < 960) {
+    if (window.innerWidth < 1000) {
       setDropdown(false);
     } else {
       setDropdown(false);
@@ -80,10 +80,10 @@ function Nav() {
             Contact
           </Link>
         </li>
-      </ul>
-      <ul>
-        <li>
-          <Link></Link>
+        <li className="nav-signin">
+          <Link to="/" className="signinlink">
+            Sign in
+          </Link>
         </li>
       </ul>
     </nav>

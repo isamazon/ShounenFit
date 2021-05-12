@@ -28,7 +28,7 @@
   transition: 0.5s;
 }
 
-@media screen and (max-width: 968px) {
+@media screen and (max-width: 1000px) {
   .nav {
     background: black;
   }
@@ -45,6 +45,7 @@
   -webkit-transition: 0.5s;
   transition: 0.5s;
   font-family: "Ceviche One", cursive;
+  z-index: 1;
 }
 
 .nav .brand:hover {
@@ -71,12 +72,15 @@ nav.active {
   list-style: none;
   text-align: center;
   background: none;
-  width: 60%;
-  right: 16%;
+  width: 100%;
+  right: 0;
   top: 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-right: 2rem;
 }
 
@@ -88,6 +92,52 @@ nav.active {
       -ms-flex-align: center;
           align-items: center;
   height: 80px;
+}
+
+.nav-signin {
+  position: absolute;
+  right: 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid white;
+  height: 30px;
+  padding: 20px;
+  width: 150px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.nav-signin:hover {
+  background: white;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+@media screen and (max-width: 1000px) {
+  .nav-signin {
+    position: relative;
+  }
+}
+
+.signinlink {
+  position: absolute;
+  width: 100%;
+  background: none;
+  color: white;
+  font-family: "Bangers", cursive;
+  font-size: 30px;
+}
+
+.signinlink:hover {
+  text-decoration: none;
+  color: black;
 }
 
 .nav-links {
@@ -130,7 +180,7 @@ nav.active {
   color: white;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1000px) {
   .NavbarItems {
     position: relative;
   }
