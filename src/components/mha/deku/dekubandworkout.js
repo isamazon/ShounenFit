@@ -21,13 +21,8 @@ import Abs from "../../bodyparts/chest";
 import Legs from "../../bodyparts/legs";
 import Triceps from "../../bodyparts/triceps";
 import Shoulders from "../../bodyparts/shouders";
-
-// Workout gifs
-import chestband1 from "../../../assets/workoutvids/bandchest1.gif";
-import chestband2 from "../../../assets/workoutvids/bandchest2.gif";
-import chestband3 from "../../../assets/workoutvids/bandchest3.gif";
-import chestband4 from "../../../assets/workoutvids/bandchest4.gif";
-import chestband5 from "../../../assets/workoutvids/bandchest5.gif";
+// All Gifs
+import Gifs from "../../workoutimgs";
 import { gsap, TimelineLite, Power3 } from "gsap/all";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -35,11 +30,11 @@ gsap.registerPlugin(ScrollTrigger);
 function Dekuworkout1() {
   let t1 = new TimelineLite({ delay: 0 });
   useEffect(() => {
-    t1.from(".nothing", { y: -15, opacity: 0, ease: "none" }, "Start");
+    t1.to(".nothing", { y: -15, opacity: 0, ease: "none" }, "Start");
 
     gsap.from(".trigger1", {
       duration: 0.5,
-      x: "-200",
+      x: "0",
       opacity: 0,
       ease: "ease-in",
       ScrollTrigger: {
@@ -172,23 +167,30 @@ function Dekuworkout1() {
         // Accordion workout props
         row="acc-row-1 "
         setH1="set-h1"
-        workoutGif={chestband1}
-        workoutGif2={chestband2}
-        workoutGif3={chestband3}
-        workoutGif4={chestband4}
-        workoutGif5={chestband5}
-        workoutGif6={chestband2}
+        workoutGif={Gifs.chestb1}
+        workoutGif2={Gifs.chestb2}
+        workoutGif3={Gifs.chestb3}
+        workoutGif4={Gifs.chestb4}
+        workoutGif5={Gifs.chestb5}
+        workoutGif6={Gifs.chestb5}
         ownershipP="The following video is owned by athleanx.com"
+        workouth1class="repeat-h1 green-color"
         workoutTitle="Banded saw"
         workoutTitle2="Crossover pushups or Pushups"
         workoutTitle3="Wrap around press"
-        workoutTitle4="Upper chest extension"
+        workoutTitle4="Upper chest pullover"
         workoutTitle5="Punch out extensions"
-        workoutTitle6="workout 6"
-        workoutDescription1="The first band chest workout is a pushing action with a band blah blah blah band blah blah blah band blah blah blahband blah blah blah"
-        workouth1class="workout-name-h1 green-color"
+        workoutTitle6="Asissted or regular chest dips"
+        workoutDescription1="Starting with the saw, to perform this workout effectively youll want to anchor your band (to something sturdy) to chest height insert your hand locked into place and allow the elbow to drive through the chest into abduction"
+        workoutDescription2="Now anchoring the band into a lowpoint and performing a standard pushup while holding the band in one hand crossing the banded hand across the unbanded hand will create the resistant abduction which increases the overal effect on your chest. If you are unable to perform this exercise with the extra difficulty of using the band just perform pushups"
+        workoutDescription3="For the third exercise youll want to anchor the band again to chest height and then perform a chest press but more importantly you want to allow your elbows to flare out, whats important about this is creating a wrap around/corner effect, which introduces some abduction stress to the exercise making the movement even more effective to the chest"
+        workoutDescription4="For the fourth exercise we are goung to be targeting the upper chest area, by performing the upper chest pullover, like a traditional lat pullover with a dumbbell the band does this motion even better. By attaching the band to a lower anchor and pulling the band over your head WHILE PULLING your hands and interally roating them to get the best abduction squezze you can"
+        workoutDescription5="With exercise number 6 were going to continue working that upperchest by performing the prone punchouts. To perform this exercise properly we need to anchor the band low to the floor. This is simulating the same kind of push that you would have from a incline dumbell press. As you press the arm out in front of us youre practically dragging your arm across the floor."
+        workoutDescription6="The last exercise will be specifically hitting the lower chest with a assited or standard dips, if you DO NOT have a pull up bar or anywhere to perform the dips perform pushups for your finishing exercise"
         workoutpclass="workout-desc-p"
         repeatH1="repeat-h1 green-color"
+        finishh1="finish-h1 green-color"
+        abstoclass="abs-to-class"
       />
       {/* 
       Shoulder WORKOUT ***************************************************************
@@ -205,12 +207,12 @@ function Dekuworkout1() {
         // Accordion workout props
         row="acc-row-1 "
         setH1="set-h1"
-        workoutGif={chestband1}
-        workoutGif2={chestband2}
-        workoutGif3={chestband3}
-        workoutGif4={chestband4}
-        workoutGif5={chestband5}
-        workoutGif6={chestband2}
+        workoutGif={Gifs.chestb1}
+        workoutGif2={Gifs.chestb2}
+        workoutGif3={Gifs.chestb3}
+        workoutGif4={Gifs.chestb4}
+        workoutGif5={Gifs.chestb5}
+        workoutGif6={Gifs.chestb5}
         ownershipP="The following video is owned by athleanx.com"
         workoutTitle="Shoulder workout 1"
         workoutTitle2="Crossover pushups or Pushups"
@@ -239,12 +241,12 @@ function Dekuworkout1() {
         // Accordion workout props
         row="acc-row-1 "
         setH1="set-h1"
-        workoutGif={chestband1}
-        workoutGif2={chestband2}
-        workoutGif3={chestband3}
-        workoutGif4={chestband4}
-        workoutGif5={chestband5}
-        workoutGif6={chestband2}
+        workoutGif={Gifs.chestb1}
+        workoutGif2={Gifs.chestb2}
+        workoutGif3={Gifs.chestb3}
+        workoutGif4={Gifs.chestb4}
+        workoutGif5={Gifs.chestb5}
+        workoutGif6={Gifs.chestb5}
         ownershipP="The following video is owned by athleanx.com"
         workoutTitle="Shoulder workout 1"
         workoutTitle2="Crossover pushups or Pushups"
@@ -274,12 +276,12 @@ function Dekuworkout1() {
         // Accordion workout props
         row="acc-row-1 "
         setH1="set-h1"
-        workoutGif={chestband1}
-        workoutGif2={chestband2}
-        workoutGif3={chestband3}
-        workoutGif4={chestband4}
-        workoutGif5={chestband5}
-        workoutGif6={chestband2}
+        workoutGif={Gifs.chestb1}
+        workoutGif2={Gifs.chestb2}
+        workoutGif3={Gifs.chestb3}
+        workoutGif4={Gifs.chestb4}
+        workoutGif5={Gifs.chestb5}
+        workoutGif6={Gifs.chestb5}
         ownershipP="The following video is owned by athleanx.com"
         workoutTitle="Shoulder workout 1"
         workoutTitle2="Crossover pushups or Pushups"
@@ -306,12 +308,12 @@ function Dekuworkout1() {
         // Accordion workout props
         row="acc-row-1 "
         setH1="set-h1"
-        workoutGif={chestband1}
-        workoutGif2={chestband2}
-        workoutGif3={chestband3}
-        workoutGif4={chestband4}
-        workoutGif5={chestband5}
-        workoutGif6={chestband2}
+        workoutGif={Gifs.chestb1}
+        workoutGif2={Gifs.chestb2}
+        workoutGif3={Gifs.chestb3}
+        workoutGif4={Gifs.chestb4}
+        workoutGif5={Gifs.chestb5}
+        workoutGif6={Gifs.chestb5}
         ownershipP="The following video is owned by athleanx.com"
         workoutTitle="Shoulder workout 1"
         workoutTitle2="Crossover pushups or Pushups"
@@ -338,12 +340,12 @@ function Dekuworkout1() {
         // Accordion workout props
         row="acc-row-1 "
         setH1="set-h1"
-        workoutGif={chestband1}
-        workoutGif2={chestband2}
-        workoutGif3={chestband3}
-        workoutGif4={chestband4}
-        workoutGif5={chestband5}
-        workoutGif6={chestband2}
+        workoutGif={Gifs.chestb1}
+        workoutGif2={Gifs.chestb2}
+        workoutGif3={Gifs.chestb3}
+        workoutGif4={Gifs.chestb4}
+        workoutGif5={Gifs.chestb5}
+        workoutGif6={Gifs.chestb5}
         ownershipP="The following video is owned by athleanx.com"
         workoutTitle="Shoulder workout 1"
         workoutTitle2="Crossover pushups or Pushups"

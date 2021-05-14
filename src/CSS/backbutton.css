@@ -112,6 +112,14 @@
   color: #787a07;
 }
 
+.blue-btn {
+  color: #00ffff;
+}
+
+.blue-btn:hover {
+  color: #00b4b4;
+}
+
 @-webkit-keyframes fadein {
   0% {
     opacity: 0;

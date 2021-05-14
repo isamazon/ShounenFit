@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 // Dependancies
 import { Accordion, Card, Col, Row } from "react-bootstrap";
-
+import Link from "react-scroll";
 import LazyLoad from "react-lazy-load";
+import { FaCheckCircle } from "react-icons/fa";
 // CSS
 import "../../CSS/workouts/workoutlayout.css";
 // Assets
@@ -163,6 +164,33 @@ class Workoutaccord extends Component {
               {this.props.workoutDescription6}
             </p>
           </Col>
+          <div className="bottom-text-btn">
+            <h1 className={this.props.finishh1}>
+              Congratulations! you finished the {this.props.bodypartworkout1}
+            </h1>
+            <p className="abs-p">
+              if youre feeling up to it try adding a ab exercise in this workout
+              (try to work your core at least 2-3 times a week)
+            </p>
+            <div
+              className={this.props.abstoclass}
+              to={this.props.absto}
+              spy={true}
+              smooth={true}
+            >
+              Abs
+            </div>
+            <div className="finish-workout-button">
+              <p className="complete-p">
+                Click the checkmark to get rid of the workout if completed
+              </p>
+              <FaCheckCircle
+                onClick={this.props.finishClick}
+                className="finish-btn"
+                size="40px"
+              />
+            </div>
+          </div>
         </Row>
       </Card.Body>
     );

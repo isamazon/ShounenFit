@@ -55,6 +55,7 @@ function Workoutlayout(props) {
                     <Workoutaccord
                       row={props.row}
                       setH1={props.setH1}
+                      bodypartworkout1={props.bodypartworkout1}
                       workoutGif={props.workoutGif}
                       workoutGif2={props.workoutGif2}
                       workoutGif3={props.workoutGif3}
@@ -77,6 +78,8 @@ function Workoutlayout(props) {
                       workouth1class={props.workouth1class}
                       workoutpclass={props.workoutpclass}
                       repeatH1={props.repeatH1}
+                      finishh1={props.finishh1}
+                      abstoclass={props.abstoclass}
                     />
                   </Accordion.Collapse>
                 </Card>

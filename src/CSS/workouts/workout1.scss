@@ -133,6 +133,21 @@ $font3: "Ceviche One", cursive;
 .yellowText {
   color: rgba(213, 216, 13, 1);
 }
+// Theme color 3
+.rowBlue {
+  border: 4px solid #00ffff;
+  background: rgba(253, 253, 253, 0.041);
+  backdrop-filter: blur(26.5px);
+  -webkit-backdrop-filter: blur(26.5px);
+  border-radius: 10px;
+  transition: 0.5s;
+  &:hover {
+    box-shadow: 0px 0px 15px #00ffff;
+  }
+}
+.blueText {
+  color: #00ffff;
+}
 
 @keyframes fadeup {
   0% {

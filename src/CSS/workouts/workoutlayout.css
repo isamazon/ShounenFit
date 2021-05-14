@@ -417,6 +417,105 @@
   margin-top: 30px;
 }
 
+.main-container .cont-fluid .cont-inner-main .row-1 .col-3 .accordion-1 .card-1 .card-body .acc-row-1 .bottom-text-btn,
+.main-container .cont-fluid .cont-inner-main .row-2 .col-3 .accordion-1 .card-1 .card-body .acc-row-1 .bottom-text-btn {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: none;
+  height: 100%;
+}
+
+.main-container .cont-fluid .cont-inner-main .row-1 .col-3 .accordion-1 .card-1 .card-body .acc-row-1 .bottom-text-btn .finish-h1,
+.main-container .cont-fluid .cont-inner-main .row-2 .col-3 .accordion-1 .card-1 .card-body .acc-row-1 .bottom-text-btn .finish-h1 {
+  position: relative;
+  width: 100%;
+  margin: 20px 0px;
+  text-align: center;
+  background: none;
+}
+
+.main-container .cont-fluid .cont-inner-main .row-1 .col-3 .accordion-1 .card-1 .card-body .acc-row-1 .bottom-text-btn .abs-p,
+.main-container .cont-fluid .cont-inner-main .row-2 .col-3 .accordion-1 .card-1 .card-body .acc-row-1 .bottom-text-btn .abs-p {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  color: white;
+}
+
+.main-container .cont-fluid .cont-inner-main .row-1 .col-3 .accordion-1 .card-1 .card-body .acc-row-1 .bottom-text-btn .abs-to-class,
+.main-container .cont-fluid .cont-inner-main .row-2 .col-3 .accordion-1 .card-1 .card-body .acc-row-1 .bottom-text-btn .abs-to-class {
+  position: relative;
+  cursor: pointer;
+  background: none;
+  padding: 10px 60px;
+  border: 2px solid white;
+  color: white;
+  font-family: "Bangers", cursive;
+  font-size: 30px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.main-container .cont-fluid .cont-inner-main .row-1 .col-3 .accordion-1 .card-1 .card-body .acc-row-1 .bottom-text-btn .abs-to-class:hover,
+.main-container .cont-fluid .cont-inner-main .row-2 .col-3 .accordion-1 .card-1 .card-body .acc-row-1 .bottom-text-btn .abs-to-class:hover {
+  color: black;
+  background: white;
+}
+
+.main-container .cont-fluid .cont-inner-main .row-1 .col-3 .accordion-1 .card-1 .card-body .acc-row-1 .bottom-text-btn .finish-workout-button,
+.main-container .cont-fluid .cont-inner-main .row-2 .col-3 .accordion-1 .card-1 .card-body .acc-row-1 .bottom-text-btn .finish-workout-button {
+  position: relative;
+  margin-top: 50px;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: none;
+}
+
+.main-container .cont-fluid .cont-inner-main .row-1 .col-3 .accordion-1 .card-1 .card-body .acc-row-1 .bottom-text-btn .finish-workout-button .complete-p,
+.main-container .cont-fluid .cont-inner-main .row-2 .col-3 .accordion-1 .card-1 .card-body .acc-row-1 .bottom-text-btn .finish-workout-button .complete-p {
+  position: relative;
+  color: white;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-family: "Bangers", cursive;
+  font-size: 30px;
+}
+
+.main-container .cont-fluid .cont-inner-main .row-1 .col-3 .accordion-1 .card-1 .card-body .acc-row-1 .bottom-text-btn .finish-workout-button .finish-btn,
+.main-container .cont-fluid .cont-inner-main .row-2 .col-3 .accordion-1 .card-1 .card-body .acc-row-1 .bottom-text-btn .finish-workout-button .finish-btn {
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  color: #01e701;
+  margin-left: 20px;
+}
+
+.main-container .cont-fluid .cont-inner-main .row-1 .col-3 .accordion-1 .card-1 .card-body .acc-row-1 .bottom-text-btn .finish-workout-button .finish-btn:hover,
+.main-container .cont-fluid .cont-inner-main .row-2 .col-3 .accordion-1 .card-1 .card-body .acc-row-1 .bottom-text-btn .finish-workout-button .finish-btn:hover {
+  color: #008d00;
+}
+
 .display-none {
   display: none;
 }
@@ -459,5 +558,20 @@
 .yellow-border:hover {
   -webkit-box-shadow: 0px 0px 10px #fdff81;
           box-shadow: 0px 0px 10px #fdff81;
+}
+
+.blue-color {
+  color: cyan;
+  font-family: "Bangers", cursive;
+}
+
+.blue-border {
+  border: 4px solid cyan;
+  border-radius: 20px;
+}
+
+.blue-border:hover {
+  -webkit-box-shadow: 0px 0px 10px cyan;
+          box-shadow: 0px 0px 10px cyan;
 }
 /*# sourceMappingURL=workoutlayout.css.map */

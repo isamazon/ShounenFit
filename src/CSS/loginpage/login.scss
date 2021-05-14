@@ -1,9 +1,21 @@
 .m-fld-cnt {
   position: relative;
   height: 100vh;
-  background: red;
+  background: #090d0f;
   .m-cnt {
     position: relative;
     height: 100%;
+    background: none;
+    display: flex;
+
+    justify-content: center;
+    .row-1 {
+      position: relative;
+      top: 8%;
+      height: 90%;
+      width: 70%;
+      background: #10191d;
+      border-radius: 20px;
+    }
   }
 }

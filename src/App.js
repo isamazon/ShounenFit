@@ -17,6 +17,7 @@ import Bakugouequip from "./components/mha/bakugou/bakugouequip";
 // Workouts
 import Dekuworkout1 from "./components/mha/deku/dekubandworkout";
 import Allmightworkout1 from "./components/mha/allmight/allmightbandworkout";
+import Shotobandworkout1 from "./components/mha/shoto/shotoband";
 function App() {
   return (
     <div className="app">
@@ -31,10 +32,11 @@ function App() {
         <Route exact path="/bakugouequip" component={Bakugouequip} />
         <Route exact path="/Femaleshounen" component={Femaleshounen} />
         {/* Login page */}
-        <Route exact path="./login" component={Login} />
+        <Route exact path="/login" component={Login} />
         {/* Workouts */}
         <Route exact path="/dekubandworkout" component={Dekuworkout1} />
         <Route exact path="/allmightbandworkout" component={Allmightworkout1} />
+        <Route exact path="/shotoband" component={Shotobandworkout1} />
       </Switch>
     </div>
   );

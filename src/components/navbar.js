@@ -9,28 +9,12 @@ import "../CSS/navbar.css";
 
 function Nav() {
   const [click, setClick] = useState(false);
-  const [dropdown, setDropdown] = useState(false);
+
   // Active navbar stat
   const [nav, setNav] = useState(false);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
-
-  const onMouseEnter = () => {
-    if (window.innerWidth < 1000) {
-      setDropdown(false);
-    } else {
-      setDropdown(true);
-    }
-  };
-
-  const onMouseLeave = () => {
-    if (window.innerWidth < 1000) {
-      setDropdown(false);
-    } else {
-      setDropdown(false);
-    }
-  };
 
   const changeBackground = () => {
     if (window.scrollY >= 10) {

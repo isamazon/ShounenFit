@@ -7,7 +7,9 @@ import "../../CSS/loginpage/login.css";
 function Login() {
   return (
     <Container fluid className="m-fld-cnt">
-      <Container className="m-cnt"></Container>
+      <Container className="m-cnt">
+        <Row className="row-1"></Row>
+      </Container>
     </Container>
   );
 }

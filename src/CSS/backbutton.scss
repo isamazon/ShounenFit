@@ -89,6 +89,13 @@ $font3: "Ceviche One", cursive;
   }
 }
 
+.blue-btn {
+  color: #00ffff;
+  &:hover {
+    color: #00b4b4;
+  }
+}
+
 @keyframes fadein {
   0% {
     opacity: 0;
