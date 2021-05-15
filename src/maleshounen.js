@@ -3,6 +3,7 @@ import React, { Component, useEffect, useState } from "react";
 import Nav from "./components/navbar";
 import Selection from "./components/animeselection";
 import Videoheader from "./components/videoheader";
+import Backbutton from "./components/backbutton";
 // Dependencies
 import AOS from "aos";
 import { Container } from "react-bootstrap";
@@ -20,6 +21,7 @@ function Maleshounen() {
 
   return (
     <div>
+      <Backbutton backroute="/" />
       <Videoheader gender="male" video={video1} posterimg={poster} />
       <Container fluid className="anime-selection-cont">
         <Selection />

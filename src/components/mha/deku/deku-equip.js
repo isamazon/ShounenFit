@@ -1,10 +1,12 @@
 import React from "react";
 // Components
 import Equipment from "../../../equipment";
+import Backbutton from "../../backbutton";
 
 function Dekuequip() {
   return (
     <div>
+      <Backbutton backroute="/MHAM" />
       <Equipment
         // Styling
         h1Class="h1-position greenText"

@@ -32,6 +32,7 @@ $font3: "Ceviche One", cursive;
     justify-content: center;
     transition: 0.5s;
     text-decoration: none;
+
     .link-back {
       display: flex;
       justify-content: space-between;
@@ -60,18 +61,19 @@ $font3: "Ceviche One", cursive;
     padding: 0px 10px;
   }
   .go-back-show {
+    text-align: center;
     color: white;
     font-family: $font1;
     transition: 0.5s;
     font-size: 30px;
+    padding: 0px 30px;
   }
   .arrow-icon-hovered {
-    position: absolute;
+    position: relative;
     color: white;
     font-size: 40px;
     transform: rotate(0deg);
     transition: 0.5s;
-    right: 0;
   }
 }
 
@@ -127,23 +129,5 @@ $font3: "Ceviche One", cursive;
   color: #00ffff;
   &:hover {
     color: #00b4b4;
-  }
-}
-
-@keyframes fadein {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeout {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
   }
 }

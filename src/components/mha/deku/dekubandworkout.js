@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import Workoutheader from "../workoutheroheader";
 import Workoutlayout from "../../workoutlayout/workoutlayout";
 import Scrolltop from "../../scrolltotop";
+import Backbutton from "../../backbutton";
 import Workoutguide from "../../workoutlayout/workoutguide";
 // Dependancies
 import { Container, Col, Row } from "react-bootstrap";
@@ -125,6 +126,7 @@ function Dekuworkout1() {
         arrowup="arrow-up"
         scrollTo="charheader"
       />
+      <Backbutton backroute="/deku-equip" />
       <Workoutheader
         charheader="charheader"
         charimg={deku}

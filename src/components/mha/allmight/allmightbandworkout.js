@@ -4,6 +4,7 @@ import Workoutheader from "../workoutheroheader";
 import Workoutlayout from "../../workoutlayout/workoutlayout";
 import Scrolltop from "../../scrolltotop";
 import Workoutguide from "../../workoutlayout/workoutguide";
+import Backbutton from "../../backbutton";
 // Dependancies
 import { Container, Col, Row } from "react-bootstrap";
 import AOS from "aos";
@@ -110,6 +111,7 @@ function Dekuworkout1() {
         arrowup="arrow-up"
         scrollTo="charheader"
       />
+      <Backbutton backroute="/allmightequipment" />
       <Workoutheader
         charheader="charheader"
         charimg={allmight}
