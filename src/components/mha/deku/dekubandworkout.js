@@ -172,7 +172,7 @@ function Dekuworkout1() {
         workoutGif3={Gifs.chestb3}
         workoutGif4={Gifs.chestb4}
         workoutGif5={Gifs.chestb5}
-        workoutGif6={Gifs.chestb5}
+        workoutGif6={Gifs.chestb6}
         ownershipP="The following video is owned by athleanx.com"
         workouth1class="repeat-h1 green-color"
         workoutTitle="Banded saw"
@@ -212,14 +212,14 @@ function Dekuworkout1() {
         workoutGif3={Gifs.chestb3}
         workoutGif4={Gifs.chestb4}
         workoutGif5={Gifs.chestb5}
-        workoutGif6={Gifs.chestb5}
+        workoutGif6={Gifs.chestb6}
         ownershipP="The following video is owned by athleanx.com"
-        workoutTitle="Shoulder workout 1"
-        workoutTitle2="Crossover pushups or Pushups"
-        workoutTitle3="Wrap around press"
-        workoutTitle4="Upper chest extension"
-        workoutTitle5="Punch out extensions"
-        workoutTitle6="workout 6"
+        workoutTitle="Lying one arm press"
+        workoutTitle2="Push press pull apart"
+        workoutTitle3="Kneeling up and overs"
+        workoutTitle4="Front raise pull aparts"
+        workoutTitle5="Stretch front raise"
+        workoutTitle6="Face pulls"
         workoutDescription1="The first band chest workout is a pushing action with a band blah blah blah band blah blah blah band blah blah blahband blah blah blah"
         workouth1class="workout-name-h1 green-color"
         workoutpclass="workout-desc-p"
@@ -246,7 +246,7 @@ function Dekuworkout1() {
         workoutGif3={Gifs.chestb3}
         workoutGif4={Gifs.chestb4}
         workoutGif5={Gifs.chestb5}
-        workoutGif6={Gifs.chestb5}
+        workoutGif6={Gifs.chestb6}
         ownershipP="The following video is owned by athleanx.com"
         workoutTitle="Shoulder workout 1"
         workoutTitle2="Crossover pushups or Pushups"
@@ -281,7 +281,7 @@ function Dekuworkout1() {
         workoutGif3={Gifs.chestb3}
         workoutGif4={Gifs.chestb4}
         workoutGif5={Gifs.chestb5}
-        workoutGif6={Gifs.chestb5}
+        workoutGif6={Gifs.chestb6}
         ownershipP="The following video is owned by athleanx.com"
         workoutTitle="Shoulder workout 1"
         workoutTitle2="Crossover pushups or Pushups"
@@ -313,7 +313,7 @@ function Dekuworkout1() {
         workoutGif3={Gifs.chestb3}
         workoutGif4={Gifs.chestb4}
         workoutGif5={Gifs.chestb5}
-        workoutGif6={Gifs.chestb5}
+        workoutGif6={Gifs.chestb6}
         ownershipP="The following video is owned by athleanx.com"
         workoutTitle="Shoulder workout 1"
         workoutTitle2="Crossover pushups or Pushups"
@@ -345,7 +345,7 @@ function Dekuworkout1() {
         workoutGif3={Gifs.chestb3}
         workoutGif4={Gifs.chestb4}
         workoutGif5={Gifs.chestb5}
-        workoutGif6={Gifs.chestb5}
+        workoutGif6={Gifs.chestb6}
         ownershipP="The following video is owned by athleanx.com"
         workoutTitle="Shoulder workout 1"
         workoutTitle2="Crossover pushups or Pushups"

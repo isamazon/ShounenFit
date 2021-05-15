@@ -1,7 +1,10 @@
 .m-fld-cnt {
   position: relative;
   height: 100vh;
-  background: #090d0f;
+  background: url("../../assets/patternbackground.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   .m-cnt {
     position: relative;
     height: 100%;
