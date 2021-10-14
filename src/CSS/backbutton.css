@@ -20,6 +20,12 @@
           align-items: center;
 }
 
+@media screen and (max-width: 900px) {
+  .backbutton-cont {
+    top: 15%;
+  }
+}
+
 .backbutton-cont .backbtn {
   position: relative;
   height: 100%;
@@ -71,6 +77,13 @@
   -webkit-transition: 0.5s;
   transition: 0.5s;
   color: #000;
+}
+
+@media screen and (max-width: 900px) {
+  .backbutton-cont .backbtn .link-back .arrow-icon {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
 }
 
 .backbutton-cont .backbtn-closed {
@@ -167,5 +180,41 @@
 
 .blue-btn:hover {
   color: #00b4b4;
+}
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 /*# sourceMappingURL=backbutton.css.map */

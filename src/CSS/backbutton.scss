@@ -21,6 +21,9 @@ $font3: "Ceviche One", cursive;
   justify-content: flex-start;
   align-items: center;
 
+  @media screen and (max-width: 900px) {
+    top: 15%;
+  }
   .backbtn {
     position: relative;
     height: 100%;
@@ -51,6 +54,9 @@ $font3: "Ceviche One", cursive;
         font-size: 40px;
         transition: 0.5s;
         color: #000;
+        @media screen and (max-width: 900px) {
+          transform: rotate(0deg);
+        }
       }
     }
   }
@@ -129,5 +135,22 @@ $font3: "Ceviche One", cursive;
   color: #00ffff;
   &:hover {
     color: #00b4b4;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }

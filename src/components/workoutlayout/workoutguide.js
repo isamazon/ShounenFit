@@ -7,7 +7,7 @@ import { FaTimes } from "react-icons/fa";
 class Workoutguide extends Component {
   render() {
     return (
-      <Container fluid className="workoutguide-cont-fluid">
+      <Container fluid className={this.props.container}>
         <Container className="workout-guide-cont">
           <FaTimes />
           <Col lg={5} xs={12} className={this.props.colclass}>

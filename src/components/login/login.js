@@ -8,7 +8,12 @@ function Login() {
   return (
     <Container fluid className="m-fld-cnt">
       <Container className="m-cnt">
-        <Row className="row-1"></Row>
+        <Row className="row-1">
+            <form action="
+            ">
+                
+            </form>
+        </Row>
       </Container>
     </Container>
   );
