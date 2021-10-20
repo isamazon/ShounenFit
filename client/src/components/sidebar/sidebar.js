@@ -30,7 +30,7 @@ function Sidebar(props) {
             <FaHome className="sidebar-icon" style={props.iconcolor} />
             <p className="sidebar-p">Home</p>
           </Link>
-          <Link to="/" className="side-bar-item">
+          <Link to="/dashboard" className="side-bar-item">
             <BsGridFill className="sidebar-icon" style={props.iconcolor} />
             <p className="sidebar-p">Dashboard</p>
           </Link>
@@ -44,7 +44,7 @@ function Sidebar(props) {
             className={sideMenu ? 'side-menu' : 'none'}
             onMouseLeave={ToggleMenu}
           >
-            <Link className="side-bar-item first">
+            <Link to="/animeselection" className="side-bar-item first">
               <FaPlus
                 className="sidebar-icon question"
                 style={props.iconcolor}

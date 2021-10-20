@@ -13,6 +13,9 @@ $font3: 'Ceviche One', cursive;
   height: 100%;
   width: 10%;
   background: #1e1f1c;
+  @media screen and (max-width: 1500px) {
+    width: 15%;
+  }
   .inner-sidebar {
     position: relative;
     display: flex;
@@ -80,6 +83,9 @@ $font3: 'Ceviche One', cursive;
           position: absolute;
           right: 5px;
           top: 43px;
+          @media screen and (max-width: 1600px) {
+            right: 0px;
+          }
         }
       }
       .side-menu {

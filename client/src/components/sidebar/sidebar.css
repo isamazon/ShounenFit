@@ -8,6 +8,12 @@
   background: #1e1f1c;
 }
 
+@media screen and (max-width: 1500px) {
+  .sidebar-container {
+    width: 15%;
+  }
+}
+
 .sidebar-container .inner-sidebar {
   position: relative;
   display: -webkit-box;
@@ -118,6 +124,12 @@
   position: absolute;
   right: 5px;
   top: 43px;
+}
+
+@media screen and (max-width: 1600px) {
+  .sidebar-container .inner-sidebar .side-bar-items .side-bar-item .openmenu-icon {
+    right: 0px;
+  }
 }
 
 .sidebar-container .inner-sidebar .side-bar-items .side-menu {

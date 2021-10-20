@@ -1,6 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Permanent+Marker&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap");
 .parent-container {
   position: relative;
   height: 100vh;
@@ -15,7 +12,7 @@
           flex-direction: row;
 }
 
-.parent-container .dashboard-container {
+.parent-container .animecontainer {
   position: relative;
   height: 100%;
   width: 90%;
@@ -31,8 +28,8 @@
 }
 
 @media screen and (max-width: 1500px) {
-  .parent-container .dashboard-container {
+  .parent-container .animecontainer {
     width: 85%;
   }
 }
-/*# sourceMappingURL=dashboard.css.map */
+/*# sourceMappingURL=animeselection.css.map */
