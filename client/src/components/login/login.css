@@ -20,13 +20,32 @@
 .login-container .video-side {
   position: relative;
   height: 100%;
-  width: 30%;
+  width: 35%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.login-container .video-side .video {
+  position: absolute;
+  left: -600px;
+  height: 120%;
+  top: -10%;
+}
+
+.login-container .video-side .videoblur {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  z-index: 10;
 }
 
 .login-container .form-side {
   position: relative;
   height: 100%;
-  width: 70%;
+  width: 65%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -49,10 +68,37 @@
   height: 100px;
 }
 
-.login-container .form-side .signp {
+.login-container .form-side .signin-signup {
   position: relative;
+  height: 100px;
   top: 10%;
-  font-family: "Fjalla One", sans-serif;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.login-container .form-side .signin-signup .signp {
   color: white;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 20px;
+}
+
+.login-container .form-side .signin-signup .sign-p {
+  color: #7de2d1;
+  font-family: "Bangers", cursive;
+  font-size: 20px;
+  padding-left: 10px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=login.css.map */

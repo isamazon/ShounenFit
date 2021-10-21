@@ -19,12 +19,29 @@ $font3: 'Ceviche One', cursive;
   .video-side {
     position: relative;
     height: 100%;
-    width: 30%;
+    width: 35%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+    .video {
+      position: absolute;
+      left: -600px;
+      height: 120%;
+      top: -10%;
+    }
+    .videoblur {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background: rgba(0, 0, 0, 0);
+      backdrop-filter: blur(10px);
+      z-index: 10;
+    }
   }
   .form-side {
     position: relative;
     height: 100%;
-    width: 70%;
+    width: 65%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,11 +54,27 @@ $font3: 'Ceviche One', cursive;
       color: white;
       height: 100px;
     }
-    .signp {
+    .signin-signup {
       position: relative;
+      height: 100px;
       top: 10%;
-      font-family: $font2;
-      color: white;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: center;
+      .signp {
+        color: white;
+        font-family: $font2;
+        font-size: 20px;
+      }
+      .sign-p {
+        color: #7de2d1;
+        font-family: $font1;
+        font-size: 20px;
+        padding-left: 10px;
+        cursor: pointer;
+      }
     }
   }
 }
