@@ -11,3 +11,5 @@ const router = express.Router();
 router.get('/', getWorkout);
 router.post('/', createWorkout);
 router.delete('/', deleteWorkout);
+
+export default router;

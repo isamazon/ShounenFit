@@ -3,6 +3,8 @@ import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 import cors from 'cors';
 import dotenv from 'dotenv';
+// Routes
+import workoutRoutes from './routes/workouts.js';
 const app = express();
 dotenv.config();
 
@@ -11,6 +13,7 @@ app.use(bodyParser.urlencoded({ limit: '30mb', extended: true }));
 app.use(cors());
 
 // Endpoints
+app.use('/workouts', workoutRoutes);
 
 app.get('/', (req, res) => {
   res.send('Hello to shonenfit, if you see this its working!!');

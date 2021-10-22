@@ -1,10 +1,10 @@
 import mongoose from 'mongoose';
-import WorkoutSchema from '../model/workout';
+import WorkoutModel from '../model/workout.js';
 
 // function to retrieve workout
 export const getWorkout = async (req, res) => {
   try {
-    const postWorkout = await WorkoutSchema.find({ creator: req.userId });
+    const postWorkout = await WorkoutModel.find({ creator: req.userId });
     console.log(postWorkout);
     res.status(200).json(postWorkout);
   } catch (error) {
@@ -16,7 +16,7 @@ export const getWorkout = async (req, res) => {
 export const createWorkout = async (req, res) => {
   const workoutData = req.body;
 
-  const newWorkoutPost = new WorkoutSchema({
+  const newWorkoutPost = new WorkoutModel({
     ...workoutData,
     creator: req.userId,
     createdAt: new Date().toISOString(),
@@ -38,7 +38,7 @@ export const deleteWorkout = async (req, res) => {
   if (!mongoose.Types.ObjectId.isValid(id))
     return res.status(404).send(`No post with id: ${id}`);
 
-  await WorkoutSchema.findByIdAndRemove(id);
+  await WorkoutModel.findByIdAndRemove(id);
 
   res.json({ message: 'Workout deleted successfully.' });
 };
