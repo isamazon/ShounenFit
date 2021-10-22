@@ -3,6 +3,8 @@ import React from 'react';
 import Sidebar from '../sidebar/sidebar';
 // CSS
 import './animeselection.css';
+// Icons
+import { FaPlus } from 'react-icons/fa';
 function AnimeSelection() {
   return (
     <div className="parent-container">

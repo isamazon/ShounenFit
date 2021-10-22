@@ -94,6 +94,19 @@
   height: 50%;
   width: 20%;
   left: 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.sidebar-container .inner-sidebar .side-bar-items .side-bar-item .dumbell {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.sidebar-container .inner-sidebar .side-bar-items .side-bar-item .dumbell:hover {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 
 .sidebar-container .inner-sidebar .side-bar-items .side-bar-item .question {
@@ -118,6 +131,7 @@
   top: 10px;
   width: 80%;
   padding-left: 30px;
+  cursor: pointer;
 }
 
 .sidebar-container .inner-sidebar .side-bar-items .side-bar-item .openmenu-icon {
@@ -234,6 +248,16 @@
   height: 50%;
   width: 20%;
   left: 10px;
+}
+
+.sidebar-container .inner-sidebar .lowerlinks .bottom-items .settings {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.sidebar-container .inner-sidebar .lowerlinks .bottom-items .settings:hover {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
 }
 
 .sidebar-container .inner-sidebar .lowerlinks .bottom-items .question {

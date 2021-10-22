@@ -13,6 +13,7 @@ import {
   FaCog,
   FaCaretRight,
   FaPlus,
+  FaPencilAlt,
 } from 'react-icons/fa';
 import { FiLogOut } from 'react-icons/fi';
 import { BsGridFill } from 'react-icons/bs';
@@ -35,7 +36,10 @@ function Sidebar(props) {
             <p className="sidebar-p">Dashboard</p>
           </Link>
           <div className="side-bar-item" onMouseEnter={ToggleMenu}>
-            <FaDumbbell className="sidebar-icon" style={props.iconcolor} />
+            <FaDumbbell
+              className="sidebar-icon dumbell"
+              style={props.iconcolor}
+            />
             <p className="sidebar-p">Workouts</p>
             <FaCaretRight className="openmenu-icon" style={props.iconcolor} />
           </div>
@@ -76,7 +80,7 @@ function Sidebar(props) {
         </div>
         <div className="lowerlinks">
           <Link className="bottom-items">
-            <FaCog className="sidebar-icon question" style={props.iconcolor} />
+            <FaCog className="sidebar-icon settings" style={props.iconcolor} />
             <p className="sidebar-p">Settings</p>
           </Link>
           <Link className="bottom-items">

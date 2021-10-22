@@ -62,6 +62,14 @@ $font3: 'Ceviche One', cursive;
           height: 50%;
           width: 20%;
           left: 10px;
+          transition: 0.5s;
+        }
+        .dumbell {
+          transition: 0.5s;
+          cursor: pointer;
+          &:hover {
+            transform: rotate(-90deg);
+          }
         }
         .question {
           height: 40%;
@@ -78,6 +86,7 @@ $font3: 'Ceviche One', cursive;
           top: 10px;
           width: 80%;
           padding-left: 30px;
+          cursor: pointer;
         }
         .openmenu-icon {
           position: absolute;
@@ -151,6 +160,13 @@ $font3: 'Ceviche One', cursive;
           width: 20%;
           left: 10px;
         }
+        .settings {
+          transition: 0.5s;
+          &:hover {
+            transform: rotate(-180deg);
+          }
+        }
+
         .question {
           height: 40%;
         }
