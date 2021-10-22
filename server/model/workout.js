@@ -5,6 +5,7 @@ const workOutSchema = mongoose.Schema({
   bodyPart: String,
   picture: String,
   workoutDesc: String,
+  creator: String,
   createdAt: {
     type: Date,
     default: new Date(),

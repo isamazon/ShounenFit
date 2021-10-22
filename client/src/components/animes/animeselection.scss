@@ -1,3 +1,13 @@
+// Font 1
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Permanent+Marker&display=swap');
+$font1: 'Bangers', cursive;
+// Font 2
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+$font2: 'Fjalla One', sans-serif;
+//  Font 3
+@import url('https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap');
+$font3: 'Ceviche One', cursive;
+
 .parent-container {
   position: relative;
   height: 100vh;

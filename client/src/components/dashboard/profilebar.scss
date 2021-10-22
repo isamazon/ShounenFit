@@ -1,0 +1,50 @@
+// Font 1
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Permanent+Marker&display=swap');
+$font1: 'Bangers', cursive;
+// Font 2
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+$font2: 'Oswald', sans-serif;
+//  Font 3
+@import url('https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap');
+$font3: 'Ceviche One', cursive;
+// Font 4
+@import url('https://fonts.googleapis.com/css2?family=Rambla:ital,wght@1,700&display=swap');
+$font4: 'Rambla', sans-serif;
+.profile-bar-container {
+  position: relative;
+  top: 0px;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  .profile-bar {
+    position: relative;
+    height: 60px;
+    width: 30%;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px 20px;
+    flex-direction: row;
+    border-radius: 50px;
+    background: #3e3f39;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.185);
+    .profile-pic {
+      position: relative;
+      background: #cacaca;
+      border-radius: 50%;
+      height: 50px;
+      width: 50px;
+      margin-right: 50px;
+    }
+    .username,
+    .level {
+      color: #cacaca;
+      font-size: 25px;
+      font-family: $font2;
+      margin: 0px 0px;
+      margin-right: 50px;
+    }
+  }
+}

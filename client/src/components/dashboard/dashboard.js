@@ -6,22 +6,16 @@ import { Link } from 'react-router-dom';
 import Fade from 'react-reveal/Fade';
 // Icons
 import { FaPlus, FaHistory } from 'react-icons/fa';
-// pictures
-import pfp from '../../assets/pfp.jpg';
+
 // components
 import Recent from './emptyrecent';
+import ProfileBar from './profilebar';
 function Dashboard() {
   return (
     <div className="parent-container">
       <Sidebar iconcolor={{ color: '#4cc9f0' }} />
       <div className="dashboard-container">
-        <div className="profile-bar-container">
-          <div className="profile-bar">
-            <img src={pfp} alt="" className="profile-pic" />
-            <p className="username">UserName</p>
-            <div className="level">level: 0</div>
-          </div>
-        </div>
+        <ProfileBar />
         <div className="dashboard-info-container">
           <Fade>
             <div className="favorite-anime-container">

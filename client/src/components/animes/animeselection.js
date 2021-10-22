@@ -4,7 +4,8 @@ import Sidebar from '../sidebar/sidebar';
 // CSS
 import './animeselection.css';
 // Icons
-import { FaPlus } from 'react-icons/fa';
+// Dependencies
+import { Col } from 'react-bootstrap';
 function AnimeSelection() {
   return (
     <div className="parent-container">
