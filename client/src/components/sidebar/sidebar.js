@@ -53,7 +53,14 @@ function Sidebar(props) {
                 className="sidebar-icon question"
                 style={props.iconcolor}
               />
-              <p className="sidebar-p">New workout</p>
+              <p className="sidebar-p">Add workout</p>
+            </Link>
+            <Link to="/animeselection" className="side-bar-item">
+              <FaPencilAlt
+                className="sidebar-icon question"
+                style={props.iconcolor}
+              />
+              <p className="sidebar-p">Custom workout</p>
             </Link>
             <Link className="side-bar-item">
               <FaHistory

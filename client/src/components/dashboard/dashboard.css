@@ -32,7 +32,7 @@
 
 .parent-container .dashboard-container .dashboard-info-container {
   position: relative;
-  height: 90vh;
+  height: 90%;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;

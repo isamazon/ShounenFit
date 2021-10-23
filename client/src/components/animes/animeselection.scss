@@ -17,14 +17,21 @@ $font3: 'Ceviche One', cursive;
   flex-direction: row;
   .animecontainer {
     position: relative;
-    height: 100%;
+    height: 100vh;
     width: 90%;
     right: 0px;
     background: #2b2c28;
-    display: flex;
-    flex-direction: column;
     @media screen and (max-width: 1500px) {
       width: 85%;
+    }
+    .anime-list-container {
+      position: relative;
+      height: 90%;
+      width: 100%;
+      background: none;
+      .anime-link {
+        position: relative;
+      }
     }
   }
 }
