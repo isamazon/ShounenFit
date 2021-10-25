@@ -1,3 +1,16 @@
+// Font 1
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Permanent+Marker&display=swap');
+$font1: 'Bangers', cursive;
+// Font 2
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+$font2: 'Oswald', sans-serif;
+//  Font 3
+@import url('https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap');
+$font3: 'Ceviche One', cursive;
+// Font 4
+@import url('https://fonts.googleapis.com/css2?family=Rambla:ital,wght@1,700&display=swap');
+$font4: 'Rambla', sans-serif;
+
 .admin-login-container {
   position: relative;
   height: 100vh;
@@ -9,9 +22,57 @@
   justify-content: center;
   .login-form-container {
     position: relative;
-    height: 55%;
-    width: 50%;
-    background: whitesmoke;
+    height: 80%;
+    width: 600px;
+    background: #3e3f396b;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.322);
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    h1 {
+      position: relative;
+      height: 15%;
+      width: 100%;
+      font-family: $font1;
+      text-align: center;
+      color: white;
+      font-size: 60px;
+      padding-top: 20px;
+    }
+    .admin-form {
+      position: relative;
+      height: 65%;
+      width: 100%;
+      background: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      .input {
+        position: relative;
+        height: 35px;
+        border: none;
+        width: 60%;
+        border-radius: 20px;
+        padding-left: 20px;
+        margin: 0px 0px;
+        &:focus {
+          outline: none;
+        }
+      }
+      .submit-button {
+        position: relative;
+        height: 40px;
+        border: none;
+        width: 60%;
+        border-radius: 20px;
+        margin: 10px 0px;
+        background: #161614;
+        box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.274);
+        color: white;
+        font-family: $font1;
+        font-size: 30px;
+      }
+    }
   }
 }

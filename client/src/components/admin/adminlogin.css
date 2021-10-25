@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rambla:ital,wght@1,700&display=swap");
 .admin-login-container {
   position: relative;
   height: 100vh;
@@ -20,9 +24,78 @@
 
 .admin-login-container .login-form-container {
   position: relative;
-  height: 55%;
-  width: 50%;
-  background: whitesmoke;
+  height: 80%;
+  width: 600px;
+  background: #3e3f396b;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.322);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.322);
   border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.admin-login-container .login-form-container h1 {
+  position: relative;
+  height: 15%;
+  width: 100%;
+  font-family: "Bangers", cursive;
+  text-align: center;
+  color: white;
+  font-size: 60px;
+  padding-top: 20px;
+}
+
+.admin-login-container .login-form-container .admin-form {
+  position: relative;
+  height: 65%;
+  width: 100%;
+  background: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.admin-login-container .login-form-container .admin-form .input {
+  position: relative;
+  height: 35px;
+  border: none;
+  width: 60%;
+  border-radius: 20px;
+  padding-left: 20px;
+  margin: 0px 0px;
+}
+
+.admin-login-container .login-form-container .admin-form .input:focus {
+  outline: none;
+}
+
+.admin-login-container .login-form-container .admin-form .submit-button {
+  position: relative;
+  height: 40px;
+  border: none;
+  width: 60%;
+  border-radius: 20px;
+  margin: 10px 0px;
+  background: #161614;
+  -webkit-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.274);
+          box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.274);
+  color: white;
+  font-family: "Bangers", cursive;
+  font-size: 30px;
 }
 /*# sourceMappingURL=adminlogin.css.map */

@@ -10,7 +10,7 @@ export const signinadmin = async (req, res) => {
     const existingAdmin = await Admin.findOne({ email });
 
     if (!existingAdmin)
-      return res.status(404).json({ message: 'User doesnt exist' });
+      return res.status(404).json({ message: 'Admin doesnt exist' });
 
     const isPasswordCorrect = await bcrypt.compare(
       password,
@@ -33,23 +33,23 @@ export const signinadmin = async (req, res) => {
 };
 
 export const signupadmin = async (req, res) => {
-  const { email, password, confirmPassword, firstName, lastName } = req.body;
+  const { email, password, confirmPassword, username } = req.body;
 
   try {
-    const existingAdmin = await User.findOne({ email });
+    const existingAdmin = await Admin.findOne({ email });
 
     if (existingAdmin)
-      return res.status(400).json({ message: 'User already exist' });
+      return res.status(400).json({ message: 'Admin already exist' });
 
     if (password !== confirmPassword)
       return res.status(400).json({ message: 'passwords dont match' });
 
     const hashedPassword = await bcrypt.hash(password, 12);
 
-    const result = await User.create({
+    const result = await Admin.create({
       email,
       password: hashedPassword,
-      name: `${firstName}${lastName}`,
+      name: username,
     });
 
     const token = jwt.sign({ email: result.email, id: result._id }, 'test', {
