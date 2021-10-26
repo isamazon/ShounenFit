@@ -1,4 +1,4 @@
-const authReducer = (state = { adminData: null }, action) => {
+const adminReducer = (state = { adminData: null }, action) => {
   switch (action.type) {
     case 'AUTH_ADMIN':
       localStorage.setItem(
@@ -14,4 +14,4 @@ const authReducer = (state = { adminData: null }, action) => {
   }
 };
 
-export default authReducer;
+export default adminReducer;

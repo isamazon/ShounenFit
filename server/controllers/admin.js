@@ -49,7 +49,7 @@ export const signupadmin = async (req, res) => {
     const result = await Admin.create({
       email,
       password: hashedPassword,
-      name: username,
+      username: username,
     });
 
     const token = jwt.sign({ email: result.email, id: result._id }, 'test', {

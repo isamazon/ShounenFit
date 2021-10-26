@@ -1,6 +1,6 @@
 import * as api from '../api';
 
-export const adminSignIn = (formDatas, history) => async (dispatch) => {
+export const adminsignin = (formDatas, history) => async (dispatch) => {
   try {
     //   sign in user
     const { data } = await api.adminSignIn(formDatas);
@@ -14,7 +14,7 @@ export const adminSignIn = (formDatas, history) => async (dispatch) => {
   }
 };
 
-export const adminSignUp = (formDatas, history) => async (dispatch) => {
+export const adminsignup = (formDatas, history) => async (dispatch) => {
   try {
     // Sign up the user
     const { data } = await api.adminSignUp(formDatas);
@@ -24,6 +24,6 @@ export const adminSignUp = (formDatas, history) => async (dispatch) => {
     history.push('/');
     window.location.reload(false);
   } catch (error) {
-    console.log(error.message);
+    console.log(error);
   }
 };

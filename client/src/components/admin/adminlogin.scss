@@ -50,10 +50,10 @@ $font4: 'Rambla', sans-serif;
       justify-content: space-evenly;
       .input {
         position: relative;
-        height: 35px;
+        height: 40px;
         border: none;
         width: 60%;
-        border-radius: 20px;
+        border-radius: 10px;
         padding-left: 20px;
         margin: 0px 0px;
         &:focus {
@@ -62,7 +62,7 @@ $font4: 'Rambla', sans-serif;
       }
       .submit-button {
         position: relative;
-        height: 40px;
+        height: 45px;
         border: none;
         width: 60%;
         border-radius: 20px;

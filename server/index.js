@@ -6,6 +6,7 @@ import dotenv from 'dotenv';
 // Routes
 import workoutRoutes from './routes/workouts.js';
 import adminRoutes from './routes/admin.js';
+import userRoutes from './routes/users.js';
 const app = express();
 dotenv.config();
 
@@ -16,6 +17,7 @@ app.use(cors());
 // Endpoints
 app.use('/workouts', workoutRoutes);
 app.use('/admin', adminRoutes);
+app.use('/user', userRoutes);
 
 app.get('/', (req, res) => {
   res.send('Hello to shonenfit, if you see this its working!!');

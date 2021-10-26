@@ -72,10 +72,10 @@
 
 .admin-login-container .login-form-container .admin-form .input {
   position: relative;
-  height: 35px;
+  height: 40px;
   border: none;
   width: 60%;
-  border-radius: 20px;
+  border-radius: 10px;
   padding-left: 20px;
   margin: 0px 0px;
 }
@@ -86,7 +86,7 @@
 
 .admin-login-container .login-form-container .admin-form .submit-button {
   position: relative;
-  height: 40px;
+  height: 45px;
   border: none;
   width: 60%;
   border-radius: 20px;

@@ -4,7 +4,7 @@ import './adminlogin.css';
 //
 import { useHistory } from 'react-router';
 import { useDispatch } from 'react-redux';
-import { adminSignIn, adminSignUp } from '../../actions/admin';
+import { adminsignin, adminsignup } from '../../actions/admin';
 const initialState = {
   username: '',
   email: '',
@@ -23,14 +23,15 @@ function AdminLogin() {
 
   const [formDatas, setFormData] = useState(initialState);
   // JWT functions
-  const handleSubmit = (e) => {
+  // Signup function
+  const handleSignUp = (e) => {
     e.preventDefault();
-
-    if (isSignUp) {
-      dispatch(adminSignUp(formDatas, history));
-    } else {
-      dispatch(adminSignIn(formDatas, history));
-    }
+    dispatch(adminsignup(formDatas, history));
+  };
+  // Login function
+  const handleLogIn = (e) => {
+    e.preventDefault();
+    dispatch(adminsignin(formDatas, history));
   };
   // Change/updating input values
   const handleChange = (e) => {
@@ -41,44 +42,70 @@ function AdminLogin() {
     <div className="admin-login-container">
       <div className="login-form-container">
         <h1>{isSignUp ? 'Admin signup' : 'Admin login'}</h1>
-        <form className="admin-form" onSubmit={handleSubmit}>
-          <input
-            className="input"
-            placeholder="Username*"
-            name="username"
-            label="username"
-            onChange={handleChange}
-            type="text"
-          />
-          <input
-            className="input"
-            placeholder="Email*"
-            name="email"
-            label="Email Address"
-            onChange={handleChange}
-            name="email"
-          />
-          <input
-            className="input"
-            placeholder="Password*"
-            name="password"
-            label="password"
-            onChange={handleChange}
-            type="text"
-            required
-          />
-          <input
-            className="input"
-            placeholder="Confirm Password*"
-            name="username"
-            label="username"
-            onChange={handleChange}
-            type="text"
-          />
-          <button type="submit" className="submit-button">
-            {isSignUp ? 'Sign up' : 'Login'}
-          </button>
-        </form>
+        {isSignUp ? (
+          <form className="admin-form" onSubmit={handleSignUp}>
+            <input
+              className="input"
+              placeholder="Username*"
+              name="username"
+              label="username"
+              onChange={handleChange}
+              type="text"
+            />
+            <input
+              className="input"
+              placeholder="Email*"
+              name="email"
+              label="Email Address"
+              onChange={handleChange}
+              name="email"
+            />
+            <input
+              className="input"
+              placeholder="Password*"
+              name="password"
+              label="password"
+              onChange={handleChange}
+              type="text"
+              required
+            />
+            <input
+              className="input"
+              name="confirmPassword"
+              label="confirmPassword"
+              placeholder="Confirm Password*"
+              onChange={handleChange}
+              type="text"
+              required
+            />
+            <button type="submit" className="submit-button">
+              {isSignUp ? 'Sign up' : 'Login'}
+            </button>
+          </form>
+        ) : (
+          <form className="admin-form small" onSubmit={handleLogIn}>
+            <input
+              className="input"
+              placeholder="Email*"
+              name="email"
+              label="Email Address"
+              onChange={handleChange}
+              name="email"
+            />
+            <input
+              className="input"
+              placeholder="Password*"
+              name="password"
+              label="password"
+              onChange={handleChange}
+              type="text"
+              required
+            />
+            <button type="submit" className="submit-button">
+              {isSignUp ? 'Sign up' : 'Login'}
+            </button>
+          </form>
+        )}
       </div>
     </div>
   );
