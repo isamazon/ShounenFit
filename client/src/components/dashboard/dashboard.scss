@@ -148,7 +148,7 @@ $font4: 'Rambla', sans-serif;
           .empty-recent {
             position: relative;
             border-radius: 30px;
-            height: 300px;
+            min-height: 300px;
             width: 95%;
             margin: 10px 0px;
             display: flex;

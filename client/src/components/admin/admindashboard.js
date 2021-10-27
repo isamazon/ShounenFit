@@ -34,6 +34,10 @@ function AdminDashboard() {
             </Button>
           </div>
         </div>
+        <div className="add-workout-container">
+          <div className="change-anime-row"></div>
+          <div className="add-anime-container"></div>
+        </div>
       </div>
     </div>
   );

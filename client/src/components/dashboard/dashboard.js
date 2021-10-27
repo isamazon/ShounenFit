@@ -41,6 +41,10 @@ function Dashboard() {
             <h1>Recent workouts:</h1>
             <div className="recent-container">
               <Recent />
+              <Recent />
+              <Recent />
+              <Recent />
+              <Recent />
             </div>
           </div>
         </div>
