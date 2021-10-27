@@ -7,6 +7,7 @@ import Dashboard from './components/dashboard/dashboard';
 import AnimeSelection from './components/animes/animeselection';
 import Login from './components/login/login';
 import AdminLogin from './components/admin/adminlogin';
+import AdminDashboard from './components/admin/admindashboard';
 function App() {
   return (
     <div className="app">
@@ -16,6 +17,7 @@ function App() {
         <Route exact path="/animeselection" component={AnimeSelection} />
         <Route exact path="/login" component={Login} />
         <Route exact path="/adminlogin" component={AdminLogin} />
+        <Route exact path="/admindashboard" component={AdminDashboard} />
       </Switch>
     </div>
   );

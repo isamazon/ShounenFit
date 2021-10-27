@@ -61,3 +61,16 @@ export const signupadmin = async (req, res) => {
     res.status(500).json({ error });
   }
 };
+
+// Update admin
+export const updateAdmin = async (req, res) => {
+  const { id: _id } = req.params;
+  const admin = req.body;
+
+  if (!mongoose.Types.ObjectId.isValid(_id))
+    return res.status(404).send('No admin with that id');
+
+  const updatedAdmin = await Admin.findByIdAndUpdate(_id, admin, { new: true });
+
+  res.json(updatedAdmin);
+};

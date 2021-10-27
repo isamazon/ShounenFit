@@ -1,0 +1,79 @@
+// Font 1
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Permanent+Marker&display=swap');
+$font1: 'Bangers', cursive;
+// Font 2
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+$font2: 'Oswald', sans-serif;
+//  Font 3
+@import url('https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap');
+$font3: 'Ceviche One', cursive;
+// Font 4
+@import url('https://fonts.googleapis.com/css2?family=Rambla:ital,wght@1,700&display=swap');
+$font4: 'Rambla', sans-serif;
+
+.admin-dash-container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background: green;
+  .admin-dash {
+    position: relative;
+    height: 100%;
+    width: 85%;
+    background: #2b2c28;
+    display: flex;
+    flex-direction: column;
+    .admin-profile-container {
+      position: relative;
+      height: 10%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      .admin-profile {
+        position: relative;
+        height: 60%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background: #cacaca;
+        border-radius: 20px;
+        left: 50px;
+        width: 50%;
+        padding: 0px 20px;
+        .admin-h1 {
+          position: relative;
+          height: 100%;
+          margin: 0px;
+          font-family: $font4;
+          display: flex;
+          align-items: center;
+          font-size: 45px;
+        }
+        h1 {
+          position: relative;
+          height: 100%;
+          margin: 0px;
+          font-family: $font1;
+          display: flex;
+          font-size: 40px;
+          align-items: center;
+          margin: 0px 20px;
+        }
+        .logout-btn {
+          position: absolute;
+          height: 60%;
+          width: 100px;
+          display: flex;
+          align-items: center;
+          background: #2b2c28;
+          color: white;
+          font-family: $font1;
+          font-size: 20px;
+          right: 10px;
+        }
+      }
+    }
+  }
+}

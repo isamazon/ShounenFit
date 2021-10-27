@@ -7,7 +7,7 @@ export const adminsignin = (formDatas, history) => async (dispatch) => {
 
     dispatch({ type: 'AUTH_ADMIN', data });
 
-    history.push('/');
+    history.push('/admindashboard');
     window.location.reload(false);
   } catch (error) {
     console.log(error);
@@ -21,7 +21,7 @@ export const adminsignup = (formDatas, history) => async (dispatch) => {
 
     dispatch({ type: 'AUTH_ADMIN', data });
 
-    history.push('/');
+    history.push('/admindashboard');
     window.location.reload(false);
   } catch (error) {
     console.log(error);

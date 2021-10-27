@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACA,OAAO,CAAC,4FAAI;AAGZ,OAAO,CAAC,4EAAI;AAGZ,OAAO,CAAC,wEAAI;AAGZ,OAAO,CAAC,mFAAI;AAGZ,AAAA,wBAAwB,CAAC;EACvB,QAAQ,EAAE,QAAQ;EAClB,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,GAAG;EACV,UAAU,EAAE,OAAO;CACpB",
+    "sources": [
+        "adminsidebar.scss"
+    ],
+    "names": [],
+    "file": "adminsidebar.css"
+}

@@ -13,7 +13,7 @@ const initialState = {
 };
 function AdminLogin() {
   // Sign in/Sign up toggle
-  const [isSignUp, setSignUp] = useState(true);
+  const [isSignUp, setSignUp] = useState(false);
   const switchMode = () => {
     setSignUp((prevIsSignup) => !prevIsSignup);
   };
@@ -98,7 +98,7 @@ function AdminLogin() {
               name="password"
               label="password"
               onChange={handleChange}
-              type="text"
+              type="password"
               required
             />
             <button type="submit" className="submit-button">
